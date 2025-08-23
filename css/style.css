@@ -145,6 +145,7 @@ section main
     z-index: -1;
 }
 
+
 .section__presentation-info {
     width: 100%;
     position: absolute;
@@ -1000,7 +1001,10 @@ section main
     text-align: center;
 }
 
+
 @media (min-width: 800px) {
+
+
     .section__presentation-image {
         transform: scale(1.2);
     }
@@ -1106,4 +1110,12 @@ section main
         font-size: 2rem;
     }
 
+}
+
+
+@media(min-width: 1200px){
+    .section__presentation {
+        background-size: 100% 80rem;
+        background-position: center !important;
+    }
 }

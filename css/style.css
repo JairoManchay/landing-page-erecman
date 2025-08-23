@@ -209,9 +209,9 @@ section main
 
 .section__presentation-list ul li span {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 800;
     display: inline-block;
-    font-family: var(--font_family_price);
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .section__presentation-image {
@@ -225,7 +225,7 @@ section main
 }
 
 .section__presentation-image img {
-    width: 50rem;
+    width: 25rem;
     height: 30rem;
 }
 
@@ -294,11 +294,28 @@ section main
 
 
 .section__offer {
+    position: relative;
     padding-top: 4rem;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    /* Elimina el fondo y la opacidad aquí */
+    /* background-image, opacity, etc. */
+    overflow: hidden;
+    padding-bottom: 4rem;
+}
+
+.section__offer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('../imgs/la-intimidad-de-la-joven-pareja-latina-en-la-cama.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
 }
 
 .section__offer-title {
@@ -856,7 +873,7 @@ section main
 .carrousel-item {
     flex: 0 0 auto;
     scroll-snap-align: center;
-    background: #fff;
+    background: var(--color_border_button);
     border-radius: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     padding: 1rem;
@@ -1016,10 +1033,23 @@ section main
 }
 
 
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .section__presentation-image {
+            width: 20rem;
+            height: 30rem;
+        
+    }
+}
+
 @media (min-width: 800px) {
 
 
     .section__presentation-image {
+        width: 20rem;
+        height: 30rem;
+    
+ 
         transform: scale(1.2);
     }
 

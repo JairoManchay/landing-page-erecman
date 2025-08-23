@@ -1,3 +1,34 @@
+@media (min-width: 600px) {
+    .carrousel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 2rem;
+        overflow-x: auto;
+        max-width: 100%;
+        padding: 4rem 2rem;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none; /* Firefox */
+    }
+    .carrousel::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+    }
+    .carrousel-item {
+        min-width: 240px;
+        max-width: 240px;
+        flex: 0 0 240px;
+        scroll-snap-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .carrousel-item img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 0.8rem;
+    }
+}
 :root {
     --color-title: #ae1a39;
     --font_family_title: "Roboto Condensed", sans-serif;
@@ -106,7 +137,7 @@ section main
     height: 42rem;
     width: 100%;
     margin-top: -6rem;
-    background-image: url('../imgs/pareja.png');
+    background-image: url('../imgs/hermosa-pareja-sexy-disfrutando-del-sexo-excitante-antes-de-tener-sexo-en-la-cama-en-el-dormitorio-d.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -773,6 +804,12 @@ section main
     line-height: 3rem;
 }
 
+@media((min-width: 600px) and (max-width: 700px)){
+    .section__about-product-recommended-opinions-title {
+        font-size: 2.5rem;
+    }
+}
+
 .section__about-product-recommended-opinions-title span {
     color: var(--color-title);
     font-weight: 700;
@@ -820,6 +857,29 @@ section main
     border-radius: 0.8rem;
     object-fit: cover;
 }
+
+@media((min-width: 600px) and (max-width: 900px)){
+    .carrousel {
+        margin: 0 auto;
+        width: 70rem;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .carrousel {
+        margin: 0 auto;
+        width: 90rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carrousel {
+        margin: 0 auto;
+        width: 110rem;
+    }
+}
+
+
 
 .section__about-product-recommended-button {
     padding: 2rem 0;

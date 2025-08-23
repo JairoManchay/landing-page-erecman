@@ -118,6 +118,7 @@ Header styles
     padding: 0;
     display: flex;
     flex-direction: row;
+    font-family: var(--font_family_title);
 }
 
 
@@ -159,6 +160,12 @@ section main
     align-items: center;
 }
 
+@media (min-width: 800px) {
+    .section__presentation-info div {
+        gap: 1.8rem;
+    }
+}
+
 .section__presentation-list {
     list-style: none;
     padding: 0;
@@ -186,6 +193,13 @@ section main
     align-items: center;
     justify-content: left;
     border-radius: 2rem;
+}
+
+@media (min-width: 800px) {
+    .section__presentation-list ul li {
+        width: 28rem;
+        padding: 1rem 1.5rem;
+    }
 }
 
 .img-list {
@@ -1020,7 +1034,7 @@ section main
 
     .section__presentation-info div {
         justify-content: right;
-        margin: 0 60px;
+        margin: 0 80px;
     }
 
     .section__presentation {

@@ -11,7 +11,10 @@
         scrollbar-width: none; /* Firefox */
     }
     .carrousel::-webkit-scrollbar {
-        display: none; /* Chrome, Safari */
+                display: none; /* Chrome, Safari, Edge Chromium */
+        width: 0;
+        height: 0;
+        background: transparent;
     }
     .carrousel-item {
         min-width: 240px;
@@ -476,7 +479,7 @@ section main
 .section__offer-tags-info ul li {
     font-size: 1.2rem;
     font-weight: 400;
-    width: 28rem;
+    width: 30rem;
     font-family: var(--font_family_price);
     margin-bottom: 1rem;
     background-color: var(--color_border_button);
@@ -497,6 +500,120 @@ section main
     border-radius: 0 0 1.5rem 1.5rem;
 }
 
+/* results */
+
+.section__results{
+    margin: 0 auto;
+    padding: 3rem 0;
+     position: relative;
+}
+
+.section__results::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('../imgs/pantalla_2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.section__results-title{
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: normal;
+    color: var(--color-title);
+    font-family: var(--font_family_title);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 600px) {
+    .section__results-title {
+        font-size: 4rem;
+    }
+}
+
+.section__results-items {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .section__results-items {
+        max-width: 700px;
+        padding: 0 2rem;
+    }
+}
+
+.section__results-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.section__results-item:nth-child(even) {
+    flex-direction: row-reverse;
+    gap: 2rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+}
+
+.section__results-item:nth-child(odd) p {
+    padding-left: 1rem;
+}
+
+.section__results-item p {
+    flex: 1;
+    margin: 0 1rem;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+}
+
+@media (min-width: 764px) {
+    .section__results-item p {
+        font-size: 3rem;
+    }
+}
+
+.section__results-item span {
+    font-weight: bold;
+    color: var(--color_border_button);
+}
+
+.section__results-item img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: var(--background_button);
+    object-fit: fill;
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+
+@media (min-width: 600px) {
+    .section__results-item img{
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
+.section__results-button-container{
+    text-align: center;
+    padding: 8rem 0;
+}
 
 /* about product */
 .section__about-product {
@@ -701,9 +818,134 @@ section main
     }
 }
 
+
+/* benefits */
+.section__about-product-benefits {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+.section__about-product-benefits-title{
+    color: var(--background_color_main);
+
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--font_family_title);
+    text-align: center;
+    line-height: 3rem;
+    background-color: var(--color_border_button);
+    margin-top: -5rem;
+    padding: 2rem 0;
+}
+
+
+
+
+.section__about-product-benefits-content {
+    padding: 2rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__about-product-benefits-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section__about-product-benefits-content ul li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 30rem;
+    font-family: var(--font_family_price);
+    margin-bottom: 1rem;
+    background-color: var(--color_border_button);
+    color: var(--background_button);
+    padding: 1rem 2rem;
+    margin: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 800px) {
+    .section__about-product-benefits-content ul li {
+        font-size: 2.3rem;
+        gap: 2rem;
+        width: 55rem;
+    }
+
+    .img-list{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+.section__about-product-benefits-content ul li:nth-child(1) {
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.section__about-product-benefits-content ul li:nth-child(7) {
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+
+.section__about-product-benefits-subtitle {
+    color: var(--background_subtitle);
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--font_family_title);
+    text-align: center;
+    line-height: 3rem;
+}
+
+@media (min-width: 600px) {
+    .section__about-product-benefits-subtitle {
+        font-size: 4rem;
+    }
+}
+
+.section__about-product-benefits-subtitle span {
+    color: var(--color-title);
+}
+
+.section__about-product-benefits-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 5rem 0;
+    height: auto;
+}
+
+.section__about-product-benefits-images img {
+    width: 12rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+.section__about-product-benefits-images img:nth-child(1) {
+    width: 11rem;
+    height: 18rem;
+    filter: grayscale(100%) contrast(2);
+    align-items: self-start;
+}
+
+.section__about-product-benefits-images img:nth-child(2) {
+    width: 18rem;
+    height: 30rem;
+}
+
 /* section of recommended */
-
-
 .section__about-product-recommended {
     padding: 1.5rem 0;
 }
@@ -1099,9 +1341,9 @@ section main
     }
 
     .section__offer-tags-info ul li {
-        font-size: 1.4rem;
-        width: 32rem;
-        padding: 1.5rem 3rem;
+        font-size: 2rem;
+        width: 45rem;
+        padding: 1.8rem 3rem;
     }
 
     .carrousel {

@@ -845,7 +845,7 @@ section main
     line-height: 3rem;
     background-color: var(--color_border_button);
     margin-top: -5rem;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
 }
 
 
@@ -866,10 +866,10 @@ section main
 }
 
 .section__about-product-benefits-content ul li {
-    font-size: 1.2rem;
-    font-weight: 400;
-    width: 100%;
-
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 90%;
+    line-height: 1.7rem;
     font-family: var(--font_family_price);
     margin-bottom: 1rem;
     background-color: var(--color_border_button);
@@ -886,6 +886,7 @@ section main
     .section__about-product-benefits-content ul li {
         font-size: 2.3rem;
         gap: 2rem;
+        line-height: 2.5rem;
         width: 55rem;
     }
 
@@ -958,7 +959,7 @@ section main
 .section__about-product-benefits-images img:nth-child(1) {
     width: 11rem;
     height: 18rem;
-    filter: grayscale(100%) contrast(2);
+    
     align-items: self-start;
 }
 

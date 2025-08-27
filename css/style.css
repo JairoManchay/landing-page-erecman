@@ -474,11 +474,14 @@ section main
 }
 
 .container__image {
-    display: block;
+    display: flex;
+    flex-direction: row;
     height: 10rem;
     width: auto;
     object-fit: cover;
 }
+
+
 
 @media (min-width: 600px) {
     .container__image{
@@ -886,7 +889,7 @@ section main
     left: -18rem;
     width: 100%;
     max-width: 500px;
-    height: 500px;
+    height: 600px;
     background-image: url('../imgs/medicamento_cara_frontal.png');
     background-size: contain;
     background-repeat: no-repeat;

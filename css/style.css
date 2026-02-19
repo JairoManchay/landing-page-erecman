@@ -246,7 +246,8 @@ section main
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -7rem;
+    margin-left: -8rem;
+      margin-top: 5rem;
     height: 25rem;
     width: 20rem;
 }
@@ -266,12 +267,14 @@ section main
 @media (min-width: 400px) and (max-width: 600px) {
     .section__presentation-image {
         margin-left: -9rem;
+          margin-top: 5rem;
     }
 }
 
 @media (min-width: 764px) and (min-height: 800px) {
     .section__presentation-image {
         margin-left: -10rem;
+          margin-top: 5rem;
     }
 }
 
@@ -279,6 +282,13 @@ section main
 @media (min-width: 800px) {
     .section__presentation-image {
         margin-left: -9rem;
+        height: 35rem;
+        margin-top: 5rem;
+    }
+
+    .section__presentation-image img {
+        width: 25rem;
+        height: 30rem;
     }
 }
 
@@ -510,8 +520,8 @@ section main
 
 .ampliacion{
     display: block;
-    max-width: 20rem;
-    height: 18rem;
+    max-width: 22rem;
+    height: 13rem;
 }
 
 .container__info-arrows {
@@ -890,7 +900,7 @@ section main
     width: 100%;
     max-width: 500px;
     height: 600px;
-    background-image: url('../imgs/frasco_3.png');
+    background-image: url('../imgs/frasco_n4.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

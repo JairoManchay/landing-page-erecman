@@ -252,14 +252,14 @@ section main
 }
 
 .section__presentation-image img {
-    width: 15rem;
-    height: 25rem;
+    width: 20rem;
+    height: 28rem;
 }
 
 @media (min-width: 320px) {
     .section__presentation-image img{
-        width: 16rem;
-        height: 28rem;
+        width: 18rem;
+        height: 30rem;
     }
 }
 
@@ -491,27 +491,27 @@ section main
 
 .image_med {
     display: block;
-    max-width: 8rem;
-    height: 12rem;
+    max-width: 10rem;
+    height: 14rem;
 }
 
 @media (min-width: 600px) {
     .image_med {
-        height: 13rem;
-        max-width: 12rem;
+        height: 16rem;
+        max-width: 14rem;
     }
 
     .ampliacion{
-        height: 16rem;
-        max-width: 12rem;
+        height: 22rem;
+        max-width: 18rem;
     }
 
 }
 
 .ampliacion{
     display: block;
-    max-width: 12rem;
-    height: 12rem;
+    max-width: 20rem;
+    height: 18rem;
 }
 
 .container__info-arrows {
@@ -890,7 +890,7 @@ section main
     width: 100%;
     max-width: 500px;
     height: 600px;
-    background-image: url('../imgs/medicamento_cara_frontal.png');
+    background-image: url('../imgs/frasco_3.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

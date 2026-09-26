@@ -23,40 +23,6 @@
     transform: scale(1.1);
     box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
-@media (min-width: 600px) {
-    .carrousel {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 2rem;
-        overflow-x: auto;
-        max-width: 100%;
-        padding: 4rem 2rem;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none; /* Firefox */
-    }
-    .carrousel::-webkit-scrollbar {
-                display: none; /* Chrome, Safari, Edge Chromium */
-        width: 0;
-        height: 0;
-        background: transparent;
-    }
-    .carrousel-item {
-        min-width: 240px;
-        max-width: 240px;
-        flex: 0 0 240px;
-        scroll-snap-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .carrousel-item img {
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 0.8rem;
-    }
-}
 :root {
     --color-title: #ae1a39;
     --font_family_title: "Roboto Condensed", sans-serif;
@@ -1294,57 +1260,87 @@ section main
 }
 
 
+/* Carrusel de testimonios (imágenes cuadradas).
+   Con 1 imagen se muestra centrada; con varias se desliza en horizontal. */
+.carrousel-wrapper {
+    position: relative;
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
 .carrousel {
-    width: 100%;
     display: flex;
-    flex-direction: row;
     gap: 2rem;
     overflow-x: auto;
-    padding: 2rem 0;
-    scroll-snap-type: x mandatory;
     padding: 4rem 2rem;
-    align-items: center;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carrousel::-webkit-scrollbar {
+    display: none;
 }
 
 .carrousel-item {
-    flex: 0 0 auto;
+    flex: 0 0 min(85%, 42rem);
     scroll-snap-align: center;
-    background: var(--color_border_button);
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    padding: 1rem;
-    min-width: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Centra los items cuando no llenan el ancho, sin cortar el primero al desbordar */
+.carrousel-item:first-child {
+    margin-left: auto;
+}
+
+.carrousel-item:last-child {
+    margin-right: auto;
 }
 
 .carrousel-item img {
-    width: 180px;
+    display: block;
+    width: 100%;
     height: auto;
-    border-radius: 0.8rem;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
-@media((min-width: 600px) and (max-width: 900px)){
-    .carrousel {
-        margin: 0 auto;
-        width: 70rem;
-    }
+.carrousel-arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: none;
+    border-radius: 50%;
+    background: var(--background_button);
+    color: var(--color_border_button);
+    font-size: 3.2rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
-    .carrousel {
-        margin: 0 auto;
-        width: 90rem;
-    }
+.carrousel-arrow:disabled {
+    opacity: 0.35;
+    cursor: default;
 }
 
-@media (min-width: 1200px) {
-    .carrousel {
-        margin: 0 auto;
-        width: 110rem;
-    }
+.carrousel-arrow--prev {
+    left: 0.5rem;
+}
+
+.carrousel-arrow--next {
+    right: 0.5rem;
+}
+
+/* Las flechas solo aparecen cuando hay más testimonios de los que caben */
+.carrousel-wrapper.is-scrollable .carrousel-arrow {
+    display: block;
 }
 
 
@@ -1547,14 +1543,6 @@ section main
         font-size: 2rem;
         width: 45rem;
         padding: 1.8rem 3rem;
-    }
-
-    .carrousel {
-        justify-content: center;
-    }
-
-    .carrousel-item img {
-        width: 250px;
     }
 
     .img-list {

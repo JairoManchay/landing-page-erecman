@@ -36,3 +36,33 @@ document.querySelectorAll('.zoom-in').forEach(function(el) {
     el.style.transform = `scale(${scale})`;
   }, 100);
 });
+
+// Carrusel de testimonios: flechas solo cuando hay más items de los que caben
+document.querySelectorAll('.carrousel-wrapper').forEach(function(wrapper) {
+  const track = wrapper.querySelector('.carrousel');
+  const prev = wrapper.querySelector('.carrousel-arrow--prev');
+  const next = wrapper.querySelector('.carrousel-arrow--next');
+
+  function update() {
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    wrapper.classList.toggle('is-scrollable', maxScroll > 1);
+    prev.disabled = track.scrollLeft <= 1;
+    next.disabled = track.scrollLeft >= maxScroll - 1;
+  }
+
+  function step() {
+    return track.querySelector('.carrousel-item').offsetWidth + 20;
+  }
+
+  prev.addEventListener('click', function() {
+    track.scrollBy({ left: -step(), behavior: 'smooth' });
+  });
+  next.addEventListener('click', function() {
+    track.scrollBy({ left: step(), behavior: 'smooth' });
+  });
+
+  track.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  window.addEventListener('load', update);
+  update();
+});

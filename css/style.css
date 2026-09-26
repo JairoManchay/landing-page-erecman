@@ -1153,11 +1153,14 @@ section main
 }
 
 
-/* Foto del médico como tarjeta redondeada, igual que los testimonios */
+/* Foto del médico en círculo; el recorte prioriza la cara y el frasco */
 .doctor-img {
     display: block;
     width: 100%;
-    border-radius: 2rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 15%;
+    border-radius: 50%;
     border: 3px solid var(--color_border_button);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }

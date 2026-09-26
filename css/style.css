@@ -1153,6 +1153,11 @@ section main
 }
 
 
+/* La foto del médico tiene fondo blanco: multiply lo funde con el gris de la página */
+.doctor-img {
+    mix-blend-mode: multiply;
+}
+
 .section__about-product-recommended-info {
 
     text-align: center;

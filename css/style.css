@@ -1153,9 +1153,13 @@ section main
 }
 
 
-/* La foto del médico tiene fondo blanco: multiply lo funde con el gris de la página */
+/* Foto del médico como tarjeta redondeada, igual que los testimonios */
 .doctor-img {
-    mix-blend-mode: multiply;
+    display: block;
+    width: 100%;
+    border-radius: 2rem;
+    border: 3px solid var(--color_border_button);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .section__about-product-recommended-info {

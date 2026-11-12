@@ -108,13 +108,13 @@ No incluir Callao como destino independiente.
 
 Al seleccionar Provincia, mostrar:
 
-> Envíos a provincias: se requiere un adelanto de S/40 para el transporte.
+> Envíos a provincias: se solicita un adelanto de S/40, que se descontará del importe pendiente de pago. Los detalles de entrega se confirmarán por WhatsApp.
 
 Exigir aceptación mediante checkbox:
 
 > Entiendo que debo adelantar S/40 para gestionar mi envío a provincia.
 
-El adelanto debe mostrarse como concepto independiente y pendiente de coordinación. No presentarlo como pagado ni asumir todavía si se descuenta del producto o si es un cargo adicional.
+El adelanto debe mostrarse como requerido, pero todavía no pagado. El saldo estimado se calcula como precio del producto menos S/40, sin incluir cargos de delivery pendientes de confirmar.
 
 ### Método de entrega
 
@@ -197,10 +197,9 @@ git diff --check
 
 ## Pendientes de confirmación comercial
 
-1. Confirmar si los `S/40` de provincia se descuentan del importe final o son un cargo adicional.
+1. Confirmar el costo adicional de delivery por destino; no está incluido en los precios mostrados.
 2. Confirmar métodos de entrega realmente disponibles por destino.
-3. Confirmar la imagen publicitaria navideña que debe reutilizarse, si aún no está presente en `imgs/`.
-4. Confirmar si el pack navideño puede solicitarse con entrega a domicilio y por agencia en todos los destinos.
+3. Confirmar si el pack navideño puede solicitarse con entrega a domicilio y por agencia en todos los destinos.
 
 ## Criterios de aceptación
 

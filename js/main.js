@@ -97,6 +97,18 @@ if (orderModal && orderForm) {
     return `S/${value.toFixed(2).replace(".", ",")}`;
   }
 
+  function normalizarCelularPeru(numero) {
+    let limpio = String(numero).replace(/\D/g, "");
+    if (limpio.length === 11 && limpio.startsWith("51")) {
+      limpio = limpio.slice(2);
+    }
+    return limpio;
+  }
+
+  function validarCelularPeru(numero) {
+    return /^9\d{8}$/.test(normalizarCelularPeru(numero));
+  }
+
   function christmasPrice() {
     return CHRISTMAS_CAMPAIGN.enabled
       ? CHRISTMAS_CAMPAIGN.promotionalPrice
@@ -111,6 +123,17 @@ if (orderModal && orderForm) {
       name: isChristmas ? "Pack Especial Navidad" : "Pide Especial",
       quantity: isChristmas ? CHRISTMAS_CAMPAIGN.productQuantity : 1,
       price: isChristmas ? christmasPrice() : 150,
+    };
+  }
+
+  function paymentBreakdown(promotion, destination) {
+    const advanceRequired = destination === "Provincia" ? 40 : 0;
+    return {
+      productPrice: promotion.price,
+      advanceRequired,
+      advancePaid: 0,
+      estimatedBalance: promotion.price - advanceRequired,
+      deliveryAdditional: "Por confirmar, si aplica",
     };
   }
 
@@ -166,13 +189,21 @@ if (orderModal && orderForm) {
     setMessage("");
     if (stepNumber === 1) {
       let valid = true;
-      ["customer-name", "customer-phone"].forEach(function (id) {
-        const input = document.getElementById(id);
-        if (!input.value.trim()) {
-          showError(id, "Este campo es obligatorio.");
-          valid = false;
-        }
-      });
+      const customerName = document.getElementById("customer-name");
+      const customerPhone = document.getElementById("customer-phone");
+      if (!customerName.value.trim()) {
+        showError("customer-name", "Este campo es obligatorio.");
+        valid = false;
+      }
+      if (!customerPhone.value.trim()) {
+        showError("customer-phone", "Este campo es obligatorio.");
+        valid = false;
+      } else if (!validarCelularPeru(customerPhone.value)) {
+        showError("customer-phone", "Ingresa un número de celular peruano válido de 9 dígitos.");
+        valid = false;
+      } else {
+        customerPhone.value = normalizarCelularPeru(customerPhone.value);
+      }
       if (!valid) setMessage("Completa los datos obligatorios para continuar.");
       return valid;
     }
@@ -222,10 +253,15 @@ if (orderModal && orderForm) {
     const promotion = selectedPromotion();
     const destination = orderModal.querySelector('input[name="destination"]:checked').value;
     const deliveryMethod = orderModal.querySelector('input[name="deliveryMethod"]:checked').value;
+    const payment = paymentBreakdown(promotion, destination);
     summary.replaceChildren();
     addSummaryRow(summary, "Promoción", promotion.name);
     addSummaryRow(summary, "Cantidad", `${promotion.quantity} frasco${promotion.quantity > 1 ? "s" : ""}`);
-    addSummaryRow(summary, "Precio", money(promotion.price));
+    addSummaryRow(summary, "Precio del producto", money(payment.productPrice));
+    addSummaryRow(summary, "Adelanto requerido", money(payment.advanceRequired));
+    addSummaryRow(summary, "Adelanto pagado", payment.advancePaid ? money(payment.advancePaid) : "No");
+    addSummaryRow(summary, "Saldo estimado del producto", money(payment.estimatedBalance));
+    addSummaryRow(summary, "Delivery adicional", payment.deliveryAdditional);
     addSummaryRow(summary, "Destino", destination);
     addSummaryRow(summary, "Entrega", deliveryMethod);
     addSummaryRow(summary, "Cliente", document.querySelector("#customer-name").value.trim());
@@ -236,7 +272,6 @@ if (orderModal && orderForm) {
     addSummaryRow(summary, "Dirección/agencia", document.querySelector("#address").value.trim());
     const reference = document.querySelector("#reference").value.trim();
     if (reference) addSummaryRow(summary, "Referencia", reference);
-    if (destination === "Provincia") addSummaryRow(summary, "Adelanto de envío", "S/40 pendiente de coordinar");
   }
 
   function openModal(trigger) {
@@ -266,16 +301,20 @@ if (orderModal && orderForm) {
     const promotion = selectedPromotion();
     const destination = orderModal.querySelector('input[name="destination"]:checked').value;
     const deliveryMethod = orderModal.querySelector('input[name="deliveryMethod"]:checked').value;
+    const payment = paymentBreakdown(promotion, destination);
     const reference = document.querySelector("#reference").value.trim() || "No indicada";
-    const advance = destination === "Provincia" ? "\nADELANTO DE ENVÍO:\nS/40 pendientes de coordinar" : "";
     return [
       "Hola, quiero confirmar un pedido de Erecman Plus.",
       "",
       "PROMOCIÓN:",
       `${promotion.name} — ${promotion.quantity} frasco${promotion.quantity > 1 ? "s" : ""}`,
       "",
-      `PRECIO:\n${money(promotion.price)}`,
-      `DESTINO:\n${destination}${advance}`,
+      `PRECIO DEL PRODUCTO:\n${money(payment.productPrice)}`,
+      `ADELANTO REQUERIDO:\n${money(payment.advanceRequired)}`,
+      `ADELANTO PAGADO:\n${payment.advancePaid ? money(payment.advancePaid) : "No"}`,
+      `SALDO ESTIMADO DEL PRODUCTO:\n${money(payment.estimatedBalance)}`,
+      `DELIVERY ADICIONAL:\n${payment.deliveryAdditional}`,
+      `DESTINO:\n${destination}`,
       "",
       "DATOS DEL CLIENTE:",
       `Nombre: ${document.querySelector("#customer-name").value.trim()}`,

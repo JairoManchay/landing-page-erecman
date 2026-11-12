@@ -586,8 +586,8 @@
                                 </label>
                                 <label class="order-field">
                                     <span>Celular / WhatsApp *</span>
-                                    <input id="customer-phone" name="customerPhone" type="tel" inputmode="tel" autocomplete="tel" required>
-                                    <small class="order-error" data-error-for="customer-phone"></small>
+                                    <input id="customer-phone" name="customerPhone" type="tel" inputmode="numeric" autocomplete="tel" aria-describedby="customer-phone-error" required>
+                                    <small class="order-error" id="customer-phone-error" data-error-for="customer-phone"></small>
                                 </label>
                             </div>
                         </fieldset>
@@ -603,7 +603,7 @@
                                 <label><input type="radio" name="destination" value="Provincia" required> Provincia</label>
                             </div>
                             <div class="province-notice" id="province-notice" hidden>
-                                <strong>Envíos a provincias:</strong> se requiere un adelanto de S/40 para el transporte.
+                                <strong>Envíos a provincias:</strong> se solicita un adelanto de S/40, que se descontará del importe pendiente de pago. Los detalles de entrega se confirmarán por WhatsApp.
                                 <label><input id="province-advance" type="checkbox"> Entiendo que debo adelantar S/40 para gestionar mi envío a provincia.</label>
                             </div>
                             <div class="order-choice-group">
@@ -659,7 +659,7 @@
                         <fieldset class="order-fieldset">
                             <legend>Paso 3: Resumen del pedido</legend>
                             <div class="order-summary" id="order-summary"></div>
-                            <p class="order-summary__note">El delivery y el adelanto provincial se coordinarán con el asesor. Los S/40 no se consideran pagados.</p>
+                            <p class="order-summary__note">El adelanto aún no ha sido pagado. Coordina el pago y la entrega con nuestro asesor por WhatsApp. El saldo estimado no incluye cargos de transporte pendientes de confirmar.</p>
                         </fieldset>
                         <div class="order-actions">
                             <button class="order-button order-button--secondary" type="button" data-prev-step="2">EDITAR DATOS</button>

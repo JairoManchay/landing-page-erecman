@@ -1,4 +1,4 @@
-# Campaña navideña Erecman Plus
+# Contexto del proyecto Erecman Plus
 
 ## Contexto de trabajo
 

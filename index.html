@@ -92,8 +92,7 @@
                 <!-- Antes: <strong id="before-price">S/139</strong> -->
             </span>
 
-            <a class="section__price-button zoom-in" href="https://wa.me/51970396146?text=Hola%2C%20ya%20vi%20toda%20la%20informaci%C3%B3n%2C%20quiero%20comprar%20Erec%20Man"
-                target="_blank">
+            <a class="section__price-button zoom-in" href="#order-modal" data-order-trigger="individual">
                 <h4 class="section__price-button-title">!LO QUIERO! COMPRA AQUÍ</h4>
                 <span class="section__price-button-shipping">Envíos a todo el Perú</span>
             </a>
@@ -141,18 +140,17 @@
                     </section>
 
                     <section class="container__info">
-                        <span class="container__info-tag zoom-in"><strong>Especial Pack</strong></span>
-                        <span class="container__info-before">Antes: S/310</span>
-                        <span class="container__info-now">Ahora: <strong>S/299</strong></span>
+                        <span class="container__info-tag zoom-in"><strong>Pack Navidad</strong></span>
+                        <span class="container__info-before">Antes: S/299</span>
+                        <span class="container__info-now">Oferta: <strong>S/269.90</strong></span>
                     </section>
                 </section>
 
             </section>
 
             <section class="section__offer-button-container">
-                <a class="section__offer-button zoom-in" href="https://wa.me/51970396146?text=Hola%2C%20ya%20vi%20toda%20la%20informaci%C3%B3n%2C%20quiero%20comprar%20Erec%20Man"
-                            target="_blank">
-                <h4 class="section__offer-button-title">!LO QUIERO! COMPRA AQUÍ</h4>
+                <a class="section__offer-button zoom-in" href="#order-modal" data-order-trigger="christmas">
+                <h4 class="section__offer-button-title">¡APROVECHAR PROMOCIÓN!</h4>
                 <span class="section__offer-button-shipping">Envíos a todo el Perú</span>
                 </a>
             </section>
@@ -298,8 +296,7 @@
             </section>
 
             <section class="section__results-button-container">
-                <a class="section__price-button zoom-in" href="https://wa.me/51970396146?text=Hola%2C%20ya%20vi%20toda%20la%20informaci%C3%B3n%2C%20quiero%20comprar%20Erec%20Man"
-                            target="_blank">
+                <a class="section__price-button zoom-in" href="#order-modal" data-order-trigger="individual">
                 <h4 class="section__price-button-title">!LO QUIERO! COMPRA AQUÍ</h4>
                 <span class="section__price-button-shipping">Envíos a todo el Perú</span>
                 </a>
@@ -491,8 +488,7 @@
 
 
             <section class="section__about-product-recommended-button">
-                <a class="section__price-button zoom-in" href="https://wa.me/51970396146?text=Hola%2C%20ya%20vi%20toda%20la%20informaci%C3%B3n%2C%20quiero%20comprar%20Erec%20Man"
-                    target="_blank">
+                <a class="section__price-button zoom-in" href="#order-modal" data-order-trigger="individual">
                     <h4 class="section__price-button-title">!LO QUIERO! COMPRA AQUÍ</h4>
                     <span class="section__price-button-shipping">Envíos a todo el Perú</span>
                 </a>
@@ -531,14 +527,149 @@
 
 
             <section class="section__about-product-recommended-security-logos-button">
-                <a class="section__price-button zoom-in"
-                    href="https://wa.me/51970396146?text=Hola%2C%20ya%20vi%20toda%20la%20informaci%C3%B3n%2C%20quiero%20comprar%20Erec%20Man" target="_blank">
+                <a class="section__price-button zoom-in" href="#order-modal" data-order-trigger="individual">
                     <h4 class="section__price-button-title">!LO QUIERO! COMPRA AQUÍ</h4>
                     <span class="section__price-button-shipping">Envíos a todo el Perú</span>
                 </a>
             </section>
         </section>
     </main>
+    <div class="order-modal" id="order-modal" aria-hidden="true">
+        <div class="order-modal__backdrop" data-order-close></div>
+        <section class="order-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+            <button class="order-modal__close" type="button" aria-label="Cerrar formulario" data-order-close>&times;</button>
+            <div class="order-modal__visual">
+                <span class="order-modal__eyebrow">Oferta especial</span>
+                <h2>Navidad con más confianza</h2>
+                <p>Elige tu presentación y coordina tu pedido de Erecman Plus.</p>
+                <img src="./imgs/frasco_n4.png" alt="Frasco Erecman Plus">
+                <span class="order-modal__badge">Envíos a todo el Perú</span>
+            </div>
+            <div class="order-modal__content">
+                <div class="order-modal__header">
+                    <p class="order-modal__brand">ERECMAN PLUS</p>
+                    <h2 id="order-modal-title">REALIZA TU PEDIDO</h2>
+                    <ol class="order-steps" aria-label="Progreso del pedido">
+                        <li class="is-active" data-step-indicator="1">1. Datos</li>
+                        <li data-step-indicator="2">2. Entrega</li>
+                        <li data-step-indicator="3">3. Resumen</li>
+                    </ol>
+                </div>
+                <p class="order-form-message" id="order-form-message" role="alert"></p>
+
+                <form id="order-form" novalidate>
+                    <div class="order-step is-active" data-step="1">
+                        <fieldset class="order-fieldset">
+                            <legend>Paso 1: Datos principales</legend>
+                            <div class="order-promotions">
+                                <label class="order-promotion" data-promotion-card="individual">
+                                    <input type="radio" name="promotion" value="individual" checked>
+                                    <span>
+                                        <strong>Pide Especial</strong>
+                                        <small>1 frasco · S/150</small>
+                                    </span>
+                                </label>
+                                <label class="order-promotion" data-promotion-card="christmas">
+                                    <input type="radio" name="promotion" value="christmas">
+                                    <span>
+                                        <strong>Pack Especial Navidad</strong>
+                                        <small>2 frascos · <s>S/299</s> <b>S/269.90</b></small>
+                                        <em>PROMOCIÓN DE NAVIDAD</em>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="order-form-grid">
+                                <label class="order-field">
+                                    <span>Nombre completo *</span>
+                                    <input id="customer-name" name="customerName" type="text" autocomplete="name" required>
+                                    <small class="order-error" data-error-for="customer-name"></small>
+                                </label>
+                                <label class="order-field">
+                                    <span>Celular / WhatsApp *</span>
+                                    <input id="customer-phone" name="customerPhone" type="tel" inputmode="tel" autocomplete="tel" required>
+                                    <small class="order-error" data-error-for="customer-phone"></small>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <button class="order-button order-button--primary" type="button" data-next-step="2">SIGUIENTE</button>
+                    </div>
+
+                    <div class="order-step" data-step="2" hidden>
+                        <fieldset class="order-fieldset">
+                            <legend>Paso 2: Ubicación y entrega</legend>
+                            <div class="order-choice-group">
+                                <span class="order-label">Destino *</span>
+                                <label><input type="radio" name="destination" value="Lima" required> Lima</label>
+                                <label><input type="radio" name="destination" value="Provincia" required> Provincia</label>
+                            </div>
+                            <div class="province-notice" id="province-notice" hidden>
+                                <strong>Envíos a provincias:</strong> se requiere un adelanto de S/40 para el transporte.
+                                <label><input id="province-advance" type="checkbox"> Entiendo que debo adelantar S/40 para gestionar mi envío a provincia.</label>
+                            </div>
+                            <div class="order-choice-group">
+                                <span class="order-label">Método de entrega *</span>
+                                <label><input type="radio" name="deliveryMethod" value="Entrega a domicilio" required> Entrega a domicilio</label>
+                                <label><input type="radio" name="deliveryMethod" value="Envío por agencia" required> Envío por agencia</label>
+                            </div>
+                            <div class="order-form-grid">
+                                <label class="order-field">
+                                    <span>Departamento *</span>
+                                    <select id="department" name="department" required>
+                                        <option value="">Selecciona un departamento</option>
+                                        <option>Amazonas</option><option>Áncash</option><option>Apurímac</option>
+                                        <option>Arequipa</option><option>Ayacucho</option><option>Cajamarca</option>
+                                        <option>Callao</option><option>Cusco</option><option>Huancavelica</option>
+                                        <option>Huánuco</option><option>Ica</option><option>Junín</option>
+                                        <option>La Libertad</option><option>Lambayeque</option><option>Lima</option>
+                                        <option>Loreto</option><option>Madre de Dios</option><option>Moquegua</option>
+                                        <option>Pasco</option><option>Piura</option><option>Puno</option>
+                                        <option>San Martín</option><option>Tacna</option><option>Tumbes</option>
+                                        <option>Ucayali</option>
+                                    </select>
+                                    <small class="order-error" data-error-for="department"></small>
+                                </label>
+                                <label class="order-field">
+                                    <span>Provincia *</span>
+                                    <input id="province" name="province" type="text" required>
+                                    <small class="order-error" data-error-for="province"></small>
+                                </label>
+                                <label class="order-field">
+                                    <span>Distrito *</span>
+                                    <input id="district" name="district" type="text" required>
+                                    <small class="order-error" data-error-for="district"></small>
+                                </label>
+                                <label class="order-field">
+                                    <span>Dirección de entrega o agencia *</span>
+                                    <input id="address" name="address" type="text" required>
+                                    <small class="order-error" data-error-for="address"></small>
+                                </label>
+                                <label class="order-field order-field--full">
+                                    <span>Referencia</span>
+                                    <input id="reference" name="reference" type="text">
+                                </label>
+                            </div>
+                        </fieldset>
+                        <div class="order-actions">
+                            <button class="order-button order-button--secondary" type="button" data-prev-step="1">ATRÁS</button>
+                            <button class="order-button order-button--primary" type="button" data-next-step="3">SIGUIENTE</button>
+                        </div>
+                    </div>
+
+                    <div class="order-step" data-step="3" hidden>
+                        <fieldset class="order-fieldset">
+                            <legend>Paso 3: Resumen del pedido</legend>
+                            <div class="order-summary" id="order-summary"></div>
+                            <p class="order-summary__note">El delivery y el adelanto provincial se coordinarán con el asesor. Los S/40 no se consideran pagados.</p>
+                        </fieldset>
+                        <div class="order-actions">
+                            <button class="order-button order-button--secondary" type="button" data-prev-step="2">EDITAR DATOS</button>
+                            <button class="order-button order-button--whatsapp" type="submit">CONTACTAR POR WHATSAPP</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
     <a href="https://wa.me/51970396146?text=Hola%2C%20ya%20vi%20toda%20la%20informaci%C3%B3n%2C%20quiero%20comprar%20Erec%20Man" class="whatsapp-float zoom-in" target="_blank" aria-label="WhatsApp">
         <img src="./imgs/whatsapp_icon.webp" alt="" class="img_float">
     </a>

@@ -1798,9 +1798,9 @@ section main
 }
 
 .order-modal__visual img {
-    width: min(19rem, 60%);
-    height: 27rem;
-    margin: 1rem 0;
+    width: min(24rem, 78%);
+    height: 31rem;
+    margin: 1.5rem 0 1.2rem;
     object-fit: contain;
     filter: drop-shadow(0 1.4rem 1rem rgba(0, 0, 0, 0.3));
 }
@@ -1829,7 +1829,7 @@ section main
     flex-direction: column;
     min-height: 0;
     overflow: hidden;
-    padding: 3.5rem 3.5rem 3rem;
+    padding: 3rem 3.2rem 2.5rem;
     border-left: 1px solid rgba(213, 168, 47, 0.45);
 }
 

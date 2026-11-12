@@ -1631,10 +1631,12 @@ section main
 
 /* Order modal */
 [data-order-trigger] {
-    background: var(--color_border_button);
+    background: linear-gradient(110deg, var(--color_border_button) 35%, #ed718c 50%, var(--color_border_button) 65%);
+    background-size: 220% 100%;
     color: #fff;
     border: 0;
     box-shadow: 0 0.6rem 1.2rem rgba(174, 26, 57, 0.35);
+    animation: order-button-shine 3.5s ease-in-out infinite;
 }
 
 [data-order-trigger] .section__price-button-title,
@@ -1646,6 +1648,15 @@ section main
 [data-order-trigger] .section__offer-button-title::before {
     content: "🛒";
     margin-right: 0.6rem;
+}
+
+@keyframes order-button-shine {
+    from {
+        background-position: 100% 0;
+    }
+    to {
+        background-position: -100% 0;
+    }
 }
 
 .order-modal {
@@ -1736,6 +1747,16 @@ section main
     margin: 1rem 0;
     object-fit: contain;
     filter: drop-shadow(0 1.4rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+.order-modal__campaign-image {
+    border-radius: 1.2rem;
+    object-fit: cover;
+}
+
+.christmas-campaign-image {
+    object-fit: cover;
+    object-position: center;
 }
 
 .order-modal__badge {
@@ -2094,5 +2115,6 @@ body.order-modal-open {
     [data-order-trigger],
     .order-button {
         transition: none;
+        animation: none;
     }
 }

@@ -35,7 +35,7 @@ const WHATSAPP_NUMBER = "51970396146";
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (!prefersReducedMotion) {
-  document.querySelectorAll(".zoom-in").forEach(function (element) {
+  document.querySelectorAll(".zoom-in:not([data-order-trigger])").forEach(function (element) {
     let scale = 1;
     let direction = 1;
 

@@ -24,7 +24,7 @@ sr.reveal(".bottom", {
   distance: "70px",
 });
 
-const CHRISTMAS_CAMPAIGN = {
+const PACK_PROMOTION = {
   enabled: true,
   promotionalPrice: 269.9,
   regularPrice: 299,
@@ -94,7 +94,7 @@ if (orderModal && orderForm) {
   let lastFocusedElement = null;
 
   function money(value) {
-    return `S/${value.toFixed(2).replace(".", ",")}`;
+    return `S/${Number.isInteger(value) ? value : value.toFixed(2)}`;
   }
 
   function normalizarCelularPeru(numero) {
@@ -109,20 +109,20 @@ if (orderModal && orderForm) {
     return /^9\d{8}$/.test(normalizarCelularPeru(numero));
   }
 
-  function christmasPrice() {
-    return CHRISTMAS_CAMPAIGN.enabled
-      ? CHRISTMAS_CAMPAIGN.promotionalPrice
-      : CHRISTMAS_CAMPAIGN.regularPrice;
+  function packPrice() {
+    return PACK_PROMOTION.enabled
+      ? PACK_PROMOTION.promotionalPrice
+      : PACK_PROMOTION.regularPrice;
   }
 
   function selectedPromotion() {
     const selected = orderModal.querySelector('input[name="promotion"]:checked');
-    const isChristmas = selected && selected.value === "christmas";
+    const isPack = selected && selected.value === "pack";
     return {
-      key: isChristmas ? "christmas" : "individual",
-      name: isChristmas ? "Pack Especial Navidad" : "Pide Especial",
-      quantity: isChristmas ? CHRISTMAS_CAMPAIGN.productQuantity : 1,
-      price: isChristmas ? christmasPrice() : 150,
+      key: isPack ? "pack" : "individual",
+      name: isPack ? "Especial Pack" : "Pide Especial",
+      quantity: isPack ? PACK_PROMOTION.productQuantity : 1,
+      price: isPack ? packPrice() : 150,
     };
   }
 
@@ -138,17 +138,17 @@ if (orderModal && orderForm) {
   }
 
   function refreshCampaignLabels() {
-    const card = orderModal.querySelector('[data-promotion-card="christmas"]');
+    const card = orderModal.querySelector('[data-promotion-card="pack"]');
     const offerPrice = document.querySelector(".section__offer-two-image .container__info-now strong");
     if (card) {
       const price = card.querySelector("b");
-      if (price) price.textContent = money(christmasPrice());
+      if (price) price.textContent = money(packPrice());
       const previous = card.querySelector("s");
-      if (previous) previous.textContent = money(CHRISTMAS_CAMPAIGN.regularPrice);
+      if (previous) previous.textContent = money(PACK_PROMOTION.regularPrice);
       const label = card.querySelector("em");
-      if (label) label.hidden = !CHRISTMAS_CAMPAIGN.enabled;
+      if (label) label.hidden = !PACK_PROMOTION.enabled;
     }
-    if (offerPrice) offerPrice.textContent = money(christmasPrice());
+    if (offerPrice) offerPrice.textContent = money(packPrice());
   }
 
   function setMessage(message) {
@@ -163,7 +163,11 @@ if (orderModal && orderForm) {
       step.classList.toggle("is-active", isActive);
     });
     indicators.forEach(function (indicator) {
-      indicator.classList.toggle("is-active", Number(indicator.dataset.stepIndicator) <= stepNumber);
+      const number = Number(indicator.dataset.stepIndicator);
+      indicator.classList.toggle("is-active", number === stepNumber);
+      indicator.classList.toggle("is-complete", number < stepNumber);
+      if (number === stepNumber) indicator.setAttribute("aria-current", "step");
+      else indicator.removeAttribute("aria-current");
     });
     setMessage("");
   }
@@ -250,34 +254,62 @@ if (orderModal && orderForm) {
 
   function renderSummary() {
     const summary = document.querySelector("#order-summary");
+    const productSummary = document.querySelector("#order-summary-product");
     const promotion = selectedPromotion();
     const destination = orderModal.querySelector('input[name="destination"]:checked').value;
     const deliveryMethod = orderModal.querySelector('input[name="deliveryMethod"]:checked').value;
     const payment = paymentBreakdown(promotion, destination);
+    productSummary.replaceChildren();
+    const image = document.createElement("img");
+    image.src = orderModal.querySelector(`[data-promotion-card="${promotion.key}"] img`).getAttribute("src");
+    image.alt = "Frasco de Erecman Plus";
+    const productDetails = document.createElement("div");
+    const productName = document.createElement("strong");
+    productName.textContent = promotion.name;
+    const productInfo = document.createElement("span");
+    productInfo.textContent = `${promotion.quantity} frasco${promotion.quantity > 1 ? "s" : ""}`;
+    productDetails.append(productName, productInfo);
+    const productPrice = document.createElement("strong");
+    productPrice.className = "order-summary-price";
+    productPrice.textContent = money(payment.productPrice);
+    productSummary.append(image, productDetails, productPrice);
     summary.replaceChildren();
-    addSummaryRow(summary, "Promoción", promotion.name);
-    addSummaryRow(summary, "Cantidad", `${promotion.quantity} frasco${promotion.quantity > 1 ? "s" : ""}`);
-    addSummaryRow(summary, "Precio del producto", money(payment.productPrice));
-    addSummaryRow(summary, "Adelanto requerido", money(payment.advanceRequired));
-    addSummaryRow(summary, "Adelanto pagado", payment.advancePaid ? money(payment.advancePaid) : "No");
-    addSummaryRow(summary, "Saldo estimado del producto", money(payment.estimatedBalance));
-    addSummaryRow(summary, "Delivery adicional", payment.deliveryAdditional);
-    addSummaryRow(summary, "Destino", destination);
-    addSummaryRow(summary, "Entrega", deliveryMethod);
-    addSummaryRow(summary, "Cliente", document.querySelector("#customer-name").value.trim());
-    addSummaryRow(summary, "Celular", document.querySelector("#customer-phone").value.trim());
-    addSummaryRow(summary, "Departamento", document.querySelector("#department").value);
-    addSummaryRow(summary, "Provincia", document.querySelector("#province").value.trim());
-    addSummaryRow(summary, "Distrito", document.querySelector("#district").value.trim());
-    addSummaryRow(summary, "Dirección/agencia", document.querySelector("#address").value.trim());
+    function section(title, paymentSection = false) {
+      const card = document.createElement("section");
+      card.className = "order-summary-section" + (paymentSection ? " order-summary-section--payment" : "");
+      const heading = document.createElement("h3");
+      heading.textContent = title;
+      card.append(heading);
+      summary.append(card);
+      return card;
+    }
+    const financialSummary = section("Resumen económico", true);
+    const deliverySummary = section("Datos de entrega");
+    addSummaryRow(financialSummary, "Precio del producto", money(payment.productPrice));
+    if (destination === "Provincia") {
+      addSummaryRow(financialSummary, "Adelanto requerido para provincia", money(payment.advanceRequired));
+      addSummaryRow(financialSummary, "Estado del adelanto", "Pendiente de coordinar");
+      addSummaryRow(financialSummary, "Saldo estimado tras adelanto", money(payment.estimatedBalance));
+      addSummaryRow(financialSummary, "Delivery", "No incluido; por confirmar");
+    } else {
+      addSummaryRow(financialSummary, "Delivery", payment.deliveryAdditional);
+    }
+    addSummaryRow(deliverySummary, "Destino", destination);
+    addSummaryRow(deliverySummary, "Entrega", deliveryMethod);
+    addSummaryRow(deliverySummary, "Nombre", document.querySelector("#customer-name").value.trim());
+    addSummaryRow(deliverySummary, "Celular / WhatsApp", document.querySelector("#customer-phone").value.trim());
+    addSummaryRow(deliverySummary, "Departamento", document.querySelector("#department").value);
+    addSummaryRow(deliverySummary, "Provincia", document.querySelector("#province").value.trim());
+    addSummaryRow(deliverySummary, "Distrito", document.querySelector("#district").value.trim());
+    addSummaryRow(deliverySummary, "Dirección/agencia", document.querySelector("#address").value.trim());
     const reference = document.querySelector("#reference").value.trim();
-    if (reference) addSummaryRow(summary, "Referencia", reference);
+    if (reference) addSummaryRow(deliverySummary, "Referencia", reference);
   }
 
   function openModal(trigger) {
     lastFocusedElement = document.activeElement;
-    const promotion = trigger.dataset.orderTrigger === "christmas" && CHRISTMAS_CAMPAIGN.enabled
-      ? "christmas"
+    const promotion = trigger.dataset.orderTrigger === "pack" && PACK_PROMOTION.enabled
+      ? "pack"
       : "individual";
     const input = orderModal.querySelector(`input[name="promotion"][value="${promotion}"]`);
     if (input) input.checked = true;
@@ -310,10 +342,14 @@ if (orderModal && orderForm) {
       `${promotion.name} — ${promotion.quantity} frasco${promotion.quantity > 1 ? "s" : ""}`,
       "",
       `PRECIO DEL PRODUCTO:\n${money(payment.productPrice)}`,
-      `ADELANTO REQUERIDO:\n${money(payment.advanceRequired)}`,
-      `ADELANTO PAGADO:\n${payment.advancePaid ? money(payment.advancePaid) : "No"}`,
-      `SALDO ESTIMADO DEL PRODUCTO:\n${money(payment.estimatedBalance)}`,
-      `DELIVERY ADICIONAL:\n${payment.deliveryAdditional}`,
+      ...(destination === "Provincia"
+        ? [
+            `ADELANTO REQUERIDO:\n${money(payment.advanceRequired)}`,
+            "ADELANTO: Pendiente de coordinar; no pagado",
+            `SALDO ESTIMADO DEL PRODUCTO:\n${money(payment.estimatedBalance)}`,
+            "DELIVERY: No incluido; por confirmar",
+          ]
+        : ["DELIVERY: Por confirmar, si aplica"]),
       `DESTINO:\n${destination}`,
       "",
       "DATOS DEL CLIENTE:",
@@ -351,6 +387,7 @@ if (orderModal && orderForm) {
     input.addEventListener("change", function () {
       const isProvince = input.value === "Provincia" && input.checked;
       provinceNotice.hidden = !isProvince;
+      provinceAdvance.disabled = !isProvince;
       if (!isProvince) provinceAdvance.checked = false;
     });
   });

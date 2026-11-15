@@ -1,0 +1,515 @@
+[
+  {
+    "requested": [
+      390,
+      844
+    ],
+    "step": "1",
+    "viewport": [
+      394,
+      853
+    ],
+    "modal": {
+      "x": 13.703125,
+      "y": 46.703125,
+      "w": 366.59375,
+      "h": 759.59375,
+      "b": 806.296875,
+      "r": 380.296875
+    },
+    "visual": {
+      "x": 14.703125,
+      "y": 47.703125,
+      "w": 364.59375,
+      "h": 140,
+      "b": 187.703125,
+      "r": 379.296875
+    },
+    "footer": {
+      "x": 35.703125,
+      "y": 749.296875,
+      "w": 323.59375,
+      "h": 44,
+      "b": 793.296875,
+      "r": 359.296875
+    },
+    "body": {
+      "x": 15.703125,
+      "y": 313.890625,
+      "w": 363.59375,
+      "h": 423.40625,
+      "b": 737.296875,
+      "r": 379.296875
+    },
+    "scroll": [
+      423,
+      609
+    ],
+    "horizontalOverflow": false,
+    "visualContained": false,
+    "styles": {
+      "height": "759.594px",
+      "maxHeight": "759.6px",
+      "transform": "none",
+      "columns": "28% minmax(0px, 1fr)"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      390,
+      844
+    ],
+    "step": "2",
+    "viewport": [
+      394,
+      853
+    ],
+    "modal": {
+      "x": 13.703125,
+      "y": 46.703125,
+      "w": 366.59375,
+      "h": 759.59375,
+      "b": 806.296875,
+      "r": 380.296875
+    },
+    "visual": {
+      "x": 14.703125,
+      "y": 47.703125,
+      "w": 364.59375,
+      "h": 140,
+      "b": 187.703125,
+      "r": 379.296875
+    },
+    "footer": {
+      "x": 15.703125,
+      "y": 736.296875,
+      "w": 363.59375,
+      "h": 69,
+      "b": 805.296875,
+      "r": 379.296875
+    },
+    "body": {
+      "x": 15.703125,
+      "y": 313.890625,
+      "w": 363.59375,
+      "h": 422.40625,
+      "b": 736.296875,
+      "r": 379.296875
+    },
+    "scroll": [
+      422,
+      732
+    ],
+    "horizontalOverflow": false,
+    "visualContained": false,
+    "styles": {
+      "height": "759.594px",
+      "maxHeight": "759.6px",
+      "transform": "none",
+      "columns": "28% minmax(0px, 1fr)"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      390,
+      844
+    ],
+    "step": "3",
+    "viewport": [
+      394,
+      853
+    ],
+    "modal": {
+      "x": 13.703125,
+      "y": 46.703125,
+      "w": 366.59375,
+      "h": 759.59375,
+      "b": 806.296875,
+      "r": 380.296875
+    },
+    "visual": {
+      "x": 14.703125,
+      "y": 47.703125,
+      "w": 364.59375,
+      "h": 140,
+      "b": 187.703125,
+      "r": 379.296875
+    },
+    "footer": {
+      "x": 15.703125,
+      "y": 725.203125,
+      "w": 363.59375,
+      "h": 80.09375,
+      "b": 805.296875,
+      "r": 379.296875
+    },
+    "body": {
+      "x": 15.703125,
+      "y": 313.890625,
+      "w": 363.59375,
+      "h": 411.3125,
+      "b": 725.203125,
+      "r": 379.296875
+    },
+    "scroll": [
+      411,
+      1290
+    ],
+    "horizontalOverflow": false,
+    "visualContained": false,
+    "styles": {
+      "height": "759.594px",
+      "maxHeight": "759.6px",
+      "transform": "none",
+      "columns": "28% minmax(0px, 1fr)"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      768,
+      600
+    ],
+    "step": "1",
+    "viewport": [
+      768,
+      600
+    ],
+    "modal": {
+      "x": 23.046875,
+      "y": 81,
+      "w": 721.90625,
+      "h": 438,
+      "b": 519,
+      "r": 744.953125
+    },
+    "visual": {
+      "x": 24.046875,
+      "y": 82,
+      "w": 201.5625,
+      "h": 436,
+      "b": 518,
+      "r": 225.609375
+    },
+    "footer": {
+      "x": 252.609375,
+      "y": 458,
+      "w": 465.34375,
+      "h": 44,
+      "b": 502,
+      "r": 717.953125
+    },
+    "body": {
+      "x": 226.609375,
+      "y": 212.890625,
+      "w": 517.34375,
+      "h": 229.109375,
+      "b": 442,
+      "r": 743.953125
+    },
+    "scroll": [
+      229,
+      399
+    ],
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "438px",
+      "maxHeight": "504px",
+      "transform": "none",
+      "columns": "201.562px 518.344px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      768,
+      600
+    ],
+    "step": "2",
+    "viewport": [
+      768,
+      600
+    ],
+    "modal": {
+      "x": 23.046875,
+      "y": 81,
+      "w": 721.90625,
+      "h": 438,
+      "b": 519,
+      "r": 744.953125
+    },
+    "visual": {
+      "x": 24.046875,
+      "y": 82,
+      "w": 201.5625,
+      "h": 436,
+      "b": 518,
+      "r": 225.609375
+    },
+    "footer": {
+      "x": 226.609375,
+      "y": 441,
+      "w": 517.34375,
+      "h": 77,
+      "b": 518,
+      "r": 743.953125
+    },
+    "body": {
+      "x": 226.609375,
+      "y": 212.890625,
+      "w": 517.34375,
+      "h": 228.109375,
+      "b": 441,
+      "r": 743.953125
+    },
+    "scroll": [
+      228,
+      516
+    ],
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "438px",
+      "maxHeight": "504px",
+      "transform": "none",
+      "columns": "201.562px 518.344px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      768,
+      600
+    ],
+    "step": "3",
+    "viewport": [
+      768,
+      600
+    ],
+    "modal": {
+      "x": 23.046875,
+      "y": 81,
+      "w": 721.90625,
+      "h": 438,
+      "b": 519,
+      "r": 744.953125
+    },
+    "visual": {
+      "x": 24.046875,
+      "y": 82,
+      "w": 201.5625,
+      "h": 436,
+      "b": 518,
+      "r": 225.609375
+    },
+    "footer": {
+      "x": 226.609375,
+      "y": 441,
+      "w": 517.34375,
+      "h": 77,
+      "b": 518,
+      "r": 743.953125
+    },
+    "body": {
+      "x": 226.609375,
+      "y": 212.890625,
+      "w": 517.34375,
+      "h": 228.109375,
+      "b": 441,
+      "r": 743.953125
+    },
+    "scroll": [
+      228,
+      1076
+    ],
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "438px",
+      "maxHeight": "504px",
+      "transform": "none",
+      "columns": "201.562px 518.344px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      1440,
+      900
+    ],
+    "step": "1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "modal": {
+      "x": 180,
+      "y": 45,
+      "w": 1080,
+      "h": 810,
+      "b": 855,
+      "r": 1260
+    },
+    "visual": {
+      "x": 181,
+      "y": 46,
+      "w": 301.828125,
+      "h": 808,
+      "b": 854,
+      "r": 482.828125
+    },
+    "footer": {
+      "x": 509.828125,
+      "y": 794,
+      "w": 723.171875,
+      "h": 44,
+      "b": 838,
+      "r": 1233
+    },
+    "body": {
+      "x": 483.828125,
+      "y": 184.890625,
+      "w": 775.171875,
+      "h": 593.109375,
+      "b": 778,
+      "r": 1259
+    },
+    "scroll": [
+      593,
+      593
+    ],
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "810px",
+      "maxHeight": "810px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1440,
+      900
+    ],
+    "step": "2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "modal": {
+      "x": 180,
+      "y": 45,
+      "w": 1080,
+      "h": 810,
+      "b": 855,
+      "r": 1260
+    },
+    "visual": {
+      "x": 181,
+      "y": 46,
+      "w": 301.828125,
+      "h": 808,
+      "b": 854,
+      "r": 482.828125
+    },
+    "footer": {
+      "x": 483.828125,
+      "y": 777,
+      "w": 775.171875,
+      "h": 77,
+      "b": 854,
+      "r": 1259
+    },
+    "body": {
+      "x": 483.828125,
+      "y": 184.890625,
+      "w": 775.171875,
+      "h": 592.109375,
+      "b": 777,
+      "r": 1259
+    },
+    "scroll": [
+      592,
+      592
+    ],
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "810px",
+      "maxHeight": "810px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1440,
+      900
+    ],
+    "step": "3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "modal": {
+      "x": 180,
+      "y": 45,
+      "w": 1080,
+      "h": 810,
+      "b": 855,
+      "r": 1260
+    },
+    "visual": {
+      "x": 181,
+      "y": 46,
+      "w": 301.828125,
+      "h": 808,
+      "b": 854,
+      "r": 482.828125
+    },
+    "footer": {
+      "x": 483.828125,
+      "y": 777,
+      "w": 775.171875,
+      "h": 77,
+      "b": 854,
+      "r": 1259
+    },
+    "body": {
+      "x": 483.828125,
+      "y": 184.890625,
+      "w": 775.171875,
+      "h": 592.109375,
+      "b": 777,
+      "r": 1259
+    },
+    "scroll": [
+      592,
+      950
+    ],
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "810px",
+      "maxHeight": "810px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  }
+]

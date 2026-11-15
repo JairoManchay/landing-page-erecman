@@ -1,0 +1,356 @@
+[
+  {
+    "requested": [
+      390,
+      844
+    ],
+    "step": "1",
+    "viewport": [
+      394,
+      853
+    ],
+    "modal": {
+      "x": 10,
+      "y": 12.5,
+      "w": 374,
+      "h": 828,
+      "b": 840.5,
+      "r": 384
+    },
+    "visual": {
+      "x": 11,
+      "y": 13.5,
+      "w": 372,
+      "h": 171.59375,
+      "b": 185.09375,
+      "r": 383
+    },
+    "footer": {
+      "x": 32,
+      "y": 782.25,
+      "w": 331,
+      "h": 45.25,
+      "b": 827.5,
+      "r": 363
+    },
+    "body": {
+      "x": 12,
+      "y": 301.28125,
+      "w": 371,
+      "h": 476.96875,
+      "b": 778.25,
+      "r": 383
+    },
+    "scroll": [
+      477,
+      612
+    ],
+    "scrollEnd": 135,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "828px",
+      "maxHeight": "828px",
+      "transform": "none",
+      "columns": "372px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      390,
+      844
+    ],
+    "step": "2",
+    "viewport": [
+      394,
+      853
+    ],
+    "modal": {
+      "x": 10,
+      "y": 12.5,
+      "w": 374,
+      "h": 828,
+      "b": 840.5,
+      "r": 384
+    },
+    "visual": {
+      "x": 11,
+      "y": 13.5,
+      "w": 372,
+      "h": 171.59375,
+      "b": 185.09375,
+      "r": 383
+    },
+    "footer": {
+      "x": 12,
+      "y": 770.5,
+      "w": 371,
+      "h": 69,
+      "b": 839.5,
+      "r": 383
+    },
+    "body": {
+      "x": 12,
+      "y": 301.28125,
+      "w": 371,
+      "h": 469.21875,
+      "b": 770.5,
+      "r": 383
+    },
+    "scroll": [
+      469,
+      950
+    ],
+    "scrollEnd": 481,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "828px",
+      "maxHeight": "828px",
+      "transform": "none",
+      "columns": "372px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      390,
+      844
+    ],
+    "step": "3",
+    "viewport": [
+      394,
+      853
+    ],
+    "modal": {
+      "x": 10,
+      "y": 12.5,
+      "w": 374,
+      "h": 828,
+      "b": 840.5,
+      "r": 384
+    },
+    "visual": {
+      "x": 11,
+      "y": 13.5,
+      "w": 372,
+      "h": 171.59375,
+      "b": 185.09375,
+      "r": 383
+    },
+    "footer": {
+      "x": 12,
+      "y": 754,
+      "w": 371,
+      "h": 85.5,
+      "b": 839.5,
+      "r": 383
+    },
+    "body": {
+      "x": 12,
+      "y": 301.28125,
+      "w": 371,
+      "h": 452.71875,
+      "b": 754,
+      "r": 383
+    },
+    "scroll": [
+      453,
+      1089
+    ],
+    "scrollEnd": 636,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "828px",
+      "maxHeight": "828px",
+      "transform": "none",
+      "columns": "372px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nArequipa\n\nProvincia\nArequipa\n\nDistrito\nCayma\n\nDirección/agencia\nAv. Ejercito 123\n\nReferencia\nFrente al parque"
+  },
+  {
+    "requested": [
+      1440,
+      900
+    ],
+    "step": "1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "modal": {
+      "x": 180,
+      "y": 163.828125,
+      "w": 1080,
+      "h": 572.328125,
+      "b": 736.15625,
+      "r": 1260
+    },
+    "visual": {
+      "x": 181,
+      "y": 164.828125,
+      "w": 301.828125,
+      "h": 570.328125,
+      "b": 735.15625,
+      "r": 482.828125
+    },
+    "footer": {
+      "x": 509.828125,
+      "y": 673.90625,
+      "w": 723.171875,
+      "h": 45.25,
+      "b": 719.15625,
+      "r": 1233
+    },
+    "body": {
+      "x": 483.828125,
+      "y": 303.71875,
+      "w": 775.171875,
+      "h": 358.1875,
+      "b": 661.90625,
+      "r": 1259
+    },
+    "scroll": [
+      358,
+      358
+    ],
+    "scrollEnd": 0,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "572.328px",
+      "maxHeight": "760px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1440,
+      900
+    ],
+    "step": "2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "modal": {
+      "x": 180,
+      "y": 70,
+      "w": 1080,
+      "h": 760,
+      "b": 830,
+      "r": 1260
+    },
+    "visual": {
+      "x": 181,
+      "y": 71,
+      "w": 301.828125,
+      "h": 758,
+      "b": 829,
+      "r": 482.828125
+    },
+    "footer": {
+      "x": 483.828125,
+      "y": 751.75,
+      "w": 775.171875,
+      "h": 77.25,
+      "b": 829,
+      "r": 1259
+    },
+    "body": {
+      "x": 483.828125,
+      "y": 209.890625,
+      "w": 775.171875,
+      "h": 541.859375,
+      "b": 751.75,
+      "r": 1259
+    },
+    "scroll": [
+      542,
+      677
+    ],
+    "scrollEnd": 135,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "760px",
+      "maxHeight": "760px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1440,
+      900
+    ],
+    "step": "3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "modal": {
+      "x": 180,
+      "y": 70,
+      "w": 1080,
+      "h": 760,
+      "b": 830,
+      "r": 1260
+    },
+    "visual": {
+      "x": 181,
+      "y": 71,
+      "w": 301.828125,
+      "h": 758,
+      "b": 829,
+      "r": 482.828125
+    },
+    "footer": {
+      "x": 483.828125,
+      "y": 751.75,
+      "w": 775.171875,
+      "h": 77.25,
+      "b": 829,
+      "r": 1259
+    },
+    "body": {
+      "x": 483.828125,
+      "y": 209.890625,
+      "w": 775.171875,
+      "h": 541.859375,
+      "b": 751.75,
+      "r": 1259
+    },
+    "scroll": [
+      542,
+      938
+    ],
+    "scrollEnd": 396,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "760px",
+      "maxHeight": "760px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nArequipa\n\nProvincia\nArequipa\n\nDistrito\nCayma\n\nDirección/agencia\nAv. Ejercito 123\n\nReferencia\nFrente al parque"
+  }
+]

@@ -1,0 +1,2303 @@
+[
+  {
+    "requested": [
+      375,
+      812
+    ],
+    "step": "1",
+    "viewport": [
+      379,
+      821
+    ],
+    "modal": {
+      "x": 10,
+      "y": 12.5,
+      "w": 359,
+      "h": 796,
+      "b": 808.5,
+      "r": 369
+    },
+    "visual": {
+      "x": 11,
+      "y": 13.5,
+      "w": 357,
+      "h": 171.59375,
+      "b": 185.09375,
+      "r": 368
+    },
+    "footer": {
+      "x": 32,
+      "y": 751.5,
+      "w": 316,
+      "h": 44,
+      "b": 795.5,
+      "r": 348
+    },
+    "body": {
+      "x": 12,
+      "y": 301.28125,
+      "w": 356,
+      "h": 446.21875,
+      "b": 747.5,
+      "r": 368
+    },
+    "scroll": [
+      446,
+      569
+    ],
+    "scrollEnd": 123,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "796px",
+      "maxHeight": "796px",
+      "transform": "none",
+      "columns": "357px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      375,
+      812
+    ],
+    "step": "2",
+    "viewport": [
+      379,
+      821
+    ],
+    "modal": {
+      "x": 10,
+      "y": 12.5,
+      "w": 359,
+      "h": 796,
+      "b": 808.5,
+      "r": 369
+    },
+    "visual": {
+      "x": 11,
+      "y": 13.5,
+      "w": 357,
+      "h": 171.59375,
+      "b": 185.09375,
+      "r": 368
+    },
+    "footer": {
+      "x": 12,
+      "y": 738.5,
+      "w": 356,
+      "h": 69,
+      "b": 807.5,
+      "r": 368
+    },
+    "body": {
+      "x": 12,
+      "y": 301.28125,
+      "w": 356,
+      "h": 437.21875,
+      "b": 738.5,
+      "r": 368
+    },
+    "scroll": [
+      437,
+      850
+    ],
+    "scrollEnd": 413,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "796px",
+      "maxHeight": "796px",
+      "transform": "none",
+      "columns": "357px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      375,
+      812
+    ],
+    "step": "3",
+    "viewport": [
+      379,
+      821
+    ],
+    "modal": {
+      "x": 10,
+      "y": 12.5,
+      "w": 359,
+      "h": 796,
+      "b": 808.5,
+      "r": 369
+    },
+    "visual": {
+      "x": 11,
+      "y": 13.5,
+      "w": 357,
+      "h": 171.59375,
+      "b": 185.09375,
+      "r": 368
+    },
+    "footer": {
+      "x": 12,
+      "y": 727.40625,
+      "w": 356,
+      "h": 80.09375,
+      "b": 807.5,
+      "r": 368
+    },
+    "body": {
+      "x": 12,
+      "y": 301.28125,
+      "w": 356,
+      "h": 426.125,
+      "b": 727.40625,
+      "r": 368
+    },
+    "scroll": [
+      426,
+      1317
+    ],
+    "scrollEnd": 891,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "796px",
+      "maxHeight": "796px",
+      "transform": "none",
+      "columns": "357px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      390,
+      844
+    ],
+    "step": "1",
+    "viewport": [
+      394,
+      853
+    ],
+    "modal": {
+      "x": 10,
+      "y": 12.5,
+      "w": 374,
+      "h": 828,
+      "b": 840.5,
+      "r": 384
+    },
+    "visual": {
+      "x": 11,
+      "y": 13.5,
+      "w": 372,
+      "h": 171.59375,
+      "b": 185.09375,
+      "r": 383
+    },
+    "footer": {
+      "x": 32,
+      "y": 783.5,
+      "w": 331,
+      "h": 44,
+      "b": 827.5,
+      "r": 363
+    },
+    "body": {
+      "x": 12,
+      "y": 301.28125,
+      "w": 371,
+      "h": 478.21875,
+      "b": 779.5,
+      "r": 383
+    },
+    "scroll": [
+      478,
+      569
+    ],
+    "scrollEnd": 91,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "828px",
+      "maxHeight": "828px",
+      "transform": "none",
+      "columns": "372px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      390,
+      844
+    ],
+    "step": "2",
+    "viewport": [
+      394,
+      853
+    ],
+    "modal": {
+      "x": 10,
+      "y": 12.5,
+      "w": 374,
+      "h": 828,
+      "b": 840.5,
+      "r": 384
+    },
+    "visual": {
+      "x": 11,
+      "y": 13.5,
+      "w": 372,
+      "h": 171.59375,
+      "b": 185.09375,
+      "r": 383
+    },
+    "footer": {
+      "x": 12,
+      "y": 770.5,
+      "w": 371,
+      "h": 69,
+      "b": 839.5,
+      "r": 383
+    },
+    "body": {
+      "x": 12,
+      "y": 301.28125,
+      "w": 371,
+      "h": 469.21875,
+      "b": 770.5,
+      "r": 383
+    },
+    "scroll": [
+      469,
+      819
+    ],
+    "scrollEnd": 350,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "828px",
+      "maxHeight": "828px",
+      "transform": "none",
+      "columns": "372px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      390,
+      844
+    ],
+    "step": "3",
+    "viewport": [
+      394,
+      853
+    ],
+    "modal": {
+      "x": 10,
+      "y": 12.5,
+      "w": 374,
+      "h": 828,
+      "b": 840.5,
+      "r": 384
+    },
+    "visual": {
+      "x": 11,
+      "y": 13.5,
+      "w": 372,
+      "h": 171.59375,
+      "b": 185.09375,
+      "r": 383
+    },
+    "footer": {
+      "x": 12,
+      "y": 759.40625,
+      "w": 371,
+      "h": 80.09375,
+      "b": 839.5,
+      "r": 383
+    },
+    "body": {
+      "x": 12,
+      "y": 301.28125,
+      "w": 371,
+      "h": 458.125,
+      "b": 759.40625,
+      "r": 383
+    },
+    "scroll": [
+      458,
+      1290
+    ],
+    "scrollEnd": 832,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "828px",
+      "maxHeight": "828px",
+      "transform": "none",
+      "columns": "372px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      599,
+      800
+    ],
+    "step": "1",
+    "viewport": [
+      604,
+      806
+    ],
+    "modal": {
+      "x": 10.5,
+      "y": 11,
+      "w": 583,
+      "h": 784,
+      "b": 795,
+      "r": 593.5
+    },
+    "visual": {
+      "x": 11.5,
+      "y": 12,
+      "w": 581,
+      "h": 166,
+      "b": 178,
+      "r": 592.5
+    },
+    "footer": {
+      "x": 32.5,
+      "y": 738,
+      "w": 540,
+      "h": 44,
+      "b": 782,
+      "r": 572.5
+    },
+    "body": {
+      "x": 12.5,
+      "y": 278.59375,
+      "w": 580,
+      "h": 455.40625,
+      "b": 734,
+      "r": 592.5
+    },
+    "scroll": [
+      455,
+      551
+    ],
+    "scrollEnd": 96,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "784px",
+      "maxHeight": "784px",
+      "transform": "none",
+      "columns": "581px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      599,
+      800
+    ],
+    "step": "2",
+    "viewport": [
+      604,
+      806
+    ],
+    "modal": {
+      "x": 10.5,
+      "y": 11,
+      "w": 583,
+      "h": 784,
+      "b": 795,
+      "r": 593.5
+    },
+    "visual": {
+      "x": 11.5,
+      "y": 12,
+      "w": 581,
+      "h": 166,
+      "b": 178,
+      "r": 592.5
+    },
+    "footer": {
+      "x": 12.5,
+      "y": 725,
+      "w": 580,
+      "h": 69,
+      "b": 794,
+      "r": 592.5
+    },
+    "body": {
+      "x": 12.5,
+      "y": 278.59375,
+      "w": 580,
+      "h": 446.40625,
+      "b": 725,
+      "r": 592.5
+    },
+    "scroll": [
+      446,
+      777
+    ],
+    "scrollEnd": 331,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "784px",
+      "maxHeight": "784px",
+      "transform": "none",
+      "columns": "581px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      599,
+      800
+    ],
+    "step": "3",
+    "viewport": [
+      604,
+      806
+    ],
+    "modal": {
+      "x": 10.5,
+      "y": 11,
+      "w": 583,
+      "h": 784,
+      "b": 795,
+      "r": 593.5
+    },
+    "visual": {
+      "x": 11.5,
+      "y": 12,
+      "w": 581,
+      "h": 166,
+      "b": 178,
+      "r": 592.5
+    },
+    "footer": {
+      "x": 12.5,
+      "y": 725,
+      "w": 580,
+      "h": 69,
+      "b": 794,
+      "r": 592.5
+    },
+    "body": {
+      "x": 12.5,
+      "y": 278.59375,
+      "w": 580,
+      "h": 446.40625,
+      "b": 725,
+      "r": 592.5
+    },
+    "scroll": [
+      446,
+      976
+    ],
+    "scrollEnd": 530,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "784px",
+      "maxHeight": "784px",
+      "transform": "none",
+      "columns": "581px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      600,
+      800
+    ],
+    "step": "1",
+    "viewport": [
+      600,
+      800
+    ],
+    "modal": {
+      "x": 18,
+      "y": 40,
+      "w": 564,
+      "h": 720,
+      "b": 760,
+      "r": 582
+    },
+    "visual": {
+      "x": 19,
+      "y": 41,
+      "w": 562,
+      "h": 144,
+      "b": 185,
+      "r": 581
+    },
+    "footer": {
+      "x": 46,
+      "y": 699,
+      "w": 509,
+      "h": 44,
+      "b": 743,
+      "r": 555
+    },
+    "body": {
+      "x": 20,
+      "y": 305.890625,
+      "w": 561,
+      "h": 381.109375,
+      "b": 687,
+      "r": 581
+    },
+    "scroll": [
+      381,
+      543
+    ],
+    "scrollEnd": 162,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "720px",
+      "maxHeight": "720px",
+      "transform": "none",
+      "columns": "562px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      600,
+      800
+    ],
+    "step": "2",
+    "viewport": [
+      600,
+      800
+    ],
+    "modal": {
+      "x": 18,
+      "y": 40,
+      "w": 564,
+      "h": 720,
+      "b": 760,
+      "r": 582
+    },
+    "visual": {
+      "x": 19,
+      "y": 41,
+      "w": 562,
+      "h": 144,
+      "b": 185,
+      "r": 581
+    },
+    "footer": {
+      "x": 20,
+      "y": 682,
+      "w": 561,
+      "h": 77,
+      "b": 759,
+      "r": 581
+    },
+    "body": {
+      "x": 20,
+      "y": 305.890625,
+      "w": 561,
+      "h": 376.109375,
+      "b": 682,
+      "r": 581
+    },
+    "scroll": [
+      376,
+      798
+    ],
+    "scrollEnd": 422,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "720px",
+      "maxHeight": "720px",
+      "transform": "none",
+      "columns": "562px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      600,
+      800
+    ],
+    "step": "3",
+    "viewport": [
+      600,
+      800
+    ],
+    "modal": {
+      "x": 18,
+      "y": 40,
+      "w": 564,
+      "h": 720,
+      "b": 760,
+      "r": 582
+    },
+    "visual": {
+      "x": 19,
+      "y": 41,
+      "w": 562,
+      "h": 144,
+      "b": 185,
+      "r": 581
+    },
+    "footer": {
+      "x": 20,
+      "y": 682,
+      "w": 561,
+      "h": 77,
+      "b": 759,
+      "r": 581
+    },
+    "body": {
+      "x": 20,
+      "y": 305.890625,
+      "w": 561,
+      "h": 376.109375,
+      "b": 682,
+      "r": 581
+    },
+    "scroll": [
+      376,
+      992
+    ],
+    "scrollEnd": 616,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "720px",
+      "maxHeight": "720px",
+      "transform": "none",
+      "columns": "562px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      700,
+      600
+    ],
+    "step": "1",
+    "viewport": [
+      700,
+      600
+    ],
+    "modal": {
+      "x": 21,
+      "y": 30,
+      "w": 658,
+      "h": 540,
+      "b": 570,
+      "r": 679
+    },
+    "visual": {
+      "x": 22,
+      "y": 31,
+      "w": 656,
+      "h": 144,
+      "b": 175,
+      "r": 678
+    },
+    "footer": {
+      "x": 49,
+      "y": 509,
+      "w": 603,
+      "h": 44,
+      "b": 553,
+      "r": 652
+    },
+    "body": {
+      "x": 23,
+      "y": 295.890625,
+      "w": 655,
+      "h": 201.109375,
+      "b": 497,
+      "r": 678
+    },
+    "scroll": [
+      201,
+      543
+    ],
+    "scrollEnd": 342,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "540px",
+      "maxHeight": "540px",
+      "transform": "none",
+      "columns": "656px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      700,
+      600
+    ],
+    "step": "2",
+    "viewport": [
+      700,
+      600
+    ],
+    "modal": {
+      "x": 21,
+      "y": 30,
+      "w": 658,
+      "h": 540,
+      "b": 570,
+      "r": 679
+    },
+    "visual": {
+      "x": 22,
+      "y": 31,
+      "w": 656,
+      "h": 144,
+      "b": 175,
+      "r": 678
+    },
+    "footer": {
+      "x": 23,
+      "y": 492,
+      "w": 655,
+      "h": 77,
+      "b": 569,
+      "r": 678
+    },
+    "body": {
+      "x": 23,
+      "y": 295.890625,
+      "w": 655,
+      "h": 196.109375,
+      "b": 492,
+      "r": 678
+    },
+    "scroll": [
+      196,
+      756
+    ],
+    "scrollEnd": 560,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "540px",
+      "maxHeight": "540px",
+      "transform": "none",
+      "columns": "656px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      700,
+      600
+    ],
+    "step": "3",
+    "viewport": [
+      700,
+      600
+    ],
+    "modal": {
+      "x": 21,
+      "y": 30,
+      "w": 658,
+      "h": 540,
+      "b": 570,
+      "r": 679
+    },
+    "visual": {
+      "x": 22,
+      "y": 31,
+      "w": 656,
+      "h": 144,
+      "b": 175,
+      "r": 678
+    },
+    "footer": {
+      "x": 23,
+      "y": 492,
+      "w": 655,
+      "h": 77,
+      "b": 569,
+      "r": 678
+    },
+    "body": {
+      "x": 23,
+      "y": 295.890625,
+      "w": 655,
+      "h": 196.109375,
+      "b": 492,
+      "r": 678
+    },
+    "scroll": [
+      196,
+      971
+    ],
+    "scrollEnd": 775,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "540px",
+      "maxHeight": "540px",
+      "transform": "none",
+      "columns": "656px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      768,
+      600
+    ],
+    "step": "1",
+    "viewport": [
+      768,
+      600
+    ],
+    "modal": {
+      "x": 23.046875,
+      "y": 30,
+      "w": 721.90625,
+      "h": 540,
+      "b": 570,
+      "r": 744.953125
+    },
+    "visual": {
+      "x": 24.046875,
+      "y": 31,
+      "w": 719.90625,
+      "h": 144,
+      "b": 175,
+      "r": 743.953125
+    },
+    "footer": {
+      "x": 51.046875,
+      "y": 509,
+      "w": 666.90625,
+      "h": 44,
+      "b": 553,
+      "r": 717.953125
+    },
+    "body": {
+      "x": 25.046875,
+      "y": 295.890625,
+      "w": 718.90625,
+      "h": 201.109375,
+      "b": 497,
+      "r": 743.953125
+    },
+    "scroll": [
+      201,
+      335
+    ],
+    "scrollEnd": 134,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "540px",
+      "maxHeight": "540px",
+      "transform": "none",
+      "columns": "719.906px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      768,
+      600
+    ],
+    "step": "2",
+    "viewport": [
+      768,
+      600
+    ],
+    "modal": {
+      "x": 23.046875,
+      "y": 30,
+      "w": 721.90625,
+      "h": 540,
+      "b": 570,
+      "r": 744.953125
+    },
+    "visual": {
+      "x": 24.046875,
+      "y": 31,
+      "w": 719.90625,
+      "h": 144,
+      "b": 175,
+      "r": 743.953125
+    },
+    "footer": {
+      "x": 25.046875,
+      "y": 492,
+      "w": 718.90625,
+      "h": 77,
+      "b": 569,
+      "r": 743.953125
+    },
+    "body": {
+      "x": 25.046875,
+      "y": 295.890625,
+      "w": 718.90625,
+      "h": 196.109375,
+      "b": 492,
+      "r": 743.953125
+    },
+    "scroll": [
+      196,
+      590
+    ],
+    "scrollEnd": 394,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "540px",
+      "maxHeight": "540px",
+      "transform": "none",
+      "columns": "719.906px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      768,
+      600
+    ],
+    "step": "3",
+    "viewport": [
+      768,
+      600
+    ],
+    "modal": {
+      "x": 23.046875,
+      "y": 30,
+      "w": 721.90625,
+      "h": 540,
+      "b": 570,
+      "r": 744.953125
+    },
+    "visual": {
+      "x": 24.046875,
+      "y": 31,
+      "w": 719.90625,
+      "h": 144,
+      "b": 175,
+      "r": 743.953125
+    },
+    "footer": {
+      "x": 25.046875,
+      "y": 492,
+      "w": 718.90625,
+      "h": 77,
+      "b": 569,
+      "r": 743.953125
+    },
+    "body": {
+      "x": 25.046875,
+      "y": 295.890625,
+      "w": 718.90625,
+      "h": 196.109375,
+      "b": 492,
+      "r": 743.953125
+    },
+    "scroll": [
+      196,
+      971
+    ],
+    "scrollEnd": 775,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "540px",
+      "maxHeight": "540px",
+      "transform": "none",
+      "columns": "719.906px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      1024,
+      768
+    ],
+    "step": "1",
+    "viewport": [
+      1024,
+      768
+    ],
+    "modal": {
+      "x": 30.71875,
+      "y": 109.90625,
+      "w": 962.546875,
+      "h": 548.1875,
+      "b": 658.09375,
+      "r": 993.265625
+    },
+    "visual": {
+      "x": 31.71875,
+      "y": 110.90625,
+      "w": 268.953125,
+      "h": 546.1875,
+      "b": 657.09375,
+      "r": 300.671875
+    },
+    "footer": {
+      "x": 327.671875,
+      "y": 597.09375,
+      "w": 638.59375,
+      "h": 44,
+      "b": 641.09375,
+      "r": 966.265625
+    },
+    "body": {
+      "x": 301.671875,
+      "y": 249.796875,
+      "w": 690.59375,
+      "h": 335.296875,
+      "b": 585.09375,
+      "r": 992.265625
+    },
+    "scroll": [
+      335,
+      335
+    ],
+    "scrollEnd": 0,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "548.188px",
+      "maxHeight": "691.2px",
+      "transform": "none",
+      "columns": "268.953px 691.594px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1024,
+      768
+    ],
+    "step": "2",
+    "viewport": [
+      1024,
+      768
+    ],
+    "modal": {
+      "x": 30.71875,
+      "y": 38.40625,
+      "w": 962.546875,
+      "h": 691.1875,
+      "b": 729.59375,
+      "r": 993.265625
+    },
+    "visual": {
+      "x": 31.71875,
+      "y": 39.40625,
+      "w": 268.953125,
+      "h": 689.1875,
+      "b": 728.59375,
+      "r": 300.671875
+    },
+    "footer": {
+      "x": 301.671875,
+      "y": 651.59375,
+      "w": 690.59375,
+      "h": 77,
+      "b": 728.59375,
+      "r": 992.265625
+    },
+    "body": {
+      "x": 301.671875,
+      "y": 178.296875,
+      "w": 690.59375,
+      "h": 473.296875,
+      "b": 651.59375,
+      "r": 992.265625
+    },
+    "scroll": [
+      473,
+      590
+    ],
+    "scrollEnd": 117,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "691.188px",
+      "maxHeight": "691.2px",
+      "transform": "none",
+      "columns": "268.953px 691.594px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1024,
+      768
+    ],
+    "step": "3",
+    "viewport": [
+      1024,
+      768
+    ],
+    "modal": {
+      "x": 30.71875,
+      "y": 38.40625,
+      "w": 962.546875,
+      "h": 691.1875,
+      "b": 729.59375,
+      "r": 993.265625
+    },
+    "visual": {
+      "x": 31.71875,
+      "y": 39.40625,
+      "w": 268.953125,
+      "h": 689.1875,
+      "b": 728.59375,
+      "r": 300.671875
+    },
+    "footer": {
+      "x": 301.671875,
+      "y": 651.59375,
+      "w": 690.59375,
+      "h": 77,
+      "b": 728.59375,
+      "r": 992.265625
+    },
+    "body": {
+      "x": 301.671875,
+      "y": 178.296875,
+      "w": 690.59375,
+      "h": 473.296875,
+      "b": 651.59375,
+      "r": 992.265625
+    },
+    "scroll": [
+      473,
+      971
+    ],
+    "scrollEnd": 498,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "691.188px",
+      "maxHeight": "691.2px",
+      "transform": "none",
+      "columns": "268.953px 691.594px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      1224,
+      768
+    ],
+    "step": "1",
+    "viewport": [
+      1224,
+      768
+    ],
+    "modal": {
+      "x": 72,
+      "y": 109.90625,
+      "w": 1080,
+      "h": 548.1875,
+      "b": 658.09375,
+      "r": 1152
+    },
+    "visual": {
+      "x": 73,
+      "y": 110.90625,
+      "w": 301.828125,
+      "h": 546.1875,
+      "b": 657.09375,
+      "r": 374.828125
+    },
+    "footer": {
+      "x": 401.828125,
+      "y": 597.09375,
+      "w": 723.171875,
+      "h": 44,
+      "b": 641.09375,
+      "r": 1125
+    },
+    "body": {
+      "x": 375.828125,
+      "y": 249.796875,
+      "w": 775.171875,
+      "h": 335.296875,
+      "b": 585.09375,
+      "r": 1151
+    },
+    "scroll": [
+      335,
+      335
+    ],
+    "scrollEnd": 0,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "548.188px",
+      "maxHeight": "691.2px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1224,
+      768
+    ],
+    "step": "2",
+    "viewport": [
+      1224,
+      768
+    ],
+    "modal": {
+      "x": 72,
+      "y": 38.40625,
+      "w": 1080,
+      "h": 691.1875,
+      "b": 729.59375,
+      "r": 1152
+    },
+    "visual": {
+      "x": 73,
+      "y": 39.40625,
+      "w": 301.828125,
+      "h": 689.1875,
+      "b": 728.59375,
+      "r": 374.828125
+    },
+    "footer": {
+      "x": 375.828125,
+      "y": 651.59375,
+      "w": 775.171875,
+      "h": 77,
+      "b": 728.59375,
+      "r": 1151
+    },
+    "body": {
+      "x": 375.828125,
+      "y": 178.296875,
+      "w": 775.171875,
+      "h": 473.296875,
+      "b": 651.59375,
+      "r": 1151
+    },
+    "scroll": [
+      473,
+      590
+    ],
+    "scrollEnd": 117,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "691.188px",
+      "maxHeight": "691.2px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1224,
+      768
+    ],
+    "step": "3",
+    "viewport": [
+      1224,
+      768
+    ],
+    "modal": {
+      "x": 72,
+      "y": 38.40625,
+      "w": 1080,
+      "h": 691.1875,
+      "b": 729.59375,
+      "r": 1152
+    },
+    "visual": {
+      "x": 73,
+      "y": 39.40625,
+      "w": 301.828125,
+      "h": 689.1875,
+      "b": 728.59375,
+      "r": 374.828125
+    },
+    "footer": {
+      "x": 375.828125,
+      "y": 651.59375,
+      "w": 775.171875,
+      "h": 77,
+      "b": 728.59375,
+      "r": 1151
+    },
+    "body": {
+      "x": 375.828125,
+      "y": 178.296875,
+      "w": 775.171875,
+      "h": 473.296875,
+      "b": 651.59375,
+      "r": 1151
+    },
+    "scroll": [
+      473,
+      950
+    ],
+    "scrollEnd": 477,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "691.188px",
+      "maxHeight": "691.2px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      1225,
+      768
+    ],
+    "step": "1",
+    "viewport": [
+      1225,
+      768
+    ],
+    "modal": {
+      "x": 72.5,
+      "y": 109.90625,
+      "w": 1080,
+      "h": 548.1875,
+      "b": 658.09375,
+      "r": 1152.5
+    },
+    "visual": {
+      "x": 73.5,
+      "y": 110.90625,
+      "w": 301.828125,
+      "h": 546.1875,
+      "b": 657.09375,
+      "r": 375.328125
+    },
+    "footer": {
+      "x": 402.328125,
+      "y": 597.09375,
+      "w": 723.171875,
+      "h": 44,
+      "b": 641.09375,
+      "r": 1125.5
+    },
+    "body": {
+      "x": 376.328125,
+      "y": 249.796875,
+      "w": 775.171875,
+      "h": 335.296875,
+      "b": 585.09375,
+      "r": 1151.5
+    },
+    "scroll": [
+      335,
+      335
+    ],
+    "scrollEnd": 0,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "548.188px",
+      "maxHeight": "660.48px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1225,
+      768
+    ],
+    "step": "2",
+    "viewport": [
+      1225,
+      768
+    ],
+    "modal": {
+      "x": 72.5,
+      "y": 53.765625,
+      "w": 1080,
+      "h": 660.46875,
+      "b": 714.234375,
+      "r": 1152.5
+    },
+    "visual": {
+      "x": 73.5,
+      "y": 54.765625,
+      "w": 301.828125,
+      "h": 658.46875,
+      "b": 713.234375,
+      "r": 375.328125
+    },
+    "footer": {
+      "x": 376.328125,
+      "y": 636.234375,
+      "w": 775.171875,
+      "h": 77,
+      "b": 713.234375,
+      "r": 1151.5
+    },
+    "body": {
+      "x": 376.328125,
+      "y": 193.65625,
+      "w": 775.171875,
+      "h": 442.578125,
+      "b": 636.234375,
+      "r": 1151.5
+    },
+    "scroll": [
+      443,
+      590
+    ],
+    "scrollEnd": 147,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "660.469px",
+      "maxHeight": "660.48px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1225,
+      768
+    ],
+    "step": "3",
+    "viewport": [
+      1225,
+      768
+    ],
+    "modal": {
+      "x": 72.5,
+      "y": 53.765625,
+      "w": 1080,
+      "h": 660.46875,
+      "b": 714.234375,
+      "r": 1152.5
+    },
+    "visual": {
+      "x": 73.5,
+      "y": 54.765625,
+      "w": 301.828125,
+      "h": 658.46875,
+      "b": 713.234375,
+      "r": 375.328125
+    },
+    "footer": {
+      "x": 376.328125,
+      "y": 636.234375,
+      "w": 775.171875,
+      "h": 77,
+      "b": 713.234375,
+      "r": 1151.5
+    },
+    "body": {
+      "x": 376.328125,
+      "y": 193.65625,
+      "w": 775.171875,
+      "h": 442.578125,
+      "b": 636.234375,
+      "r": 1151.5
+    },
+    "scroll": [
+      443,
+      950
+    ],
+    "scrollEnd": 507,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "660.469px",
+      "maxHeight": "660.48px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      1366,
+      768
+    ],
+    "step": "1",
+    "viewport": [
+      1366,
+      768
+    ],
+    "modal": {
+      "x": 143,
+      "y": 109.90625,
+      "w": 1080,
+      "h": 548.1875,
+      "b": 658.09375,
+      "r": 1223
+    },
+    "visual": {
+      "x": 144,
+      "y": 110.90625,
+      "w": 301.828125,
+      "h": 546.1875,
+      "b": 657.09375,
+      "r": 445.828125
+    },
+    "footer": {
+      "x": 472.828125,
+      "y": 597.09375,
+      "w": 723.171875,
+      "h": 44,
+      "b": 641.09375,
+      "r": 1196
+    },
+    "body": {
+      "x": 446.828125,
+      "y": 249.796875,
+      "w": 775.171875,
+      "h": 335.296875,
+      "b": 585.09375,
+      "r": 1222
+    },
+    "scroll": [
+      335,
+      335
+    ],
+    "scrollEnd": 0,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "548.188px",
+      "maxHeight": "660.48px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1366,
+      768
+    ],
+    "step": "2",
+    "viewport": [
+      1366,
+      768
+    ],
+    "modal": {
+      "x": 143,
+      "y": 53.765625,
+      "w": 1080,
+      "h": 660.46875,
+      "b": 714.234375,
+      "r": 1223
+    },
+    "visual": {
+      "x": 144,
+      "y": 54.765625,
+      "w": 301.828125,
+      "h": 658.46875,
+      "b": 713.234375,
+      "r": 445.828125
+    },
+    "footer": {
+      "x": 446.828125,
+      "y": 636.234375,
+      "w": 775.171875,
+      "h": 77,
+      "b": 713.234375,
+      "r": 1222
+    },
+    "body": {
+      "x": 446.828125,
+      "y": 193.65625,
+      "w": 775.171875,
+      "h": 442.578125,
+      "b": 636.234375,
+      "r": 1222
+    },
+    "scroll": [
+      443,
+      590
+    ],
+    "scrollEnd": 147,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "660.469px",
+      "maxHeight": "660.48px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1366,
+      768
+    ],
+    "step": "3",
+    "viewport": [
+      1366,
+      768
+    ],
+    "modal": {
+      "x": 143,
+      "y": 53.765625,
+      "w": 1080,
+      "h": 660.46875,
+      "b": 714.234375,
+      "r": 1223
+    },
+    "visual": {
+      "x": 144,
+      "y": 54.765625,
+      "w": 301.828125,
+      "h": 658.46875,
+      "b": 713.234375,
+      "r": 445.828125
+    },
+    "footer": {
+      "x": 446.828125,
+      "y": 636.234375,
+      "w": 775.171875,
+      "h": 77,
+      "b": 713.234375,
+      "r": 1222
+    },
+    "body": {
+      "x": 446.828125,
+      "y": 193.65625,
+      "w": 775.171875,
+      "h": 442.578125,
+      "b": 636.234375,
+      "r": 1222
+    },
+    "scroll": [
+      443,
+      950
+    ],
+    "scrollEnd": 507,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "660.469px",
+      "maxHeight": "660.48px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      1440,
+      900
+    ],
+    "step": "1",
+    "viewport": [
+      1440,
+      900
+    ],
+    "modal": {
+      "x": 180,
+      "y": 175.90625,
+      "w": 1080,
+      "h": 548.1875,
+      "b": 724.09375,
+      "r": 1260
+    },
+    "visual": {
+      "x": 181,
+      "y": 176.90625,
+      "w": 301.828125,
+      "h": 546.1875,
+      "b": 723.09375,
+      "r": 482.828125
+    },
+    "footer": {
+      "x": 509.828125,
+      "y": 663.09375,
+      "w": 723.171875,
+      "h": 44,
+      "b": 707.09375,
+      "r": 1233
+    },
+    "body": {
+      "x": 483.828125,
+      "y": 315.796875,
+      "w": 775.171875,
+      "h": 335.296875,
+      "b": 651.09375,
+      "r": 1259
+    },
+    "scroll": [
+      335,
+      335
+    ],
+    "scrollEnd": 0,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "548.188px",
+      "maxHeight": "760px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1440,
+      900
+    ],
+    "step": "2",
+    "viewport": [
+      1440,
+      900
+    ],
+    "modal": {
+      "x": 180,
+      "y": 70,
+      "w": 1080,
+      "h": 760,
+      "b": 830,
+      "r": 1260
+    },
+    "visual": {
+      "x": 181,
+      "y": 71,
+      "w": 301.828125,
+      "h": 758,
+      "b": 829,
+      "r": 482.828125
+    },
+    "footer": {
+      "x": 483.828125,
+      "y": 752,
+      "w": 775.171875,
+      "h": 77,
+      "b": 829,
+      "r": 1259
+    },
+    "body": {
+      "x": 483.828125,
+      "y": 209.890625,
+      "w": 775.171875,
+      "h": 542.109375,
+      "b": 752,
+      "r": 1259
+    },
+    "scroll": [
+      542,
+      590
+    ],
+    "scrollEnd": 48,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "760px",
+      "maxHeight": "760px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1440,
+      900
+    ],
+    "step": "3",
+    "viewport": [
+      1440,
+      900
+    ],
+    "modal": {
+      "x": 180,
+      "y": 70,
+      "w": 1080,
+      "h": 760,
+      "b": 830,
+      "r": 1260
+    },
+    "visual": {
+      "x": 181,
+      "y": 71,
+      "w": 301.828125,
+      "h": 758,
+      "b": 829,
+      "r": 482.828125
+    },
+    "footer": {
+      "x": 483.828125,
+      "y": 752,
+      "w": 775.171875,
+      "h": 77,
+      "b": 829,
+      "r": 1259
+    },
+    "body": {
+      "x": 483.828125,
+      "y": 209.890625,
+      "w": 775.171875,
+      "h": 542.109375,
+      "b": 752,
+      "r": 1259
+    },
+    "scroll": [
+      542,
+      950
+    ],
+    "scrollEnd": 408,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "760px",
+      "maxHeight": "760px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      1920,
+      1080
+    ],
+    "step": "1",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "modal": {
+      "x": 420,
+      "y": 265.90625,
+      "w": 1080,
+      "h": 548.1875,
+      "b": 814.09375,
+      "r": 1500
+    },
+    "visual": {
+      "x": 421,
+      "y": 266.90625,
+      "w": 301.828125,
+      "h": 546.1875,
+      "b": 813.09375,
+      "r": 722.828125
+    },
+    "footer": {
+      "x": 749.828125,
+      "y": 753.09375,
+      "w": 723.171875,
+      "h": 44,
+      "b": 797.09375,
+      "r": 1473
+    },
+    "body": {
+      "x": 723.828125,
+      "y": 405.796875,
+      "w": 775.171875,
+      "h": 335.296875,
+      "b": 741.09375,
+      "r": 1499
+    },
+    "scroll": [
+      335,
+      335
+    ],
+    "scrollEnd": 0,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "548.188px",
+      "maxHeight": "760px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1920,
+      1080
+    ],
+    "step": "2",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "modal": {
+      "x": 420,
+      "y": 160,
+      "w": 1080,
+      "h": 760,
+      "b": 920,
+      "r": 1500
+    },
+    "visual": {
+      "x": 421,
+      "y": 161,
+      "w": 301.828125,
+      "h": 758,
+      "b": 919,
+      "r": 722.828125
+    },
+    "footer": {
+      "x": 723.828125,
+      "y": 842,
+      "w": 775.171875,
+      "h": 77,
+      "b": 919,
+      "r": 1499
+    },
+    "body": {
+      "x": 723.828125,
+      "y": 299.890625,
+      "w": 775.171875,
+      "h": 542.109375,
+      "b": 842,
+      "r": 1499
+    },
+    "scroll": [
+      542,
+      590
+    ],
+    "scrollEnd": 48,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "760px",
+      "maxHeight": "760px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      1920,
+      1080
+    ],
+    "step": "3",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "modal": {
+      "x": 420,
+      "y": 160,
+      "w": 1080,
+      "h": 760,
+      "b": 920,
+      "r": 1500
+    },
+    "visual": {
+      "x": 421,
+      "y": 161,
+      "w": 301.828125,
+      "h": 758,
+      "b": 919,
+      "r": 722.828125
+    },
+    "footer": {
+      "x": 723.828125,
+      "y": 842,
+      "w": 775.171875,
+      "h": 77,
+      "b": 919,
+      "r": 1499
+    },
+    "body": {
+      "x": 723.828125,
+      "y": 299.890625,
+      "w": 775.171875,
+      "h": 542.109375,
+      "b": 842,
+      "r": 1499
+    },
+    "scroll": [
+      542,
+      950
+    ],
+    "scrollEnd": 408,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "760px",
+      "maxHeight": "760px",
+      "transform": "none",
+      "columns": "301.828px 776.172px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  },
+  {
+    "requested": [
+      390,
+      460
+    ],
+    "step": "1",
+    "viewport": [
+      394,
+      465
+    ],
+    "modal": {
+      "x": 10,
+      "y": 10.5,
+      "w": 374,
+      "h": 444,
+      "b": 454.5,
+      "r": 384
+    },
+    "visual": {
+      "x": 11,
+      "y": 11.5,
+      "w": 372,
+      "h": 107.390625,
+      "b": 118.890625,
+      "r": 383
+    },
+    "footer": {
+      "x": 32,
+      "y": 397.5,
+      "w": 331,
+      "h": 44,
+      "b": 441.5,
+      "r": 363
+    },
+    "body": {
+      "x": 12,
+      "y": 229.078125,
+      "w": 371,
+      "h": 164.421875,
+      "b": 393.5,
+      "r": 383
+    },
+    "scroll": [
+      164,
+      569
+    ],
+    "scrollEnd": 405,
+    "provinceNoticeVisible": false,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "444px",
+      "maxHeight": "444px",
+      "transform": "none",
+      "columns": "372px"
+    },
+    "active": "1. Datos principales",
+    "summary": ""
+  },
+  {
+    "requested": [
+      390,
+      460
+    ],
+    "step": "2",
+    "viewport": [
+      394,
+      465
+    ],
+    "modal": {
+      "x": 10,
+      "y": 10.5,
+      "w": 374,
+      "h": 444,
+      "b": 454.5,
+      "r": 384
+    },
+    "visual": {
+      "x": 11,
+      "y": 11.5,
+      "w": 372,
+      "h": 107.390625,
+      "b": 118.890625,
+      "r": 383
+    },
+    "footer": {
+      "x": 12,
+      "y": 384.5,
+      "w": 371,
+      "h": 69,
+      "b": 453.5,
+      "r": 383
+    },
+    "body": {
+      "x": 12,
+      "y": 229.078125,
+      "w": 371,
+      "h": 155.421875,
+      "b": 384.5,
+      "r": 383
+    },
+    "scroll": [
+      155,
+      819
+    ],
+    "scrollEnd": 664,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "444px",
+      "maxHeight": "444px",
+      "transform": "none",
+      "columns": "372px"
+    },
+    "active": "2. Ubicación",
+    "summary": ""
+  },
+  {
+    "requested": [
+      390,
+      460
+    ],
+    "step": "3",
+    "viewport": [
+      394,
+      465
+    ],
+    "modal": {
+      "x": 10,
+      "y": 10.5,
+      "w": 374,
+      "h": 444,
+      "b": 454.5,
+      "r": 384
+    },
+    "visual": {
+      "x": 11,
+      "y": 11.5,
+      "w": 372,
+      "h": 107.390625,
+      "b": 118.890625,
+      "r": 383
+    },
+    "footer": {
+      "x": 12,
+      "y": 373.40625,
+      "w": 371,
+      "h": 80.09375,
+      "b": 453.5,
+      "r": 383
+    },
+    "body": {
+      "x": 12,
+      "y": 229.078125,
+      "w": 371,
+      "h": 144.328125,
+      "b": 373.40625,
+      "r": 383
+    },
+    "scroll": [
+      144,
+      1290
+    ],
+    "scrollEnd": 1146,
+    "provinceNoticeVisible": true,
+    "horizontalOverflow": false,
+    "visualContained": true,
+    "styles": {
+      "height": "444px",
+      "maxHeight": "444px",
+      "transform": "none",
+      "columns": "372px"
+    },
+    "active": "3. Resumen",
+    "summary": "Resumen económico\n\nPrecio del producto\nS/269.90\n\nAdelanto requerido para provincia\nS/40\n\nEstado del adelanto\nPendiente de coordinar\n\nSaldo estimado tras adelanto\nS/229.90\n\nDelivery\nNo incluido; por confirmar\n\nDatos de entrega\n\nDestino\nProvincia\n\nEntrega\nEntrega a domicilio\n\nNombre\nCliente de prueba\n\nCelular / WhatsApp\n987654321\n\nDepartamento\nLima\n\nProvincia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDistrito\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nDirección/agencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos\n\nReferencia\nTexto largo de prueba para verificar la entrega y el ajuste de los campos"
+  }
+]

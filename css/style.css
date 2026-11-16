@@ -33,31 +33,6 @@
     .order-summary-product img { animation: none; }
 }
 
-.whatsapp-float {
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    z-index: 9999;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-    border-radius: 50%;
-    padding: 0.3rem;
-}
-.whatsapp-float svg {
-    width: 64px;
-    height: 64px;
-    display: block;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-}
-.whatsapp-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
-}
 :root {
     --color-title: #ae1a39;
     --font_family_title: "Roboto Condensed", sans-serif;
@@ -376,7 +351,7 @@ section main
 
 .section__price-button:hover {
     transform: scale(1.1);
-    animation: order-button-shine 3.5s ease-in-out infinite, purchase-button-pulse 2.4s ease-in-out infinite;
+    animation: purchase-button-continuous 3.5s ease-in-out infinite;
 }
 
 .section__price-button-title {
@@ -1649,25 +1624,7 @@ section main
 }
 
 
-.whatsapp-float {
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  z-index: 9999;
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
 
-.img_float{
-    width: 8rem;
-    height: auto;
-}
 
 /* Order modal */
 [data-order-trigger] {
@@ -1677,7 +1634,7 @@ section main
     border: 0;
     box-shadow: 0 0.6rem 1.2rem rgba(174, 26, 57, 0.35);
     transform-origin: center;
-    animation: order-button-shine 3.5s ease-in-out infinite, purchase-button-pulse 2.4s ease-in-out infinite;
+    animation: purchase-button-continuous 3.5s ease-in-out infinite;
 }
 
 [data-order-trigger] .section__price-button-title,
@@ -1703,13 +1660,18 @@ section main
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H7M10 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
+@keyframes purchase-button-continuous {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+}
+
 @keyframes purchase-button-pulse {
-    0%, 100% {
+    0%, 15%, 55%, 100% {
         transform: scale(1);
     }
 
-    50% {
-        transform: scale(1.09);
+    32% {
+        transform: scale(1.04);
     }
 }
 
@@ -2678,4 +2640,39 @@ body.order-modal-open > .whatsapp-float { visibility: hidden; }
  .order-benefit-icon svg { width: 14px; height: 14px; }
  .order-modal__header { padding: 8px 16px; }
  .order-modal__header h2 { font-size: 20px; margin-bottom: 8px; }
+}
+
+/* Focused purchase-button and floating WhatsApp visibility improvements. */
+[data-order-trigger] .section__price-button-title,
+[data-order-trigger] .section__offer-button-title { font-weight: 800; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.25; letter-spacing: .035em; }
+[data-order-trigger] .section__price-button-title::before,
+[data-order-trigger] .section__offer-button-title::before { width: 2rem; height: 2rem; }
+.whatsapp-float {
+    position: fixed;
+    right: max(20px, calc(env(safe-area-inset-right, 0px) + 12px));
+    bottom: max(20px, calc(env(safe-area-inset-bottom, 0px) + 12px));
+    z-index: 9999;
+    display: block;
+    width: 96px;
+    height: 96px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 50%;
+    background: #25d366;
+    box-shadow: 0 4px 16px rgba(0, 70, 34, .25);
+    cursor: pointer;
+}
+.whatsapp-float svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: center;
+    animation: purchase-button-pulse 3.5s ease-in-out .6s infinite;
+}
+.whatsapp-float:focus-visible { outline: 3px solid #075e54; outline-offset: 4px; }
+.whatsapp-float.is-obstructing { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) {
+    .whatsapp-float svg { animation: none; }
 }

@@ -436,3 +436,33 @@ if (orderModal && orderForm) {
 
   refreshCampaignLabels();
 }
+
+// Keep the floating contact control clear of purchase actions as the page scrolls.
+const floatingWhatsApp = document.querySelector('.whatsapp-float');
+if (floatingWhatsApp) {
+  const purchaseActions = [...document.querySelectorAll(
+    '[data-order-trigger], .container__info, .section__offer-info, .section__price-title, h1, h2, h3, h4, button, label'
+  )];
+  let floatingCheckPending = false;
+  function updateFloatingWhatsApp() {
+    floatingCheckPending = false;
+    const floating = floatingWhatsApp.getBoundingClientRect();
+    const obstructsPurchase = purchaseActions.some(action => {
+      const rect = action.getBoundingClientRect();
+      return rect.width > 0 && rect.height > 0 && rect.left < floating.right + 8 &&
+        rect.right > floating.left - 8 && rect.top < floating.bottom + 8 &&
+        rect.bottom > floating.top - 8;
+    });
+    floatingWhatsApp.classList.toggle('is-obstructing', obstructsPurchase);
+  }
+  function scheduleFloatingWhatsAppCheck() {
+    if (!floatingCheckPending) {
+      floatingCheckPending = true;
+      window.requestAnimationFrame(updateFloatingWhatsApp);
+    }
+  }
+  window.addEventListener('scroll', scheduleFloatingWhatsAppCheck, { passive: true });
+  window.addEventListener('resize', scheduleFloatingWhatsAppCheck);
+  window.addEventListener('load', scheduleFloatingWhatsAppCheck);
+  updateFloatingWhatsApp();
+}

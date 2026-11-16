@@ -1,0 +1,38 @@
+﻿const fs=require('fs');const {spawn}=require('child_process');
+(async()=>{const browser=spawn('C:/Users/Usuario/AppData/Local/ms-playwright/chromium-1228/chrome-win64/chrome.exe',['--headless','--no-sandbox','--disable-gpu','--remote-debugging-port=9342','--user-data-dir='+process.env.TEMP+'/erecman-product-zoom','about:blank'],{stdio:'ignore',windowsHide:true});
+try{let targets;for(let i=0;i<40;i++){try{targets=await fetch('http://127.0.0.1:9342/json').then(r=>r.json());if(targets.some(t=>t.type==='page'))break}catch{}await new Promise(r=>setTimeout(r,250))}if(!targets)throw Error('No se pudo conectar con Chromium');const ws=new WebSocket(targets.find(t=>t.type==='page').webSocketDebuggerUrl);await new Promise(r=>ws.onopen=r);let seq=0;const pending=new Map();ws.onmessage=e=>{const m=JSON.parse(e.data);if(m.id){pending.get(m.id)?.(m);pending.delete(m.id)}};const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,m=>m.error?reject(Error(JSON.stringify(m.error))):resolve(m.result));ws.send(JSON.stringify({id,method,params}))});const ev=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value};
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));await send('Page.enable');await send('Network.enable');await send('Network.setBlockedURLs',{urls:['*://fonts.googleapis.com/*','*://fonts.gstatic.com/*','*://analytics.tiktok.com/*','*://www.googletagmanager.com/*']});const assertions=[];const check=(name,ok)=>{assertions.push({name,ok});if(!ok)throw Error(name)};
+async function load(width,height){await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});await send('Page.navigate',{url:'http://127.0.0.1:8080/'});await sleep(1000);for(let i=0;i<300;i++){if(await ev(`document.readyState!=='loading'&&!!document.querySelector('.whatsapp-float svg')&&typeof PACK_PROMOTION==='object'`))break;await sleep(100)}await sleep(700)}
+const sizes=[[375,812],[390,844],[768,1024],[1366,768],[1920,1080]];const layouts=[];
+for(const [w,h] of sizes){await load(w,h);console.log('Testing',w);
+check(w+' five purchase buttons and SVG WhatsApp',await ev(`document.querySelectorAll('[data-order-trigger]').length===5&&!!document.querySelector('.whatsapp-float svg')&&!document.querySelector('.whatsapp-float img')`));
+check(w+' Spanish CTA and modal targets',await ev(`[...document.querySelectorAll('[data-order-trigger]')].every(e=>e.textContent.includes('COMPRAR AHORA')&&e.getAttribute('href')==='#order-modal')`));
+check(w+' WhatsApp 96px and safe edges',await ev(`(()=>{const r=document.querySelector('.whatsapp-float').getBoundingClientRect();return r.width===96&&r.height===96&&r.right<=innerWidth-12&&r.bottom<=innerHeight-12})()`));
+const count=await ev(`document.querySelectorAll('[data-order-trigger]').length`);
+for(let i=0;i<count;i++){
+await ev(`document.querySelectorAll('[data-order-trigger]')[${i}].scrollIntoView({block:'center'})`);await sleep(300);
+const shape=await ev(`(()=>{const e=document.querySelectorAll('[data-order-trigger]')[${i}],a=e.getAnimations().find(a=>a.animationName==='purchase-button-continuous');if(!a)return null;a.pause();a.currentTime=0;const before={w:e.offsetWidth,h:e.offsetHeight},base=e.getBoundingClientRect().width;a.currentTime=1750;const peak=e.getBoundingClientRect(),motion=getComputedStyle(e);a.currentTime=2500;const pause=getComputedStyle(e).transform;return {before,after:{w:e.offsetWidth,h:e.offsetHeight},base,peak:{width:peak.width,left:peak.left,right:peak.right},duration:motion.animationDuration,pause,viewport:innerWidth}})()`);
+check(w+' CTA '+i+' scale 4%',shape&&Math.abs(shape.peak.width/shape.base-1.04)<.002);
+check(w+' CTA '+i+' layout stable',JSON.stringify(shape.before)===JSON.stringify(shape.after));
+check(w+' CTA '+i+' contained at peak',shape.peak.left>=-1&&shape.peak.right<=w+1);
+check(w+' CTA '+i+' 3.5s continuous',shape.duration==='3.5s'&&shape.pause!=='matrix(1, 0, 0, 1, 0, 0)');layouts.push({w,h,index:i,...shape});
+await ev(`document.querySelectorAll('[data-order-trigger]')[${i}].click()`);check(w+' CTA '+i+' opens modal and hides floating contact',await ev(`document.querySelector('#order-modal').classList.contains('is-open')&&getComputedStyle(document.querySelector('.whatsapp-float')).visibility==='hidden'`));await ev(`document.querySelector('[data-order-close]').click()`);
+}
+await ev(`(()=>{const c=document.querySelector('[data-order-trigger]');c.scrollIntoView({block:'center'});window.scrollBy(0,c.getBoundingClientRect().top-(innerHeight-90))})()`);await sleep(150);
+check(w+' floating contact avoids overlap',await ev(`(()=>{const f=document.querySelector('.whatsapp-float'),r=f.getBoundingClientRect();const overlap=[...document.querySelectorAll('[data-order-trigger]')].some(e=>{let b=e.getBoundingClientRect();return b.left<r.right+8&&b.right>r.left-8&&b.top<r.bottom+8&&b.bottom>r.top-8});return !overlap||getComputedStyle(f).visibility==='hidden'})()`));
+await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});check(w+' reduced motion',await ev(`[...document.querySelectorAll('[data-order-trigger],.whatsapp-float svg')].every(e=>getComputedStyle(e).animationName==='none')`));await send('Emulation.setEmulatedMedia',{features:[]});
+}
+fs.writeFileSync('qa/button-visibility/results.json',JSON.stringify({assertions,layouts},null,2));console.log('PASS '+assertions.length+' checks');
+for(const [view,w,h] of [['escritorio',1366,768],['movil',390,844]]){
+await load(w,h);await ev(`document.querySelector('[data-order-trigger]').scrollIntoView({block:'center'})`);await sleep(2200);
+
+const frames=[],start=Date.now();let scrolled=false;while(Date.now()-start<10000){if(view==='movil'&&!scrolled&&Date.now()-start>4500){await ev("document.querySelector('.carrousel-wrapper').scrollIntoView({block:'start'})");await sleep(600);scrolled=true}frames.push((await send('Page.captureScreenshot',{format:'jpeg',quality:85})).data);await sleep(100)}
+fs.writeFileSync('qa/button-visibility/'+view+'-frames.json',JSON.stringify(frames));fs.writeFileSync('qa/button-visibility/'+view+'.jpg',Buffer.from(frames[Math.min(10,frames.length-1)],'base64'));console.log('Captured '+view);
+}
+await send('Page.navigate',{url:'about:blank'});await sleep(200);
+for(const [view,w,h] of [['escritorio',1366,768],['movil',390,844]]){
+const frames=JSON.parse(fs.readFileSync('qa/button-visibility/'+view+'-frames.json'));
+const data=await ev(`(async()=>{let frames=${JSON.stringify(frames)},canvas=document.createElement('canvas');canvas.width=${w};canvas.height=${h};document.body.append(canvas);let ctx=canvas.getContext('2d'),stream=canvas.captureStream(10),rec=new MediaRecorder(stream,{mimeType:'video/webm;codecs=vp8',videoBitsPerSecond:2200000}),chunks=[];rec.ondataavailable=e=>chunks.push(e.data);let done=new Promise(r=>rec.onstop=r);rec.start();for(let frame of frames){let im=new Image();im.src='data:image/jpeg;base64,'+frame;await im.decode();ctx.drawImage(im,0,0);await new Promise(r=>setTimeout(r,10000/frames.length))}rec.stop();await done;return await new Promise(r=>{let fr=new FileReader();fr.onload=()=>r(fr.result.split(',')[1]);fr.readAsDataURL(new Blob(chunks,{type:'video/webm'}))})})()`);
+fs.writeFileSync('qa/button-visibility/'+view+'.webm',Buffer.from(data,'base64'));fs.unlinkSync('qa/button-visibility/'+view+'-frames.json');console.log('Saved '+view+'.webm');
+}
+await send('Browser.close');ws.close();}finally{browser.kill()}})().catch(e=>{console.error(e);process.exitCode=1});

@@ -1,0 +1,27 @@
+﻿const fs=require('fs');const {spawn}=require('child_process');
+(async()=>{const browser=spawn('C:/Users/Usuario/AppData/Local/ms-playwright/chromium-1228/chrome-win64/chrome.exe',['--headless','--no-sandbox','--disable-gpu','--remote-debugging-port=9342','--user-data-dir='+process.env.TEMP+'/erecman-product-zoom','about:blank'],{stdio:'ignore',windowsHide:true});
+try{let targets;for(let i=0;i<40;i++){try{targets=await fetch('http://127.0.0.1:9342/json').then(r=>r.json());if(targets.some(t=>t.type==='page'))break}catch{}await new Promise(r=>setTimeout(r,250))}if(!targets)throw Error('No se pudo conectar con Chromium');const ws=new WebSocket(targets.find(t=>t.type==='page').webSocketDebuggerUrl);await new Promise(r=>ws.onopen=r);let seq=0;const pending=new Map();ws.onmessage=e=>{const m=JSON.parse(e.data);if(m.id){pending.get(m.id)?.(m);pending.delete(m.id)}};const send=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,m=>m.error?reject(Error(JSON.stringify(m.error))):resolve(m.result));ws.send(JSON.stringify({id,method,params}))});const ev=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value};
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const results=[];const checks=[];const check=(name,ok)=>{checks.push({name,ok});if(!ok)throw Error(name)};
+await send('Page.enable');
+async function load(width,height){await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});await send('Page.navigate',{url:'http://127.0.0.1:8080/'});for(let n=0;n<100;n++){if(await ev('document.readyState==="complete" && !!document.querySelector("#order-form")'))break;await sleep(100)}await sleep(400)}
+const next2=`document.querySelector('#customer-name').value='Cliente de prueba';document.querySelector('#customer-phone').value='987654321';document.querySelector('[data-next-step="2"]').click()`;
+const next3=`document.querySelector('[name="destination"][value="Provincia"]').click();document.querySelector('[name="deliveryMethod"]').click();for(const id of ['department','province','district','address'])document.getElementById(id).value=id==='department'?'Lima':'Datos de prueba';document.querySelector('#province-advance').checked=true;document.querySelector('[data-next-step="3"]').click()`;
+async function geometry(){return ev(`(()=>{let q=s=>document.querySelector(s),rect=e=>{let r=e.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height,right:r.right,bottom:r.bottom}};let imgs=[...document.querySelectorAll('.section__presentation-image img,.order-step:not([hidden]) .order-promotion img,.order-step:not([hidden]) .order-summary-product img')];return {pageWidth:document.documentElement.scrollWidth,viewport:innerWidth,cards:[...document.querySelectorAll('.order-step:not([hidden]) .order-promotion,.order-step:not([hidden]) .order-summary-product')].map(rect),imgs:imgs.filter(e=>e.getBoundingClientRect().width>0).map(e=>({rect:rect(e),animation:getComputedStyle(e).animationName,scale:getComputedStyle(e).getPropertyValue('--erecman-frasco-scale'),loaded:e.complete&&e.naturalWidth>0})),modalOverflow:q('.order-modal__dialog').scrollWidth>q('.order-modal__dialog').clientWidth,step:q('.order-step:not([hidden])').dataset.step}})()`)}
+// Record actual screenshots over 8 seconds, then encode them in Chromium with MediaRecorder.
+await load(1366,768);await ev(`document.querySelector('.section__about-product-benefits-images').scrollIntoView({block:'center'})`);await sleep(2200);
+for(const view of ['ultimo-frasco']){
+ if(view==='paso-1')await ev(`document.querySelector('[data-order-trigger=pack]').click()`);
+ if(view==='paso-3'){await ev(next2);await ev(next3)}
+ await ev(`document.querySelectorAll('img').forEach(e=>e.getAnimations().filter(a=>a.animationName==='erecmanFrascoZoom').forEach(a=>{a.currentTime=0;a.play()}))`);
+ const frames=[];const start=Date.now();while(Date.now()-start<8200){frames.push((await send('Page.captureScreenshot',{format:'jpeg',quality:80})).data);await sleep(100)}
+ fs.writeFileSync('qa/product-zoom/'+view+'-frames.json',JSON.stringify(frames));console.log('Captured '+view+' '+frames.length+' frames');
+}
+await send('Page.navigate',{url:'about:blank'});await sleep(200);
+for(const view of ['ultimo-frasco']){
+ const frames=JSON.parse(fs.readFileSync('qa/product-zoom/'+view+'-frames.json'));
+ const data=await ev(`(async()=>{let frames=${JSON.stringify(frames)},canvas=document.createElement('canvas');canvas.width=1366;canvas.height=768;document.body.append(canvas);let ctx=canvas.getContext('2d'),stream=canvas.captureStream(10),rec=new MediaRecorder(stream,{mimeType:'video/webm;codecs=vp8',videoBitsPerSecond:1800000}),chunks=[];rec.ondataavailable=e=>chunks.push(e.data);let done=new Promise(r=>rec.onstop=r);rec.start();for(let frame of frames){let im=new Image();im.src='data:image/jpeg;base64,'+frame;await im.decode();ctx.drawImage(im,0,0);await new Promise(r=>setTimeout(r,8200/frames.length))}rec.stop();await done;return await new Promise(r=>{let fr=new FileReader();fr.onload=()=>r(fr.result.split(',')[1]);fr.readAsDataURL(new Blob(chunks,{type:'video/webm'}))})})()`);
+ fs.writeFileSync('qa/product-zoom/'+view+'.webm',Buffer.from(data,'base64'));fs.unlinkSync('qa/product-zoom/'+view+'-frames.json');console.log('Saved '+view+'.webm');
+}
+await send('Browser.close');ws.close();}finally{browser.kill()}})().catch(e=>{console.error(e);process.exitCode=1});
+

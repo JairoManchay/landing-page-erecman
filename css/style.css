@@ -1,3 +1,38 @@
+/* Pulse only product images; layout dimensions and existing button animations stay intact. */
+@keyframes erecmanFrascoZoom {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(var(--erecman-frasco-scale)); }
+}
+
+.section__presentation-image img,
+.order-promotion img,
+.order-summary-product img {
+    --erecman-frasco-scale: 1.05;
+    animation: erecmanFrascoZoom 2.4s ease-in-out infinite;
+    transform-origin: center center;
+}
+
+.order-promotion img { --erecman-frasco-scale: 1.08; }
+.order-summary-product img { --erecman-frasco-scale: 1.03; }
+
+@keyframes erecmanFrascoZoomContinuo {
+    0%, 100% { scale: 1; }
+    50% { scale: 1.14; }
+}
+
+/* Separate scale preserves the positioning transform applied by ScrollReveal. */
+.section__about-product-benefits-images img:nth-child(2) {
+    animation: erecmanFrascoZoomContinuo 2.4s ease-in-out infinite;
+    transform-origin: center center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .section__about-product-benefits-images img:nth-child(2),
+    .section__presentation-image img,
+    .order-promotion img,
+    .order-summary-product img { animation: none; }
+}
+
 .whatsapp-float {
     position: fixed;
     right: 2rem;
@@ -1674,7 +1709,7 @@ section main
     }
 
     50% {
-        transform: scale(1.05);
+        transform: scale(1.09);
     }
 }
 

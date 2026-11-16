@@ -1,0 +1,2318 @@
+{
+  "checks": [
+    {
+      "name": "375 step 0 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "375 step 0 stable cards",
+      "ok": true
+    },
+    {
+      "name": "375 step 0 images loaded",
+      "ok": true
+    },
+    {
+      "name": "375 step 0 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "375 step 1 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "375 step 1 stable cards",
+      "ok": true
+    },
+    {
+      "name": "375 step 1 images loaded",
+      "ok": true
+    },
+    {
+      "name": "375 step 1 correct step",
+      "ok": true
+    },
+    {
+      "name": "375 step 1 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "375 step 1 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "375 step 1 image 1 scale",
+      "ok": true
+    },
+    {
+      "name": "375 step 1 image 2 scale",
+      "ok": true
+    },
+    {
+      "name": "375 step 2 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "375 step 2 stable cards",
+      "ok": true
+    },
+    {
+      "name": "375 step 2 images loaded",
+      "ok": true
+    },
+    {
+      "name": "375 step 2 correct step",
+      "ok": true
+    },
+    {
+      "name": "375 step 2 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "375 step 2 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "375 step 3 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "375 step 3 stable cards",
+      "ok": true
+    },
+    {
+      "name": "375 step 3 images loaded",
+      "ok": true
+    },
+    {
+      "name": "375 step 3 correct step",
+      "ok": true
+    },
+    {
+      "name": "375 step 3 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "375 step 3 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "375 step 3 image 1 scale",
+      "ok": true
+    },
+    {
+      "name": "390 step 0 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "390 step 0 stable cards",
+      "ok": true
+    },
+    {
+      "name": "390 step 0 images loaded",
+      "ok": true
+    },
+    {
+      "name": "390 step 0 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "390 step 1 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "390 step 1 stable cards",
+      "ok": true
+    },
+    {
+      "name": "390 step 1 images loaded",
+      "ok": true
+    },
+    {
+      "name": "390 step 1 correct step",
+      "ok": true
+    },
+    {
+      "name": "390 step 1 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "390 step 1 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "390 step 1 image 1 scale",
+      "ok": true
+    },
+    {
+      "name": "390 step 1 image 2 scale",
+      "ok": true
+    },
+    {
+      "name": "390 step 2 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "390 step 2 stable cards",
+      "ok": true
+    },
+    {
+      "name": "390 step 2 images loaded",
+      "ok": true
+    },
+    {
+      "name": "390 step 2 correct step",
+      "ok": true
+    },
+    {
+      "name": "390 step 2 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "390 step 2 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "390 step 3 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "390 step 3 stable cards",
+      "ok": true
+    },
+    {
+      "name": "390 step 3 images loaded",
+      "ok": true
+    },
+    {
+      "name": "390 step 3 correct step",
+      "ok": true
+    },
+    {
+      "name": "390 step 3 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "390 step 3 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "390 step 3 image 1 scale",
+      "ok": true
+    },
+    {
+      "name": "768 step 0 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "768 step 0 stable cards",
+      "ok": true
+    },
+    {
+      "name": "768 step 0 images loaded",
+      "ok": true
+    },
+    {
+      "name": "768 step 0 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "768 step 1 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "768 step 1 stable cards",
+      "ok": true
+    },
+    {
+      "name": "768 step 1 images loaded",
+      "ok": true
+    },
+    {
+      "name": "768 step 1 correct step",
+      "ok": true
+    },
+    {
+      "name": "768 step 1 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "768 step 1 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "768 step 1 image 1 scale",
+      "ok": true
+    },
+    {
+      "name": "768 step 1 image 2 scale",
+      "ok": true
+    },
+    {
+      "name": "768 step 2 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "768 step 2 stable cards",
+      "ok": true
+    },
+    {
+      "name": "768 step 2 images loaded",
+      "ok": true
+    },
+    {
+      "name": "768 step 2 correct step",
+      "ok": true
+    },
+    {
+      "name": "768 step 2 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "768 step 2 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "768 step 3 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "768 step 3 stable cards",
+      "ok": true
+    },
+    {
+      "name": "768 step 3 images loaded",
+      "ok": true
+    },
+    {
+      "name": "768 step 3 correct step",
+      "ok": true
+    },
+    {
+      "name": "768 step 3 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "768 step 3 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "768 step 3 image 1 scale",
+      "ok": true
+    },
+    {
+      "name": "1366 step 0 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "1366 step 0 stable cards",
+      "ok": true
+    },
+    {
+      "name": "1366 step 0 images loaded",
+      "ok": true
+    },
+    {
+      "name": "1366 step 0 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "1366 step 1 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "1366 step 1 stable cards",
+      "ok": true
+    },
+    {
+      "name": "1366 step 1 images loaded",
+      "ok": true
+    },
+    {
+      "name": "1366 step 1 correct step",
+      "ok": true
+    },
+    {
+      "name": "1366 step 1 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "1366 step 1 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "1366 step 1 image 1 scale",
+      "ok": true
+    },
+    {
+      "name": "1366 step 1 image 2 scale",
+      "ok": true
+    },
+    {
+      "name": "1366 step 2 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "1366 step 2 stable cards",
+      "ok": true
+    },
+    {
+      "name": "1366 step 2 images loaded",
+      "ok": true
+    },
+    {
+      "name": "1366 step 2 correct step",
+      "ok": true
+    },
+    {
+      "name": "1366 step 2 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "1366 step 2 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "1366 step 3 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "1366 step 3 stable cards",
+      "ok": true
+    },
+    {
+      "name": "1366 step 3 images loaded",
+      "ok": true
+    },
+    {
+      "name": "1366 step 3 correct step",
+      "ok": true
+    },
+    {
+      "name": "1366 step 3 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "1366 step 3 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "1366 step 3 image 1 scale",
+      "ok": true
+    },
+    {
+      "name": "1920 step 0 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "1920 step 0 stable cards",
+      "ok": true
+    },
+    {
+      "name": "1920 step 0 images loaded",
+      "ok": true
+    },
+    {
+      "name": "1920 step 0 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "1920 step 1 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "1920 step 1 stable cards",
+      "ok": true
+    },
+    {
+      "name": "1920 step 1 images loaded",
+      "ok": true
+    },
+    {
+      "name": "1920 step 1 correct step",
+      "ok": true
+    },
+    {
+      "name": "1920 step 1 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "1920 step 1 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "1920 step 1 image 1 scale",
+      "ok": true
+    },
+    {
+      "name": "1920 step 1 image 2 scale",
+      "ok": true
+    },
+    {
+      "name": "1920 step 2 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "1920 step 2 stable cards",
+      "ok": true
+    },
+    {
+      "name": "1920 step 2 images loaded",
+      "ok": true
+    },
+    {
+      "name": "1920 step 2 correct step",
+      "ok": true
+    },
+    {
+      "name": "1920 step 2 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "1920 step 2 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "1920 step 3 no new horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "1920 step 3 stable cards",
+      "ok": true
+    },
+    {
+      "name": "1920 step 3 images loaded",
+      "ok": true
+    },
+    {
+      "name": "1920 step 3 correct step",
+      "ok": true
+    },
+    {
+      "name": "1920 step 3 modal no overflow",
+      "ok": true
+    },
+    {
+      "name": "1920 step 3 image 0 scale",
+      "ok": true
+    },
+    {
+      "name": "1920 step 3 image 1 scale",
+      "ok": true
+    },
+    {
+      "name": "Reduced motion disables zoom",
+      "ok": true
+    },
+    {
+      "name": "WhatsApp keeps price, advance and phone",
+      "ok": true
+    },
+    {
+      "name": "Individual summary updates and keeps zoom",
+      "ok": true
+    }
+  ],
+  "results": [
+    {
+      "width": 375,
+      "height": 812,
+      "step": 0,
+      "rest": {
+        "pageWidth": 375,
+        "viewport": 375,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 184,
+              "y": 425.59375,
+              "w": 176,
+              "h": 300,
+              "right": 360,
+              "bottom": 725.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      },
+      "peak": {
+        "pageWidth": 375,
+        "viewport": 375,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 179.60000610351562,
+              "y": 418.09375,
+              "w": 184.79998779296875,
+              "h": 315,
+              "right": 364.3999938964844,
+              "bottom": 733.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      }
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "step": 1,
+      "rest": {
+        "pageWidth": 382,
+        "viewport": 375,
+        "cards": [
+          {
+            "x": 30,
+            "y": 401.078125,
+            "w": 301,
+            "h": 105.390625,
+            "right": 331,
+            "bottom": 506.46875
+          },
+          {
+            "x": 30,
+            "y": 518.46875,
+            "w": 301,
+            "h": 129.390625,
+            "right": 331,
+            "bottom": 647.859375
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 189.5,
+              "y": 425.59375,
+              "w": 180,
+              "h": 300,
+              "right": 369.5,
+              "bottom": 725.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 78,
+              "y": 414.765625,
+              "w": 60,
+              "h": 78,
+              "right": 138,
+              "bottom": 492.765625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 78,
+              "y": 544.15625,
+              "w": 60,
+              "h": 78,
+              "right": 138,
+              "bottom": 622.15625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      },
+      "peak": {
+        "pageWidth": 382,
+        "viewport": 375,
+        "cards": [
+          {
+            "x": 30,
+            "y": 401.078125,
+            "w": 301,
+            "h": 105.390625,
+            "right": 331,
+            "bottom": 506.46875
+          },
+          {
+            "x": 30,
+            "y": 518.46875,
+            "w": 301,
+            "h": 129.390625,
+            "right": 331,
+            "bottom": 647.859375
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 185,
+              "y": 418.09375,
+              "w": 189,
+              "h": 315,
+              "right": 374,
+              "bottom": 733.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 75.5999984741211,
+              "y": 411.6456298828125,
+              "w": 64.79999542236328,
+              "h": 84.239990234375,
+              "right": 140.39999389648438,
+              "bottom": 495.8856201171875
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 75.5999984741211,
+              "y": 541.0362548828125,
+              "w": 64.79999542236328,
+              "h": 84.239990234375,
+              "right": 140.39999389648438,
+              "bottom": 625.2762451171875
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      }
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "step": 2,
+      "rest": {
+        "pageWidth": 382,
+        "viewport": 375,
+        "cards": [],
+        "imgs": [
+          {
+            "rect": {
+              "x": 189.5,
+              "y": 425.59375,
+              "w": 180,
+              "h": 300,
+              "right": 369.5,
+              "bottom": 725.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "2"
+      },
+      "peak": {
+        "pageWidth": 382,
+        "viewport": 375,
+        "cards": [],
+        "imgs": [
+          {
+            "rect": {
+              "x": 185,
+              "y": 418.09375,
+              "w": 189,
+              "h": 315,
+              "right": 374,
+              "bottom": 733.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "2"
+      }
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "step": 3,
+      "rest": {
+        "pageWidth": 382,
+        "viewport": 375,
+        "cards": [
+          {
+            "x": 30,
+            "y": 391.375,
+            "w": 301,
+            "h": 127.28125,
+            "right": 331,
+            "bottom": 518.65625
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 189.5,
+              "y": 425.59375,
+              "w": 180,
+              "h": 300,
+              "right": 369.5,
+              "bottom": 725.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 47,
+              "y": 417.015625,
+              "w": 56,
+              "h": 76,
+              "right": 103,
+              "bottom": 493.015625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.03",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "3"
+      },
+      "peak": {
+        "pageWidth": 382,
+        "viewport": 375,
+        "cards": [
+          {
+            "x": 30,
+            "y": 391.375,
+            "w": 301,
+            "h": 127.28125,
+            "right": 331,
+            "bottom": 518.65625
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 185,
+              "y": 418.09375,
+              "w": 189,
+              "h": 315,
+              "right": 374,
+              "bottom": 733.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 46.15999984741211,
+              "y": 415.8756103515625,
+              "w": 57.679996490478516,
+              "h": 78.280029296875,
+              "right": 103.83999633789062,
+              "bottom": 494.1556396484375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.03",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "3"
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "step": 0,
+      "rest": {
+        "pageWidth": 390,
+        "viewport": 390,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 189.5,
+              "y": 425.59375,
+              "w": 180,
+              "h": 300,
+              "right": 369.5,
+              "bottom": 725.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      },
+      "peak": {
+        "pageWidth": 390,
+        "viewport": 390,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 185,
+              "y": 418.09375,
+              "w": 189,
+              "h": 315,
+              "right": 374,
+              "bottom": 733.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "step": 1,
+      "rest": {
+        "pageWidth": 394,
+        "viewport": 390,
+        "cards": [
+          {
+            "x": 30,
+            "y": 401.078125,
+            "w": 316,
+            "h": 105.390625,
+            "right": 346,
+            "bottom": 506.46875
+          },
+          {
+            "x": 30,
+            "y": 518.46875,
+            "w": 316,
+            "h": 129.390625,
+            "right": 346,
+            "bottom": 647.859375
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 197,
+              "y": 425.59375,
+              "w": 180,
+              "h": 300,
+              "right": 377,
+              "bottom": 725.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 78,
+              "y": 414.765625,
+              "w": 60,
+              "h": 78,
+              "right": 138,
+              "bottom": 492.765625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 78,
+              "y": 544.15625,
+              "w": 60,
+              "h": 78,
+              "right": 138,
+              "bottom": 622.15625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      },
+      "peak": {
+        "pageWidth": 394,
+        "viewport": 390,
+        "cards": [
+          {
+            "x": 30,
+            "y": 401.078125,
+            "w": 316,
+            "h": 105.390625,
+            "right": 346,
+            "bottom": 506.46875
+          },
+          {
+            "x": 30,
+            "y": 518.46875,
+            "w": 316,
+            "h": 129.390625,
+            "right": 346,
+            "bottom": 647.859375
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 192.5,
+              "y": 418.09375,
+              "w": 189,
+              "h": 315,
+              "right": 381.5,
+              "bottom": 733.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 75.5999984741211,
+              "y": 411.6456298828125,
+              "w": 64.79999542236328,
+              "h": 84.239990234375,
+              "right": 140.39999389648438,
+              "bottom": 495.8856201171875
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 75.5999984741211,
+              "y": 541.0362548828125,
+              "w": 64.79999542236328,
+              "h": 84.239990234375,
+              "right": 140.39999389648438,
+              "bottom": 625.2762451171875
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "step": 2,
+      "rest": {
+        "pageWidth": 394,
+        "viewport": 390,
+        "cards": [],
+        "imgs": [
+          {
+            "rect": {
+              "x": 197,
+              "y": 425.59375,
+              "w": 180,
+              "h": 300,
+              "right": 377,
+              "bottom": 725.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "2"
+      },
+      "peak": {
+        "pageWidth": 394,
+        "viewport": 390,
+        "cards": [],
+        "imgs": [
+          {
+            "rect": {
+              "x": 192.5,
+              "y": 418.09375,
+              "w": 189,
+              "h": 315,
+              "right": 381.5,
+              "bottom": 733.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "2"
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "step": 3,
+      "rest": {
+        "pageWidth": 394,
+        "viewport": 390,
+        "cards": [
+          {
+            "x": 30,
+            "y": 391.375,
+            "w": 316,
+            "h": 127.28125,
+            "right": 346,
+            "bottom": 518.65625
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 197,
+              "y": 425.59375,
+              "w": 180,
+              "h": 300,
+              "right": 377,
+              "bottom": 725.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 47,
+              "y": 417.015625,
+              "w": 56,
+              "h": 76,
+              "right": 103,
+              "bottom": 493.015625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.03",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "3"
+      },
+      "peak": {
+        "pageWidth": 394,
+        "viewport": 390,
+        "cards": [
+          {
+            "x": 30,
+            "y": 391.375,
+            "w": 316,
+            "h": 127.28125,
+            "right": 346,
+            "bottom": 518.65625
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 192.5,
+              "y": 418.09375,
+              "w": 189,
+              "h": 315,
+              "right": 381.5,
+              "bottom": 733.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 46.15999984741211,
+              "y": 415.8756103515625,
+              "w": 57.679996490478516,
+              "h": 78.280029296875,
+              "right": 103.83999633789062,
+              "bottom": 494.1556396484375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.03",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "3"
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "step": 0,
+      "rest": {
+        "pageWidth": 768,
+        "viewport": 768,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 368.5,
+              "y": 398.59375,
+              "w": 180,
+              "h": 300,
+              "right": 548.5,
+              "bottom": 698.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      },
+      "peak": {
+        "pageWidth": 768,
+        "viewport": 768,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 364,
+              "y": 391.09375,
+              "w": 189,
+              "h": 315,
+              "right": 553,
+              "bottom": 706.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "step": 1,
+      "rest": {
+        "pageWidth": 772,
+        "viewport": 768,
+        "cards": [
+          {
+            "x": 51.046875,
+            "y": 533.015625,
+            "w": 327.453125,
+            "h": 129.390625,
+            "right": 378.5,
+            "bottom": 662.40625
+          },
+          {
+            "x": 390.5,
+            "y": 533.015625,
+            "w": 327.453125,
+            "h": 129.390625,
+            "right": 717.953125,
+            "bottom": 662.40625
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 376,
+              "y": 398.59375,
+              "w": 180,
+              "h": 300,
+              "right": 556,
+              "bottom": 698.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 99.046875,
+              "y": 549.703125,
+              "w": 72,
+              "h": 96,
+              "right": 171.046875,
+              "bottom": 645.703125
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 438.5,
+              "y": 549.703125,
+              "w": 72,
+              "h": 96,
+              "right": 510.5,
+              "bottom": 645.703125
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      },
+      "peak": {
+        "pageWidth": 772,
+        "viewport": 768,
+        "cards": [
+          {
+            "x": 51.046875,
+            "y": 533.015625,
+            "w": 327.453125,
+            "h": 129.390625,
+            "right": 378.5,
+            "bottom": 662.40625
+          },
+          {
+            "x": 390.5,
+            "y": 533.015625,
+            "w": 327.453125,
+            "h": 129.390625,
+            "right": 717.953125,
+            "bottom": 662.40625
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 371.5,
+              "y": 391.09375,
+              "w": 189,
+              "h": 315,
+              "right": 560.5,
+              "bottom": 706.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 96.1668701171875,
+              "y": 545.8630981445312,
+              "w": 77.760009765625,
+              "h": 103.6800537109375,
+              "right": 173.9268798828125,
+              "bottom": 649.5431518554688
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 435.6199951171875,
+              "y": 545.8630981445312,
+              "w": 77.760009765625,
+              "h": 103.6800537109375,
+              "right": 513.3800048828125,
+              "bottom": 649.5431518554688
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "step": 2,
+      "rest": {
+        "pageWidth": 772,
+        "viewport": 768,
+        "cards": [],
+        "imgs": [
+          {
+            "rect": {
+              "x": 376,
+              "y": 398.59375,
+              "w": 180,
+              "h": 300,
+              "right": 556,
+              "bottom": 698.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "2"
+      },
+      "peak": {
+        "pageWidth": 772,
+        "viewport": 768,
+        "cards": [],
+        "imgs": [
+          {
+            "rect": {
+              "x": 371.5,
+              "y": 391.09375,
+              "w": 189,
+              "h": 315,
+              "right": 560.5,
+              "bottom": 706.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "2"
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "step": 3,
+      "rest": {
+        "pageWidth": 772,
+        "viewport": 768,
+        "cards": [
+          {
+            "x": 51.046875,
+            "y": 445.1875,
+            "w": 651.90625,
+            "h": 126,
+            "right": 702.953125,
+            "bottom": 571.1875
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 376,
+              "y": 398.59375,
+              "w": 180,
+              "h": 300,
+              "right": 556,
+              "bottom": 698.59375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 68.046875,
+              "y": 462.1875,
+              "w": 68,
+              "h": 92,
+              "right": 136.046875,
+              "bottom": 554.1875
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.03",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "3"
+      },
+      "peak": {
+        "pageWidth": 772,
+        "viewport": 768,
+        "cards": [
+          {
+            "x": 51.046875,
+            "y": 445.1875,
+            "w": 651.90625,
+            "h": 126,
+            "right": 702.953125,
+            "bottom": 571.1875
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 371.5,
+              "y": 391.09375,
+              "w": 189,
+              "h": 315,
+              "right": 560.5,
+              "bottom": 706.09375
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 67.02687072753906,
+              "y": 460.8074951171875,
+              "w": 70.04000854492188,
+              "h": 94.760009765625,
+              "right": 137.06687927246094,
+              "bottom": 555.5675048828125
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.03",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "3"
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "step": 0,
+      "rest": {
+        "pageWidth": 1366,
+        "viewport": 1366,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1051,
+              "y": 385.140625,
+              "w": 240,
+              "h": 360,
+              "right": 1291,
+              "bottom": 745.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      },
+      "peak": {
+        "pageWidth": 1366,
+        "viewport": 1366,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1045,
+              "y": 376.140625,
+              "w": 252,
+              "h": 378,
+              "right": 1297,
+              "bottom": 754.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "step": 1,
+      "rest": {
+        "pageWidth": 1370,
+        "viewport": 1366,
+        "cards": [
+          {
+            "x": 472.828125,
+            "y": 342.015625,
+            "w": 355.578125,
+            "h": 129.390625,
+            "right": 828.40625,
+            "bottom": 471.40625
+          },
+          {
+            "x": 840.40625,
+            "y": 342.015625,
+            "w": 355.59375,
+            "h": 129.390625,
+            "right": 1196,
+            "bottom": 471.40625
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1066,
+              "y": 385.140625,
+              "w": 240,
+              "h": 360,
+              "right": 1306,
+              "bottom": 745.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 520.828125,
+              "y": 358.703125,
+              "w": 72,
+              "h": 96,
+              "right": 592.828125,
+              "bottom": 454.703125
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 888.40625,
+              "y": 358.703125,
+              "w": 72,
+              "h": 96,
+              "right": 960.40625,
+              "bottom": 454.703125
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      },
+      "peak": {
+        "pageWidth": 1370,
+        "viewport": 1366,
+        "cards": [
+          {
+            "x": 472.828125,
+            "y": 342.015625,
+            "w": 355.578125,
+            "h": 129.390625,
+            "right": 828.40625,
+            "bottom": 471.40625
+          },
+          {
+            "x": 840.40625,
+            "y": 342.015625,
+            "w": 355.59375,
+            "h": 129.390625,
+            "right": 1196,
+            "bottom": 471.40625
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1060,
+              "y": 376.140625,
+              "w": 252,
+              "h": 378,
+              "right": 1312,
+              "bottom": 754.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 517.9481201171875,
+              "y": 354.8631286621094,
+              "w": 77.760009765625,
+              "h": 103.67999267578125,
+              "right": 595.7081298828125,
+              "bottom": 458.5431213378906
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 885.5262451171875,
+              "y": 354.8631286621094,
+              "w": 77.760009765625,
+              "h": 103.67999267578125,
+              "right": 963.2862548828125,
+              "bottom": 458.5431213378906
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "step": 2,
+      "rest": {
+        "pageWidth": 1370,
+        "viewport": 1366,
+        "cards": [],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1066,
+              "y": 385.140625,
+              "w": 240,
+              "h": 360,
+              "right": 1306,
+              "bottom": 745.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "2"
+      },
+      "peak": {
+        "pageWidth": 1370,
+        "viewport": 1366,
+        "cards": [],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1060,
+              "y": 376.140625,
+              "w": 252,
+              "h": 378,
+              "right": 1312,
+              "bottom": 754.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "2"
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "step": 3,
+      "rest": {
+        "pageWidth": 1370,
+        "viewport": 1366,
+        "cards": [
+          {
+            "x": 472.828125,
+            "y": 260.953125,
+            "w": 708.171875,
+            "h": 126,
+            "right": 1181,
+            "bottom": 386.953125
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1066,
+              "y": 385.140625,
+              "w": 240,
+              "h": 360,
+              "right": 1306,
+              "bottom": 745.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 489.828125,
+              "y": 277.953125,
+              "w": 68,
+              "h": 92,
+              "right": 557.828125,
+              "bottom": 369.953125
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.03",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "3"
+      },
+      "peak": {
+        "pageWidth": 1370,
+        "viewport": 1366,
+        "cards": [
+          {
+            "x": 472.828125,
+            "y": 260.953125,
+            "w": 708.171875,
+            "h": 126,
+            "right": 1181,
+            "bottom": 386.953125
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1060,
+              "y": 376.140625,
+              "w": 252,
+              "h": 378,
+              "right": 1312,
+              "bottom": 754.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 488.8081359863281,
+              "y": 276.5731201171875,
+              "w": 70.04000854492188,
+              "h": 94.760009765625,
+              "right": 558.84814453125,
+              "bottom": 371.3331298828125
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.03",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "3"
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "step": 0,
+      "rest": {
+        "pageWidth": 1920,
+        "viewport": 1920,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1605,
+              "y": 385.140625,
+              "w": 240,
+              "h": 360,
+              "right": 1845,
+              "bottom": 745.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      },
+      "peak": {
+        "pageWidth": 1920,
+        "viewport": 1920,
+        "cards": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1599,
+              "y": 376.140625,
+              "w": 252,
+              "h": 378,
+              "right": 1851,
+              "bottom": 754.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "step": 1,
+      "rest": {
+        "pageWidth": 1924,
+        "viewport": 1920,
+        "cards": [
+          {
+            "x": 749.828125,
+            "y": 498.015625,
+            "w": 355.578125,
+            "h": 129.390625,
+            "right": 1105.40625,
+            "bottom": 627.40625
+          },
+          {
+            "x": 1117.40625,
+            "y": 498.015625,
+            "w": 355.59375,
+            "h": 129.390625,
+            "right": 1473,
+            "bottom": 627.40625
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1620,
+              "y": 385.140625,
+              "w": 240,
+              "h": 360,
+              "right": 1860,
+              "bottom": 745.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 797.828125,
+              "y": 514.703125,
+              "w": 72,
+              "h": 96,
+              "right": 869.828125,
+              "bottom": 610.703125
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 1165.40625,
+              "y": 514.703125,
+              "w": 72,
+              "h": 96,
+              "right": 1237.40625,
+              "bottom": 610.703125
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      },
+      "peak": {
+        "pageWidth": 1924,
+        "viewport": 1920,
+        "cards": [
+          {
+            "x": 749.828125,
+            "y": 498.015625,
+            "w": 355.578125,
+            "h": 129.390625,
+            "right": 1105.40625,
+            "bottom": 627.40625
+          },
+          {
+            "x": 1117.40625,
+            "y": 498.015625,
+            "w": 355.59375,
+            "h": 129.390625,
+            "right": 1473,
+            "bottom": 627.40625
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1614,
+              "y": 376.140625,
+              "w": 252,
+              "h": 378,
+              "right": 1866,
+              "bottom": 754.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 794.9481201171875,
+              "y": 510.8631286621094,
+              "w": 77.760009765625,
+              "h": 103.68002319335938,
+              "right": 872.7081298828125,
+              "bottom": 614.5431518554688
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 1162.5262451171875,
+              "y": 510.8631286621094,
+              "w": 77.760009765625,
+              "h": 103.68002319335938,
+              "right": 1240.2862548828125,
+              "bottom": 614.5431518554688
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.08",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "1"
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "step": 2,
+      "rest": {
+        "pageWidth": 1924,
+        "viewport": 1920,
+        "cards": [],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1620,
+              "y": 385.140625,
+              "w": 240,
+              "h": 360,
+              "right": 1860,
+              "bottom": 745.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "2"
+      },
+      "peak": {
+        "pageWidth": 1924,
+        "viewport": 1920,
+        "cards": [],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1614,
+              "y": 376.140625,
+              "w": 252,
+              "h": 378,
+              "right": 1866,
+              "bottom": 754.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "2"
+      }
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "step": 3,
+      "rest": {
+        "pageWidth": 1924,
+        "viewport": 1920,
+        "cards": [
+          {
+            "x": 749.828125,
+            "y": 367.1875,
+            "w": 708.171875,
+            "h": 126,
+            "right": 1458,
+            "bottom": 493.1875
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1620,
+              "y": 385.140625,
+              "w": 240,
+              "h": 360,
+              "right": 1860,
+              "bottom": 745.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 766.828125,
+              "y": 384.1875,
+              "w": 68,
+              "h": 92,
+              "right": 834.828125,
+              "bottom": 476.1875
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.03",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "3"
+      },
+      "peak": {
+        "pageWidth": 1924,
+        "viewport": 1920,
+        "cards": [
+          {
+            "x": 749.828125,
+            "y": 367.1875,
+            "w": 708.171875,
+            "h": 126,
+            "right": 1458,
+            "bottom": 493.1875
+          }
+        ],
+        "imgs": [
+          {
+            "rect": {
+              "x": 1614,
+              "y": 376.140625,
+              "w": 252,
+              "h": 378,
+              "right": 1866,
+              "bottom": 754.140625
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.05",
+            "loaded": true
+          },
+          {
+            "rect": {
+              "x": 765.80810546875,
+              "y": 382.8074951171875,
+              "w": 70.0400390625,
+              "h": 94.760009765625,
+              "right": 835.84814453125,
+              "bottom": 477.5675048828125
+            },
+            "animation": "erecmanFrascoZoom",
+            "scale": "1.03",
+            "loaded": true
+          }
+        ],
+        "modalOverflow": false,
+        "step": "3"
+      }
+    }
+  ]
+}

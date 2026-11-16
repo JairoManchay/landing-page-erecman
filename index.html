@@ -658,10 +658,12 @@
                             </div>
                             <div class="order-choice-group">
                                 <span class="order-label">Método de entrega *</span>
-                                <label><input type="radio" name="deliveryMethod" value="Entrega a domicilio" required>
+                                <label data-home-delivery><input type="radio" name="deliveryMethod" value="Entrega a domicilio" required>
                                     Entrega a domicilio</label>
-                                <label><input type="radio" name="deliveryMethod" value="Envío por agencia" required>
-                                    Envío por agencia</label>
+                                <label><input type="radio" name="deliveryMethod" value="Envío por agencia Shalom" required>
+                                    <span data-agency-delivery-label>Envío por agencia Shalom</span></label>
+                                <label data-courier-delivery hidden><input type="radio" name="deliveryMethod" value="Envío por Olva Courier" required disabled>
+                                    Envío por Olva Courier</label>
                             </div>
                             <div class="order-form-grid">
                                 <label class="order-field">
@@ -729,6 +731,11 @@
                         <fieldset class="order-fieldset">
                             <legend>Paso 3: Resumen del pedido</legend>
                             <div class="order-summary-product" id="order-summary-product"></div>
+                            <ul class="order-summary-trust" aria-label="Garantías del producto">
+                                <li><img src="./imgs/porciento_garantizado.png" alt="" width="80" height="80"><span>Satisfacción garantizada</span></li>
+                                <li><img src="./imgs/porciento_natural.png" alt="" width="80" height="80"><span>100% natural</span></li>
+                                <li><img src="./imgs/produccion_verificado.png" alt="" width="80" height="80"><span>Producción verificada</span></li>
+                            </ul>
                             <div class="order-summary" id="order-summary"></div>
                             <p class="order-summary__note">Al continuar, se abrirá WhatsApp con el resumen de tu pedido
                                 para que un asesor confirme la entrega y el pago.</p>

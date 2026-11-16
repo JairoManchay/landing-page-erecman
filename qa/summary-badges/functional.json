@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Campos obligatorios impiden avanzar",
+    "pass": true
+  },
+  {
+    "name": "Celular que no comienza con 9 rechazado",
+    "pass": true
+  },
+  {
+    "name": "Celular de ocho digitos rechazado",
+    "pass": true
+  },
+  {
+    "name": "Celular valido permite avanzar",
+    "pass": true
+  },
+  {
+    "name": "Provincia muestra aviso y exige aceptacion del adelanto",
+    "pass": true
+  },
+  {
+    "name": "Resumen e imagen correctos: pack",
+    "pass": true
+  },
+  {
+    "name": "WhatsApp preserves full order structure: pack",
+    "pass": true
+  },
+  {
+    "name": "WhatsApp conserva numero, precio, adelanto pendiente y comprador: pack",
+    "pass": true
+  },
+  {
+    "name": "Resumen e imagen correctos: individual",
+    "pass": true
+  },
+  {
+    "name": "WhatsApp preserves full order structure: individual",
+    "pass": true
+  },
+  {
+    "name": "WhatsApp conserva numero, precio, adelanto pendiente y comprador: individual",
+    "pass": true
+  },
+  {
+    "name": "Lima excludes provincial advance and retains delivery note",
+    "pass": true
+  },
+  {
+    "name": "Retroceso conserva datos",
+    "pass": true
+  },
+  {
+    "name": "Panel principal conserva imagen original",
+    "pass": true
+  },
+  {
+    "name": "Sin caracteres corruptos en formulario",
+    "pass": true
+  }
+]

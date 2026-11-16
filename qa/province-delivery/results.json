@@ -1,0 +1,218 @@
+[
+  {
+    "name": "375 Lima keeps home delivery",
+    "pass": true
+  },
+  {
+    "name": "375 Province hides and disables home, selects Shalom",
+    "pass": true
+  },
+  {
+    "name": "375 Invalid home selection cannot advance",
+    "pass": true
+  },
+  {
+    "name": "375 shalom summary correct",
+    "pass": true
+  },
+  {
+    "name": "375 shalom readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "375 shalom stacked delivery rows",
+    "pass": true
+  },
+  {
+    "name": "375 shalom WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "375 courier summary correct",
+    "pass": true
+  },
+  {
+    "name": "375 courier readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "375 courier stacked delivery rows",
+    "pass": true
+  },
+  {
+    "name": "375 courier WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "375 Lima restores options and resets advance",
+    "pass": true
+  },
+  {
+    "name": "390 Lima keeps home delivery",
+    "pass": true
+  },
+  {
+    "name": "390 Province hides and disables home, selects Shalom",
+    "pass": true
+  },
+  {
+    "name": "390 Invalid home selection cannot advance",
+    "pass": true
+  },
+  {
+    "name": "390 shalom summary correct",
+    "pass": true
+  },
+  {
+    "name": "390 shalom readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "390 shalom stacked delivery rows",
+    "pass": true
+  },
+  {
+    "name": "390 shalom WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "390 courier summary correct",
+    "pass": true
+  },
+  {
+    "name": "390 courier readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "390 courier stacked delivery rows",
+    "pass": true
+  },
+  {
+    "name": "390 courier WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "390 Lima restores options and resets advance",
+    "pass": true
+  },
+  {
+    "name": "768 Lima keeps home delivery",
+    "pass": true
+  },
+  {
+    "name": "768 Province hides and disables home, selects Shalom",
+    "pass": true
+  },
+  {
+    "name": "768 Invalid home selection cannot advance",
+    "pass": true
+  },
+  {
+    "name": "768 shalom summary correct",
+    "pass": true
+  },
+  {
+    "name": "768 shalom readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "768 shalom WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "768 courier summary correct",
+    "pass": true
+  },
+  {
+    "name": "768 courier readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "768 courier WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "768 Lima restores options and resets advance",
+    "pass": true
+  },
+  {
+    "name": "1366 Lima keeps home delivery",
+    "pass": true
+  },
+  {
+    "name": "1366 Province hides and disables home, selects Shalom",
+    "pass": true
+  },
+  {
+    "name": "1366 Invalid home selection cannot advance",
+    "pass": true
+  },
+  {
+    "name": "1366 shalom summary correct",
+    "pass": true
+  },
+  {
+    "name": "1366 shalom readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "1366 shalom WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "1366 courier summary correct",
+    "pass": true
+  },
+  {
+    "name": "1366 courier readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "1366 courier WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "1366 Lima restores options and resets advance",
+    "pass": true
+  },
+  {
+    "name": "1920 Lima keeps home delivery",
+    "pass": true
+  },
+  {
+    "name": "1920 Province hides and disables home, selects Shalom",
+    "pass": true
+  },
+  {
+    "name": "1920 Invalid home selection cannot advance",
+    "pass": true
+  },
+  {
+    "name": "1920 shalom summary correct",
+    "pass": true
+  },
+  {
+    "name": "1920 shalom readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "1920 shalom WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "1920 courier summary correct",
+    "pass": true
+  },
+  {
+    "name": "1920 courier readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "1920 courier WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "1920 Lima restores options and resets advance",
+    "pass": true
+  }
+]

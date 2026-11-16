@@ -221,7 +221,8 @@ if (orderModal && orderForm) {
       setMessage("Selecciona Lima o Provincia.");
       valid = false;
     }
-    if (!deliveryMethod) {
+    if (!deliveryMethod || deliveryMethod.disabled ||
+        (destination && destination.value === "Provincia" && deliveryMethod.value === "Entrega a domicilio")) {
       setMessage("Selecciona un método de entrega.");
       valid = false;
     }
@@ -285,6 +286,28 @@ if (orderModal && orderForm) {
     }
     const financialSummary = section("Resumen económico", true);
     const deliverySummary = section("Datos de entrega");
+    const carrier = deliveryMethod.includes("Shalom")
+      ? { image: "./imgs/salom.png", name: "Shalom" }
+      : deliveryMethod.includes("Olva")
+        ? { image: "./imgs/olva.png", name: "Olva Courier" }
+        : null;
+    if (carrier) {
+      const carrierBlock = document.createElement("div");
+      carrierBlock.className = "order-summary-carrier";
+      const carrierImage = document.createElement("img");
+      carrierImage.src = carrier.image;
+      carrierImage.alt = carrier.name;
+      carrierImage.width = 56;
+      carrierImage.height = 56;
+      const carrierText = document.createElement("div");
+      const carrierLabel = document.createElement("span");
+      carrierLabel.textContent = "Agencia seleccionada";
+      const carrierName = document.createElement("strong");
+      carrierName.textContent = carrier.name;
+      carrierText.append(carrierLabel, carrierName);
+      carrierBlock.append(carrierImage, carrierText);
+      deliverySummary.append(carrierBlock);
+    }
     addSummaryRow(financialSummary, "Precio del producto", money(payment.productPrice));
     if (destination === "Provincia") {
       addSummaryRow(financialSummary, "Adelanto requerido para provincia", money(payment.advanceRequired));
@@ -383,14 +406,34 @@ if (orderModal && orderForm) {
     input.addEventListener("change", refreshCampaignLabels);
   });
 
+  function syncDeliveryOptions() {
+    const isProvince = orderModal.querySelector('input[name="destination"]:checked')?.value === "Provincia";
+    const home = orderModal.querySelector('[data-home-delivery]');
+    const homeInput = home.querySelector('input');
+    const agencyLabel = orderModal.querySelector('[data-agency-delivery-label]');
+    const agencyInput = agencyLabel.closest('label').querySelector('input');
+    const courier = orderModal.querySelector('[data-courier-delivery]');
+    const courierInput = courier.querySelector('input');
+    home.hidden = isProvince;
+    homeInput.disabled = isProvince;
+    courier.hidden = !isProvince;
+    courierInput.disabled = !isProvince;
+    agencyInput.value = "Env\u00edo por agencia Shalom";
+    agencyLabel.textContent = agencyInput.value;
+    if ((isProvince && homeInput.checked) || (!isProvince && courierInput.checked)) {
+      homeInput.checked = false;
+      courierInput.checked = false;
+      agencyInput.checked = true;
+    }
+    provinceNotice.hidden = !isProvince;
+    provinceAdvance.disabled = !isProvince;
+    if (!isProvince) provinceAdvance.checked = false;
+  }
+
   destinationInputs.forEach(function (input) {
-    input.addEventListener("change", function () {
-      const isProvince = input.value === "Provincia" && input.checked;
-      provinceNotice.hidden = !isProvince;
-      provinceAdvance.disabled = !isProvince;
-      if (!isProvince) provinceAdvance.checked = false;
-    });
+    input.addEventListener("change", syncDeliveryOptions);
   });
+  syncDeliveryOptions();
 
   orderModal.querySelectorAll("[data-next-step]").forEach(function (button) {
     button.addEventListener("click", function () {

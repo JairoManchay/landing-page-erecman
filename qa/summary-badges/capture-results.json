@@ -1,0 +1,70 @@
+[
+  {
+    "name": "390 Lima keeps home delivery",
+    "pass": true
+  },
+  {
+    "name": "390 Province hides and disables home, selects Shalom",
+    "pass": true
+  },
+  {
+    "name": "390 Invalid home selection cannot advance",
+    "pass": true
+  },
+  {
+    "name": "390 shalom summary correct",
+    "pass": true
+  },
+  {
+    "name": "390 shalom correct carrier logo",
+    "pass": true
+  },
+  {
+    "name": "390 shalom three static product seals fit",
+    "pass": true
+  },
+  {
+    "name": "390 shalom readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "390 shalom stacked delivery rows",
+    "pass": true
+  },
+  {
+    "name": "390 shalom WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "390 courier summary correct",
+    "pass": true
+  },
+  {
+    "name": "390 courier correct carrier logo",
+    "pass": true
+  },
+  {
+    "name": "390 courier three static product seals fit",
+    "pass": true
+  },
+  {
+    "name": "390 courier readable summary without overflow",
+    "pass": true
+  },
+  {
+    "name": "390 courier stacked delivery rows",
+    "pass": true
+  },
+  {
+    "name": "390 courier WhatsApp correct",
+    "pass": true
+  },
+  {
+    "name": "390 Lima restores options and resets advance",
+    "pass": true
+  },
+  {
+    "name": "390 Lima home delivery has no agency logo",
+    "pass": true
+  }
+]

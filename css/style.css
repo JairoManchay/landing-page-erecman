@@ -2676,3 +2676,50 @@ body.order-modal-open > .whatsapp-float { visibility: hidden; }
 @media (prefers-reduced-motion: reduce) {
     .whatsapp-float svg { animation: none; }
 }
+
+/* Province delivery choices and a readable mobile delivery summary. */
+.order-choice-group label[hidden] { display: none; }
+@media (max-width: 599px) {
+    .order-summary-section:not(.order-summary-section--payment) p {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 4px;
+        margin-bottom: 16px;
+    }
+    .order-summary-section:not(.order-summary-section--payment) p > span {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .order-summary-section:not(.order-summary-section--payment) p > strong {
+        min-width: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Existing product seals and the selected shipping carrier in the order summary. */
+.order-summary-trust {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 0 0 24px;
+    padding: 16px 8px;
+    list-style: none;
+    border: 1px solid #ead3d8;
+    border-radius: 10px;
+    background: #fff;
+}
+.order-summary-trust li { display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 0; text-align: center; }
+.order-summary-trust img { display: block; width: 80px; max-width: 100%; height: 80px; object-fit: contain; }
+.order-summary-trust span { font-size: 14px; line-height: 1.4; color: #505050; overflow-wrap: anywhere; }
+.order-summary-carrier { display: flex; align-items: center; gap: 12px; padding: 0 0 16px; margin: 0 0 16px; border-bottom: 1px solid #ead3d8; }
+.order-summary-carrier img { display: block; width: 56px; height: 56px; object-fit: contain; flex: 0 0 56px; }
+.order-summary-carrier > div { min-width: 0; }
+.order-summary-carrier span { display: block; color: #666; font-size: 14px; }
+.order-summary-carrier strong { display: block; font-size: 16px; font-weight: 700; }
+@media (max-width: 599px) {
+    .order-summary-trust { gap: 8px; padding: 16px 8px; }
+    .order-summary-trust img { width: 64px; height: 64px; }
+}

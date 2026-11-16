@@ -1,0 +1,86 @@
+[
+  {
+    "name": "320 no visible summary and seals preserved",
+    "pass": true
+  },
+  {
+    "name": "320 empty form still validates",
+    "pass": true
+  },
+  {
+    "name": "320 advance acceptance still required",
+    "pass": true
+  },
+  {
+    "name": "320 province WhatsApp retains price advance balance and customer",
+    "pass": true
+  },
+  {
+    "name": "320 courier still correct",
+    "pass": true
+  },
+  {
+    "name": "320 Lima no advance and individual price",
+    "pass": true
+  },
+  {
+    "name": "320 badges fit and final action reachable",
+    "pass": true
+  },
+  {
+    "name": "390 no visible summary and seals preserved",
+    "pass": true
+  },
+  {
+    "name": "390 empty form still validates",
+    "pass": true
+  },
+  {
+    "name": "390 advance acceptance still required",
+    "pass": true
+  },
+  {
+    "name": "390 province WhatsApp retains price advance balance and customer",
+    "pass": true
+  },
+  {
+    "name": "390 courier still correct",
+    "pass": true
+  },
+  {
+    "name": "390 Lima no advance and individual price",
+    "pass": true
+  },
+  {
+    "name": "390 badges fit and final action reachable",
+    "pass": true
+  },
+  {
+    "name": "1366 no visible summary and seals preserved",
+    "pass": true
+  },
+  {
+    "name": "1366 empty form still validates",
+    "pass": true
+  },
+  {
+    "name": "1366 advance acceptance still required",
+    "pass": true
+  },
+  {
+    "name": "1366 province WhatsApp retains price advance balance and customer",
+    "pass": true
+  },
+  {
+    "name": "1366 courier still correct",
+    "pass": true
+  },
+  {
+    "name": "1366 Lima no advance and individual price",
+    "pass": true
+  },
+  {
+    "name": "1366 badges fit and final action reachable",
+    "pass": true
+  }
+]

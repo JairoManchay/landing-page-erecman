@@ -82,16 +82,19 @@ const orderModal = document.querySelector("#order-modal");
 const orderForm = document.querySelector("#order-form");
 
 if (orderModal && orderForm) {
-  const formMessage = document.querySelector("#order-form-message");
-  const steps = orderModal.querySelectorAll("[data-step]");
-  const indicators = orderModal.querySelectorAll("[data-step-indicator]");
+  const formMessage = document.getElementById("order-form-message");
   const triggerButtons = document.querySelectorAll("[data-order-trigger]");
-  const promotionInputs = orderModal.querySelectorAll('input[name="promotion"]');
-  const destinationInputs = orderModal.querySelectorAll('input[name="destination"]');
-  const provinceNotice = document.querySelector("#province-notice");
-  const provinceAdvance = document.querySelector("#province-advance");
-  let currentStep = 1;
+  const provinceNotice = document.getElementById("province-notice");
+  const scrollArea = orderModal.querySelector(".order-modal__content");
   let lastFocusedElement = null;
+  let activeMode = null;
+  const catalog = window.ERECMAN_UBIGEO;
+  const departmentField = document.getElementById("department");
+  const provinceField = document.getElementById("province");
+  const districtField = document.getElementById("district");
+  const addressField = document.getElementById("address");
+  const referenceField = document.getElementById("reference");
+  const addressHelp = document.getElementById("address-help");
 
   function money(value) {
     return `S/${Number.isInteger(value) ? value : value.toFixed(2)}`;
@@ -106,7 +109,7 @@ if (orderModal && orderForm) {
   }
 
   function validarCelularPeru(numero) {
-    return /^9\d{8}$/.test(normalizarCelularPeru(numero));
+    return /^(?:\+?51)?9\d{8}$/.test(String(numero).replace(/[\s-]/g, ""));
   }
 
   function packPrice() {
@@ -127,7 +130,7 @@ if (orderModal && orderForm) {
   }
 
   function paymentBreakdown(promotion, destination) {
-    const advanceRequired = destination === "Provincia" ? 40 : 0;
+    const advanceRequired = destination === "Shalom" ? 40 : 0;
     return {
       productPrice: promotion.price,
       advanceRequired,
@@ -149,363 +152,196 @@ if (orderModal && orderForm) {
       if (label) label.hidden = !PACK_PROMOTION.enabled;
     }
     if (offerPrice) offerPrice.textContent = money(packPrice());
+
   }
 
-  function setMessage(message) {
-    formMessage.textContent = message;
-  }
 
-  function setStep(stepNumber) {
-    currentStep = stepNumber;
-    steps.forEach(function (step) {
-      const isActive = Number(step.dataset.step) === stepNumber;
-      step.hidden = !isActive;
-      step.classList.toggle("is-active", isActive);
-    });
-    indicators.forEach(function (indicator) {
-      const number = Number(indicator.dataset.stepIndicator);
-      indicator.classList.toggle("is-active", number === stepNumber);
-      indicator.classList.toggle("is-complete", number < stepNumber);
-      if (number === stepNumber) indicator.setAttribute("aria-current", "step");
-      else indicator.removeAttribute("aria-current");
-    });
-    setMessage("");
+  function setMessage(message) { formMessage.textContent = message; }
+
+  function controlsFor(id) {
+    const field = document.getElementById(id);
+    return field ? [field] : [...orderForm.querySelectorAll(`input[name="${id}"]`)];
   }
 
   function showError(id, message) {
-    const error = orderModal.querySelector(`[data-error-for="${id}"]`);
-    const input = document.getElementById(id);
+    const error = orderForm.querySelector(`[data-error-for="${id}"]`);
     if (error) error.textContent = message;
-    if (input) input.setAttribute("aria-invalid", "true");
+    controlsFor(id).filter(field => !field.disabled).forEach(field => field.setAttribute("aria-invalid", "true"));
+  }
+
+  function clearError(id) {
+    const error = orderForm.querySelector(`[data-error-for="${id}"]`);
+    if (error) error.textContent = "";
+    controlsFor(id).forEach(field => field.removeAttribute("aria-invalid"));
   }
 
   function clearErrors() {
-    orderModal.querySelectorAll(".order-error").forEach(function (error) {
-      error.textContent = "";
-    });
-    orderModal.querySelectorAll("[aria-invalid]").forEach(function (input) {
-      input.removeAttribute("aria-invalid");
-    });
-  }
-
-  function validateStep(stepNumber) {
-    clearErrors();
+    orderForm.querySelectorAll(".order-error").forEach(error => { error.textContent = ""; });
+    orderForm.querySelectorAll("[aria-invalid]").forEach(field => field.removeAttribute("aria-invalid"));
     setMessage("");
-    if (stepNumber === 1) {
-      let valid = true;
-      const customerName = document.getElementById("customer-name");
-      const customerPhone = document.getElementById("customer-phone");
-      if (!customerName.value.trim()) {
-        showError("customer-name", "Este campo es obligatorio.");
-        valid = false;
-      }
-      if (!customerPhone.value.trim()) {
-        showError("customer-phone", "Este campo es obligatorio.");
-        valid = false;
-      } else if (!validarCelularPeru(customerPhone.value)) {
-        showError("customer-phone", "Ingresa un número de celular peruano válido de 9 dígitos.");
-        valid = false;
-      } else {
-        customerPhone.value = normalizarCelularPeru(customerPhone.value);
-      }
-      if (!valid) setMessage("Completa los datos obligatorios para continuar.");
-      return valid;
-    }
-
-    const destination = orderModal.querySelector('input[name="destination"]:checked');
-    const deliveryMethod = orderModal.querySelector('input[name="deliveryMethod"]:checked');
-    const requiredFields = ["department", "province", "district", "address"];
-    let valid = true;
-
-    if (!destination) {
-      setMessage("Selecciona Lima o Provincia.");
-      valid = false;
-    }
-    if (!deliveryMethod || deliveryMethod.disabled ||
-        (destination && destination.value === "Provincia" && deliveryMethod.value === "Entrega a domicilio")) {
-      setMessage("Selecciona un método de entrega.");
-      valid = false;
-    }
-    requiredFields.forEach(function (id) {
-      const input = document.getElementById(id);
-      if (!input.value.trim()) {
-        showError(id, "Este campo es obligatorio.");
-        valid = false;
-      }
-    });
-    if (destination && destination.value === "Provincia" && !provinceAdvance.checked) {
-      setMessage("Acepta la condición del adelanto de S/40 para continuar.");
-      valid = false;
-    }
-    if (!valid && !formMessage.textContent) {
-      setMessage("Completa los datos obligatorios para continuar.");
-    }
-    return valid;
   }
 
-  function addSummaryRow(container, label, value) {
-    const row = document.createElement("p");
-    const labelElement = document.createElement("span");
-    const valueElement = document.createElement("strong");
-    labelElement.textContent = label;
-    valueElement.textContent = value;
-    row.append(labelElement, valueElement);
-    container.appendChild(row);
+  function prettyLocation(name) { return name.toLocaleLowerCase("es-PE").replace(/(^|[\s-])\p{L}/gu, letter => letter.toLocaleUpperCase("es-PE")); }
+  function districtName(item) {
+    if (item.code === "150101") return "Lima (Cercado de Lima)";
+    if (item.code === "150118") return "Lurigancho (Chosica)";
+    return prettyLocation(item.name);
+  }
+  function shippingMode() {
+    const value = orderForm.querySelector('[name="destination"]:checked')?.value;
+    return ["Lima", "Shalom"].includes(value) ? value : "";
+  }
+  function locationOptions(select, locations, placeholder, display = item => prettyLocation(item.name)) {
+    const options = placeholder ? [new Option(placeholder, "")] : [];
+    [...locations].sort((a,b)=>a.name.localeCompare(b.name,"es")).forEach(item=>options.push(new Option(display(item),item.code)));
+    select.replaceChildren(...options);
+  }
+  function geographicSelection() {
+    const department = catalog?.departments.find(item => item.code === departmentField.value);
+    const province = department?.provinces.find(item => item.code === provinceField.value);
+    const district = province?.districts.find(item => item.code === districtField.value);
+    return { department, province, district };
+  }
+  function allowedProvinces(department) {
+    if (!department) return [];
+    return shippingMode() === "Lima" ? (department.code === "15" ? department.provinces.filter(p=>p.code === "1501") : []) : department.provinces;
+  }
+  function setFieldLabel(field,text) {
+    const label=field.closest('.order-field').querySelector('span'),icon=label.querySelector('svg');label.replaceChildren();if(icon)label.append(icon);label.append(document.createTextNode(text));
+  }
+  function clearPickupFields() { addressField.value="";referenceField.value="";clearError("address"); }
+  function updateDistrictOptions() {
+    clearPickupFields();clearError("district");
+    const lima = shippingMode() === "Lima";
+    locationOptions(districtField,lima ? catalog.limaDistricts : [],"Selecciona tu distrito",districtName);
+    districtField.disabled = !lima;
+  }
+  function updateProvinceOptions() {
+    if(shippingMode() !== "Shalom")return;
+    const department=catalog?.departments.find(d=>d.code===departmentField.value),provinces=allowedProvinces(department);
+    locationOptions(provinceField,provinces,department?"Selecciona una provincia":"Selecciona un departamento");
+    provinceField.disabled=!provinces.length;clearError("province");updateDistrictOptions();
+  }
+  function syncShippingMode() {
+    const mode=shippingMode();if(mode===activeMode){return}activeMode=mode;
+    for(const id of ["department","province","district","address","reference"])clearError(id);
+    clearPickupFields();provinceNotice.hidden=!mode||mode==="Lima";
+    for(const field of [departmentField,provinceField,districtField,addressField,referenceField]){field.value="";field.disabled=!mode||!catalog;field.closest('.order-field').hidden=false}
+    districtField.required=mode==="Lima";districtField.closest(".order-field").hidden=mode==="Shalom";
+    locationOptions(districtField,[],"Selecciona una provincia");locationOptions(provinceField,[],"Selecciona un departamento");locationOptions(departmentField,[],"Selecciona una modalidad de env\u00edo");
+    setFieldLabel(provinceField,"Provincia *");setFieldLabel(addressField,mode==="Lima"?"Direcci\u00f3n exacta de entrega *":mode==="Shalom"?"Direcci\u00f3n de entrega *":"Direcci\u00f3n de entrega o agencia *");
+    addressField.placeholder=mode==="Lima"?"Calle, n\u00famero y detalles de entrega":mode==="Shalom"?"Indica la agencia o courier a confirmar":"Selecciona primero la forma de env\u00edo";
+    addressHelp.textContent=mode==="Lima"?"Confirma con el asesor la cobertura de delivery para tu distrito.":mode?"Confirma la agencia Shalom o courier y su cobertura con nuestro asesor.":"Selecciona la forma de env\u00edo para habilitar los campos de ubicaci\u00f3n.";
+    if(mode&&!catalog){setMessage("No se pudo cargar el cat\u00e1logo de ubicaciones. Recarga la p\u00e1gina.");return}
+    if(mode==="Lima"){
+      const lima=catalog.departments.find(d=>d.code==="15");locationOptions(departmentField,[lima]);departmentField.disabled=true;
+      locationOptions(provinceField,allowedProvinces(lima));provinceField.disabled=true;updateDistrictOptions();
+    }else if(mode==="Shalom"){
+      locationOptions(departmentField,catalog.departments,"Selecciona un departamento");provinceField.disabled=true;districtField.disabled=true;
+    }
   }
 
-  function renderSummary() {
-    const summary = document.querySelector("#order-summary");
-    const productSummary = document.querySelector("#order-summary-product");
-    const promotion = selectedPromotion();
-    const destination = orderModal.querySelector('input[name="destination"]:checked').value;
-    const deliveryMethod = orderModal.querySelector('input[name="deliveryMethod"]:checked').value;
-    const payment = paymentBreakdown(promotion, destination);
-    productSummary.replaceChildren();
-    const image = document.createElement("img");
-    image.src = orderModal.querySelector(`[data-promotion-card="${promotion.key}"] img`).getAttribute("src");
-    image.alt = "Frasco de Erecman Plus";
-    const productDetails = document.createElement("div");
-    const productName = document.createElement("strong");
-    productName.textContent = promotion.name;
-    const productInfo = document.createElement("span");
-    productInfo.textContent = `${promotion.quantity} frasco${promotion.quantity > 1 ? "s" : ""}`;
-    productDetails.append(productName, productInfo);
-    const productPrice = document.createElement("strong");
-    productPrice.className = "order-summary-price";
-    productPrice.textContent = money(payment.productPrice);
-    productSummary.append(image, productDetails, productPrice);
-    summary.replaceChildren();
-    function section(title, paymentSection = false) {
-      const card = document.createElement("section");
-      card.className = "order-summary-section" + (paymentSection ? " order-summary-section--payment" : "");
-      const heading = document.createElement("h3");
-      heading.textContent = title;
-      card.append(heading);
-      summary.append(card);
-      return card;
+  function validateForm() {
+    clearErrors();let valid=true;const fail=(id,message)=>{showError(id,message);valid=false};
+    const name=document.getElementById('customer-name'),phone=document.getElementById('customer-phone');
+    if(!name.value.trim())fail('customer-name','Escribe tu nombre completo.');
+    if(!validarCelularPeru(phone.value))fail('customer-phone','Ingresa 9 d\u00edgitos y empieza con 9. Puedes incluir +51.');else phone.value=normalizarCelularPeru(phone.value);
+    const mode=shippingMode(),geo=geographicSelection();
+    if(!mode)fail('destination','Selecciona una modalidad de env\u00edo.');
+    else if(!catalog)fail('destination','No se pudo cargar el cat\u00e1logo de ubicaciones. Recarga la p\u00e1gina.');
+    else{
+      if(!geo.department||(mode==='Lima'&&geo.department.code!=='15'))fail('department','Selecciona un departamento v\u00e1lido para esta modalidad.');
+      if(!allowedProvinces(geo.department).some(p=>p.code===geo.province?.code))fail('province','Selecciona una provincia v\u00e1lida para esta modalidad y departamento.');
+      if(mode==='Lima'&&!geo.district)fail('district','Selecciona un distrito de la provincia elegida.');
+      if(!addressField.value.trim())fail('address',mode==='Lima'?'Escribe la direcci\u00f3n exacta de entrega.':'Indica Shalom o el courier y lugar de recojo.');
     }
-    const financialSummary = section("Resumen económico", true);
-    const deliverySummary = section("Datos de entrega");
-    const carrier = deliveryMethod.includes("Shalom")
-      ? { image: "./imgs/salom.png", name: "Shalom" }
-      : deliveryMethod.includes("Olva")
-        ? { image: "./imgs/olva.png", name: "Olva Courier" }
-        : null;
-    if (carrier) {
-      const carrierBlock = document.createElement("div");
-      carrierBlock.className = "order-summary-carrier";
-      const carrierImage = document.createElement("img");
-      carrierImage.src = carrier.image;
-      carrierImage.alt = carrier.name;
-      carrierImage.width = 56;
-      carrierImage.height = 56;
-      const carrierText = document.createElement("div");
-      const carrierLabel = document.createElement("span");
-      carrierLabel.textContent = "Agencia seleccionada";
-      const carrierName = document.createElement("strong");
-      carrierName.textContent = carrier.name;
-      carrierText.append(carrierLabel, carrierName);
-      carrierBlock.append(carrierImage, carrierText);
-      deliverySummary.append(carrierBlock);
-    }
-    addSummaryRow(financialSummary, "Precio del producto", money(payment.productPrice));
-    if (destination === "Provincia") {
-      addSummaryRow(financialSummary, "Adelanto requerido para provincia", money(payment.advanceRequired));
-      addSummaryRow(financialSummary, "Estado del adelanto", "Pendiente de coordinar");
-      addSummaryRow(financialSummary, "Saldo estimado tras adelanto", money(payment.estimatedBalance));
-      addSummaryRow(financialSummary, "Delivery", "No incluido; por confirmar");
-    } else {
-      addSummaryRow(financialSummary, "Delivery", payment.deliveryAdditional);
-    }
-    addSummaryRow(deliverySummary, "Destino", destination);
-    addSummaryRow(deliverySummary, "Entrega", deliveryMethod);
-    addSummaryRow(deliverySummary, "Nombre", document.querySelector("#customer-name").value.trim());
-    addSummaryRow(deliverySummary, "Celular / WhatsApp", document.querySelector("#customer-phone").value.trim());
-    addSummaryRow(deliverySummary, "Departamento", document.querySelector("#department").value);
-    addSummaryRow(deliverySummary, "Provincia", document.querySelector("#province").value.trim());
-    addSummaryRow(deliverySummary, "Distrito", document.querySelector("#district").value.trim());
-    addSummaryRow(deliverySummary, "Dirección/agencia", document.querySelector("#address").value.trim());
-    const reference = document.querySelector("#reference").value.trim();
-    if (reference) addSummaryRow(deliverySummary, "Referencia", reference);
+    if(!valid)setMessage('Revisa los campos indicados para continuar con tu pedido.');return valid;
+  }
+  function buildWhatsAppMessage() {
+    const promotion=selectedPromotion(),mode=shippingMode(),payment=paymentBreakdown(promotion,mode),geo=geographicSelection();
+    const shipping=mode==='Lima'?'Lima \u2014 Contraentrega':'Shalom';
+    return [
+      '\u{1F6D2} *NUEVO PEDIDO \u2014 ERECMAN PLUS*','',
+      `\u{1F4E6} *Producto:* ${promotion.name}`,`\u{1F522} *Cantidad:* ${promotion.quantity} frasco${promotion.quantity>1?'s':''}`,`\u{1F4B0} *Precio:* ${money(payment.productPrice)}`,'',
+      `\u{1F69A} *Env\u00edo:* ${shipping}`,
+      ...(mode==='Lima'?['\u{1F4B5} *Pago:* Contraentrega']:[`\u{1F4B5} *Adelanto requerido:* ${money(payment.advanceRequired)}`,`\u{1F4B3} *Saldo tras el adelanto:* ${money(payment.estimatedBalance)}`,'\u23F3 *Estado:* Adelanto pendiente']), '',
+      `\u{1F464} *Cliente:* ${document.getElementById('customer-name').value.trim()}`,`\u{1F4F1} *Celular:* ${document.getElementById('customer-phone').value.trim()}`,'',
+      `\u{1F5FA}\uFE0F *Departamento:* ${prettyLocation(geo.department.name)}`,`\u{1F4CD} *Provincia:* ${prettyLocation(geo.province.name)}`,...(mode==='Lima'?[`\u{1F3D8}\uFE0F *Distrito:* ${districtName(geo.district)}`]:[]),
+      `\u{1F3E0} *${mode==='Lima'?'Direcci\u00f3n':'Shalom o courier'}:* ${addressField.value.trim()}`,`\u{1F4DD} *Referencia:* ${referenceField.value.trim()||'No indicada'}`,'',
+      'Cobertura y costo adicional de env\u00edo: por confirmar.',
+      ...(mode==='Lima'?[]:['El adelanto no ha sido pagado; la diferencia se paga al recoger.']),
+      mode==='Lima'?'\u2705 Deseo confirmar mi pedido.':'\u2705 Deseo coordinar mi pedido y el adelanto.'
+    ].join('\n');
   }
 
   function openModal(trigger) {
-    lastFocusedElement = document.activeElement;
-    const promotion = trigger.dataset.orderTrigger === "pack" && PACK_PROMOTION.enabled
-      ? "pack"
-      : "individual";
-    const input = orderModal.querySelector(`input[name="promotion"][value="${promotion}"]`);
-    if (input) input.checked = true;
+    lastFocusedElement = trigger;
+    const promotion = trigger.dataset.orderTrigger === "pack" && PACK_PROMOTION.enabled ? "pack" : "individual";
+    orderForm.querySelector(`[name="promotion"][value="${promotion}"]`).checked = true;
+    clearErrors();
+    syncShippingMode();
     refreshCampaignLabels();
-    setStep(1);
     orderModal.classList.add("is-open");
     orderModal.setAttribute("aria-hidden", "false");
     document.body.classList.add("order-modal-open");
-    orderModal.querySelector(".order-modal__close").focus();
+    scrollArea.scrollTop = 0;
+    orderModal.querySelector(".order-modal__close").focus({ preventScroll: true });
   }
 
   function closeModal() {
     orderModal.classList.remove("is-open");
     orderModal.setAttribute("aria-hidden", "true");
     document.body.classList.remove("order-modal-open");
-    setStep(1);
-    if (lastFocusedElement) lastFocusedElement.focus();
+    if (lastFocusedElement?.isConnected) lastFocusedElement.focus({ preventScroll: true });
   }
 
-  function buildWhatsAppMessage() {
-    const promotion = selectedPromotion();
-    const destination = orderModal.querySelector('input[name="destination"]:checked').value;
-    const deliveryMethod = orderModal.querySelector('input[name="deliveryMethod"]:checked').value;
-    const payment = paymentBreakdown(promotion, destination);
-    const reference = document.querySelector("#reference").value.trim() || "No indicada";
-    return [
-      "Hola, quiero confirmar un pedido de Erecman Plus.",
-      "",
-      "PROMOCIÓN:",
-      `${promotion.name} — ${promotion.quantity} frasco${promotion.quantity > 1 ? "s" : ""}`,
-      "",
-      `PRECIO DEL PRODUCTO:\n${money(payment.productPrice)}`,
-      ...(destination === "Provincia"
-        ? [
-            `ADELANTO REQUERIDO:\n${money(payment.advanceRequired)}`,
-            "ADELANTO: Pendiente de coordinar; no pagado",
-            `SALDO ESTIMADO DEL PRODUCTO:\n${money(payment.estimatedBalance)}`,
-            "DELIVERY: No incluido; por confirmar",
-          ]
-        : ["DELIVERY: Por confirmar, si aplica"]),
-      `DESTINO:\n${destination}`,
-      "",
-      "DATOS DEL CLIENTE:",
-      `Nombre: ${document.querySelector("#customer-name").value.trim()}`,
-      `Celular: ${document.querySelector("#customer-phone").value.trim()}`,
-      "",
-      "ENTREGA:",
-      `Departamento: ${document.querySelector("#department").value}`,
-      `Provincia: ${document.querySelector("#province").value.trim()}`,
-      `Distrito: ${document.querySelector("#district").value.trim()}`,
-      `Dirección: ${document.querySelector("#address").value.trim()}`,
-      `Referencia: ${reference}`,
-      `Método: ${deliveryMethod}`,
-      "",
-      "Quisiera confirmar mi pedido y coordinar el pago y la entrega.",
-    ].join("\n");
-  }
-
-  triggerButtons.forEach(function (trigger) {
-    trigger.addEventListener("click", function (event) {
-      event.preventDefault();
-      openModal(trigger);
-    });
-  });
-
-  orderModal.querySelectorAll("[data-order-close]").forEach(function (closeButton) {
-    closeButton.addEventListener("click", closeModal);
-  });
-
-  promotionInputs.forEach(function (input) {
-    input.addEventListener("change", refreshCampaignLabels);
-  });
-
-  function syncDeliveryOptions() {
-    const isProvince = orderModal.querySelector('input[name="destination"]:checked')?.value === "Provincia";
-    const home = orderModal.querySelector('[data-home-delivery]');
-    const homeInput = home.querySelector('input');
-    const agencyLabel = orderModal.querySelector('[data-agency-delivery-label]');
-    const agencyInput = agencyLabel.closest('label').querySelector('input');
-    const courier = orderModal.querySelector('[data-courier-delivery]');
-    const courierInput = courier.querySelector('input');
-    home.hidden = isProvince;
-    homeInput.disabled = isProvince;
-    courier.hidden = !isProvince;
-    courierInput.disabled = !isProvince;
-    agencyInput.value = "Env\u00edo por agencia Shalom";
-    agencyLabel.textContent = agencyInput.value;
-    if ((isProvince && homeInput.checked) || (!isProvince && courierInput.checked)) {
-      homeInput.checked = false;
-      courierInput.checked = false;
-      agencyInput.checked = true;
-    }
-    provinceNotice.hidden = !isProvince;
-    provinceAdvance.disabled = !isProvince;
-    if (!isProvince) provinceAdvance.checked = false;
-  }
-
-  destinationInputs.forEach(function (input) {
-    input.addEventListener("change", syncDeliveryOptions);
-  });
-  syncDeliveryOptions();
-
-  orderModal.querySelectorAll("[data-next-step]").forEach(function (button) {
-    button.addEventListener("click", function () {
-      const nextStep = Number(button.dataset.nextStep);
-      if (!validateStep(currentStep)) return;
-      if (nextStep === 3) renderSummary();
-      setStep(nextStep);
-    });
-  });
-
-  orderModal.querySelectorAll("[data-prev-step]").forEach(function (button) {
-    button.addEventListener("click", function () {
-      setStep(Number(button.dataset.prevStep));
-    });
-  });
-
-  orderForm.addEventListener("submit", function (event) {
+  triggerButtons.forEach(trigger => trigger.addEventListener("click", event => {
     event.preventDefault();
-    if (!validateStep(2)) {
-      setStep(2);
+    openModal(trigger);
+  }));
+  orderModal.querySelectorAll("[data-order-close]").forEach(button => button.addEventListener("click", closeModal));
+
+  orderForm.addEventListener("input", event => {
+    if (event.target.type === "radio" || event.target.type === "checkbox") return;
+    clearError(event.target.id);
+    if (!orderForm.querySelector('[aria-invalid="true"]')) setMessage("");
+  });
+  orderForm.addEventListener("change", event => {
+    if (event.target.name === "destination") syncShippingMode();
+    if (event.target.id === "department") updateProvinceOptions();
+    if (event.target.id === "province") updateDistrictOptions();
+    if (event.target.id === "district") clearPickupFields();
+    if (event.target.name === "promotion") refreshCampaignLabels();
+
+    clearError(event.target.type === "radio" ? event.target.name : event.target.id);
+    if (!orderForm.querySelector('[aria-invalid="true"]')) setMessage("");
+  });
+
+  orderForm.addEventListener("submit", event => {
+    event.preventDefault();
+    if (!validateForm()) {
+      const firstInvalid = orderForm.querySelector('[aria-invalid="true"]:not(:disabled)');
+      if (firstInvalid) {
+        firstInvalid.scrollIntoView({ block: "center", behavior: prefersReducedMotion ? "auto" : "smooth" });
+        firstInvalid.focus({ preventScroll: true });
+      }
       return;
     }
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildWhatsAppMessage())}`;
     window.open(url, "_blank", "noopener");
   });
 
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && orderModal.classList.contains("is-open")) {
-      closeModal();
-    }
-    if (event.key !== "Tab" || !orderModal.classList.contains("is-open")) return;
-    const focusable = orderModal.querySelectorAll("button, input, select, [href]");
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-    if (event.shiftKey && document.activeElement === first) {
-      event.preventDefault();
-      last.focus();
-    } else if (!event.shiftKey && document.activeElement === last) {
-      event.preventDefault();
-      first.focus();
-    }
+  document.addEventListener("keydown", event => {
+    if (!orderModal.classList.contains("is-open")) return;
+    if (event.key === "Escape") { event.preventDefault(); closeModal(); return; }
+    if (event.key !== "Tab") return;
+    const focusable = [...orderModal.querySelectorAll('button, input, select, textarea, [href], [tabindex]:not([tabindex="-1"])')]
+      .filter(element => !element.disabled && element.getClientRects().length > 0);
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
   });
 
+  syncShippingMode();
   refreshCampaignLabels();
-}
-
-// Keep the floating contact control clear of purchase actions as the page scrolls.
-const floatingWhatsApp = document.querySelector('.whatsapp-float');
-if (floatingWhatsApp) {
-  const purchaseActions = [...document.querySelectorAll(
-    '[data-order-trigger], .container__info, .section__offer-info, .section__price-title, h1, h2, h3, h4, button, label'
-  )];
-  let floatingCheckPending = false;
-  function updateFloatingWhatsApp() {
-    floatingCheckPending = false;
-    const floating = floatingWhatsApp.getBoundingClientRect();
-    const obstructsPurchase = purchaseActions.some(action => {
-      const rect = action.getBoundingClientRect();
-      return rect.width > 0 && rect.height > 0 && rect.left < floating.right + 8 &&
-        rect.right > floating.left - 8 && rect.top < floating.bottom + 8 &&
-        rect.bottom > floating.top - 8;
-    });
-    floatingWhatsApp.classList.toggle('is-obstructing', obstructsPurchase);
-  }
-  function scheduleFloatingWhatsAppCheck() {
-    if (!floatingCheckPending) {
-      floatingCheckPending = true;
-      window.requestAnimationFrame(updateFloatingWhatsApp);
-    }
-  }
-  window.addEventListener('scroll', scheduleFloatingWhatsAppCheck, { passive: true });
-  window.addEventListener('resize', scheduleFloatingWhatsAppCheck);
-  window.addEventListener('load', scheduleFloatingWhatsAppCheck);
-  updateFloatingWhatsApp();
 }

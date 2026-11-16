@@ -1,0 +1,29 @@
+[
+  {
+    "width": 320,
+    "label": "REGISTRAR PEDIDO",
+    "running": true,
+    "left": "-4deg",
+    "right": "4deg",
+    "scale": "none",
+    "contained": true
+  },
+  {
+    "width": 390,
+    "label": "REGISTRAR PEDIDO",
+    "running": true,
+    "left": "-4deg",
+    "right": "4deg",
+    "scale": "none",
+    "contained": true
+  },
+  {
+    "width": 1366,
+    "label": "REGISTRAR PEDIDO",
+    "running": true,
+    "left": "-4deg",
+    "right": "4deg",
+    "scale": "none",
+    "contained": true
+  }
+]

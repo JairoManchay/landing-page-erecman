@@ -1,0 +1,86 @@
+[
+  {
+    "name": "320 fields visible before promotion or shipping selection",
+    "pass": true
+  },
+  {
+    "name": "320 acceptance checkbox and price panel removed",
+    "pass": true
+  },
+  {
+    "name": "320 Lima submits without checkbox",
+    "pass": true
+  },
+  {
+    "name": "320 Lima correct advance rule",
+    "pass": true
+  },
+  {
+    "name": "320 Shalom submits without checkbox",
+    "pass": true
+  },
+  {
+    "name": "320 Shalom correct advance rule",
+    "pass": true
+  },
+  {
+    "name": "320 Shalom courier label and message",
+    "pass": true
+  },
+  {
+    "name": "390 fields visible before promotion or shipping selection",
+    "pass": true
+  },
+  {
+    "name": "390 acceptance checkbox and price panel removed",
+    "pass": true
+  },
+  {
+    "name": "390 Lima submits without checkbox",
+    "pass": true
+  },
+  {
+    "name": "390 Lima correct advance rule",
+    "pass": true
+  },
+  {
+    "name": "390 Shalom submits without checkbox",
+    "pass": true
+  },
+  {
+    "name": "390 Shalom correct advance rule",
+    "pass": true
+  },
+  {
+    "name": "390 Shalom courier label and message",
+    "pass": true
+  },
+  {
+    "name": "1366 fields visible before promotion or shipping selection",
+    "pass": true
+  },
+  {
+    "name": "1366 acceptance checkbox and price panel removed",
+    "pass": true
+  },
+  {
+    "name": "1366 Lima submits without checkbox",
+    "pass": true
+  },
+  {
+    "name": "1366 Lima correct advance rule",
+    "pass": true
+  },
+  {
+    "name": "1366 Shalom submits without checkbox",
+    "pass": true
+  },
+  {
+    "name": "1366 Shalom correct advance rule",
+    "pass": true
+  },
+  {
+    "name": "1366 Shalom courier label and message",
+    "pass": true
+  }
+]

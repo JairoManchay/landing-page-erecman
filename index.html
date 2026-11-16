@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERECMAN</title>
     <link rel="stylesheet" href="css/style.css?v=2026-09-26">
+    <link rel="stylesheet" href="css/order-form.css?v=2026-11-15-shipping">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
@@ -546,56 +547,22 @@
             </section>
         </section>
     </main>
-    <div class="order-modal" id="order-modal" aria-hidden="true">
+    <div class="order-modal order-modal--single" id="order-modal" aria-hidden="true">
         <div class="order-modal__backdrop" data-order-close></div>
         <section class="order-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
             <button class="order-modal__close" type="button" aria-label="Cerrar formulario"
                 data-order-close>&times;</button>
-            <div class="order-modal__visual">
-                <div class="order-modal__visual-brand" aria-label="Erecman Plus">
-                    <span>ERECMAN</span>
-                    <strong>PLUS</strong>
-                    <i aria-hidden="true"></i>
-                </div>
-                <img class="order-modal__campaign-image" src="./imgs/Frasco SupleVita con cápsulas doradas.png"
-                    alt="Frasco de Erecman Plus">
-                <ul class="order-benefits">
-                    <li>
-                        <span class="order-benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M13.2 2 5.5 13h5.1L9.8 22l8.7-12h-5.2L13.2 2Z" /></svg></span>
-                        <span>Más energía</span>
-                    </li>
-                    <li>
-                        <span class="order-benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6 20v-7.5a2 2 0 0 1 4 0V15l1-7a2 2 0 0 1 4 .3l-.2 3.2.7-2.2a2 2 0 0 1 3.8 1.2l-1.6 6.3A4 4 0 0 1 13.8 20H6Z" /><path d="M6 13H4.8A2.8 2.8 0 0 0 2 15.8V20h4" /></svg></span>
-                        <span>Mayor potencia</span>
-                    </li>
-                    <li>
-                        <span class="order-benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 19V5M4 19h17" /><path d="m7 15 4-4 3 2 5-6" /><path d="M15 7h4v4" /></svg></span>
-                        <span>Mejor rendimiento</span>
-                    </li>
-                    <li>
-                        <span class="order-benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M20.8 8.8c0 5.2-8.8 10-8.8 10s-8.8-4.8-8.8-10A4.6 4.6 0 0 1 12 6.2a4.6 4.6 0 0 1 8.8 2.6Z" /></svg></span>
-                        <span>Recupera tu confianza</span>
-                    </li>
-                </ul>
-            </div>
             <div class="order-modal__content">
                 <div class="order-modal__header">
                     <h2 id="order-modal-title"><span class="order-cart-icon" aria-hidden="true"></span>REALIZA TU PEDIDO
                     </h2>
-                    <ol class="order-steps" aria-label="Progreso del pedido">
-                        <li class="is-active" data-step-indicator="1">1. Datos principales</li>
-                        <li data-step-indicator="2">2. Ubicación</li>
-                        <li data-step-indicator="3">3. Resumen</li>
-                    </ol>
                 </div>
                 <p class="order-form-message" id="order-form-message" role="alert"></p>
 
                 <form id="order-form" novalidate>
-                    <div class="order-step is-active" data-step="1">
-                        <fieldset class="order-fieldset">
-                            <legend>Paso 1: Datos principales</legend>
-                            <p class="order-section-label">Selecciona tu promoción</p>
-                            <div class="order-promotions">
+                    <fieldset class="order-section" id="order-promotions-section">
+                        <legend>Selecciona tu promoción</legend>
+                        <div class="order-promotions">
                                 <label class="order-promotion" data-promotion-card="individual">
                                     <input type="radio" name="promotion" value="individual" checked>
                                     <img src="./imgs/imagen_de_un_solo_frasco.png" alt=""
@@ -618,143 +585,90 @@
                                     </span>
                                 </label>
                             </div>
-                            <p class="order-step-hint">En el siguiente paso te pediremos los datos de ubicación. Para
-                                Provincia se solicita un adelanto de S/40.</p>
-                            <div class="order-form-grid">
+                    </fieldset>
+                    <fieldset class="order-section" id="order-shipping-section">
+                        <legend>Formas de envío</legend>
+                        <div class="order-shipping-options">
+                            <label class="order-shipping-card">
+                                <input id="destination-lima" type="radio" name="destination" value="Lima" aria-describedby="destination-error" required>
+                                <svg class="order-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 3l9 8M5 10v11h14V10M9 21v-7h6v7"/></svg>
+                                <span><strong>Lima — Pago contraentrega</strong><small>Delivery contraentrega. Cobertura y costo por confirmar con el asesor.</small></span>
+                            </label>
+                            <label class="order-shipping-card">
+                                <input id="destination-shalom" type="radio" name="destination" value="Shalom" aria-describedby="destination-error" required>
+                                <svg class="order-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h11v12H3zM14 9h4l3 4v4h-7M6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4M18 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/></svg>
+                                <span><strong>Envío por Shalom</strong><small>Envío por Shalom. Se requiere un adelanto de <b>S/40</b>, que se descontará del importe pendiente de pago.</small></span>
+                            </label>
+
+                        </div>
+                        <small class="order-error" id="destination-error" data-error-for="destination"></small>
+                        <div class="province-notice" id="province-notice" hidden>
+                            <strong>Adelanto requerido: S/40</strong>
+                            <p>El adelanto se descuenta del importe del producto y la diferencia se paga al recoger. Está pendiente de coordinar; no ha sido pagado. La agencia y cobertura de Shalom se confirmarán con el asesor.</p>
+                        </div>
+                    </fieldset>
+                    <fieldset class="order-section" id="order-customer-section">
+                        <legend>Completa tu información</legend>
+                        <div class="order-form-grid">
                                 <label class="order-field">
-                                    <span>Nombre completo *</span>
+                                    <span><svg class="order-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a7 7 0 0 0-14 0v2M13 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/></svg>Nombre completo *</span>
                                     <input id="customer-name" name="customerName" type="text" autocomplete="name"
-                                        required>
-                                    <small class="order-error" data-error-for="customer-name"></small>
+                                        required aria-describedby="customer-name-error">
+                                    <small class="order-error" id="customer-name-error" data-error-for="customer-name"></small>
                                 </label>
                                 <label class="order-field">
-                                    <span>Celular / WhatsApp *</span>
+                                    <span><svg class="order-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10v18H7zM10 17h4"/></svg>Celular / WhatsApp *</span>
                                     <input id="customer-phone" name="customerPhone" type="tel" inputmode="numeric"
-                                        autocomplete="tel" aria-describedby="customer-phone-error" required>
+                                        autocomplete="tel" placeholder="Ej. 987654321 o +51 987654321" aria-describedby="customer-phone-error" required>
                                     <small class="order-error" id="customer-phone-error"
                                         data-error-for="customer-phone"></small>
                                 </label>
                             </div>
-                        </fieldset>
-                        <button class="order-button order-button--primary" type="button" data-next-step="2">SIGUIENTE
-                            <span aria-hidden="true">→</span></button>
-                    </div>
-
-                    <div class="order-step" data-step="2" hidden>
-                        <fieldset class="order-fieldset">
-                            <legend>Paso 2: Ubicación y entrega</legend>
-                            <div class="order-choice-group">
-                                <span class="order-label">Destino *</span>
-                                <label><input type="radio" name="destination" value="Lima" required> Lima</label>
-                                <label><input type="radio" name="destination" value="Provincia" required>
-                                    Provincia</label>
-                            </div>
-                            <div class="province-notice" id="province-notice" hidden>
-                                <strong>Envíos a provincias:</strong> se solicita un adelanto de S/40, que se descontará
-                                del importe pendiente de pago. Los detalles de entrega se confirmarán por WhatsApp.
-                                <label><input id="province-advance" type="checkbox" disabled> Entiendo que debo
-                                    adelantar S/40 para gestionar mi envío a provincia.</label>
-                            </div>
-                            <div class="order-choice-group">
-                                <span class="order-label">Método de entrega *</span>
-                                <label data-home-delivery><input type="radio" name="deliveryMethod" value="Entrega a domicilio" required>
-                                    Entrega a domicilio</label>
-                                <label><input type="radio" name="deliveryMethod" value="Envío por agencia Shalom" required>
-                                    <span data-agency-delivery-label>Envío por agencia Shalom</span></label>
-                                <label data-courier-delivery hidden><input type="radio" name="deliveryMethod" value="Envío por Olva Courier" required disabled>
-                                    Envío por Olva Courier</label>
-                            </div>
-                            <div class="order-form-grid">
+                        <div class="order-form-grid">
                                 <label class="order-field">
-                                    <span>Departamento *</span>
-                                    <select id="department" name="department" required>
-                                        <option value="">Selecciona un departamento</option>
-                                        <option>Amazonas</option>
-                                        <option>Áncash</option>
-                                        <option>Apurímac</option>
-                                        <option>Arequipa</option>
-                                        <option>Ayacucho</option>
-                                        <option>Cajamarca</option>
-                                        <option>Callao</option>
-                                        <option>Cusco</option>
-                                        <option>Huancavelica</option>
-                                        <option>Huánuco</option>
-                                        <option>Ica</option>
-                                        <option>Junín</option>
-                                        <option>La Libertad</option>
-                                        <option>Lambayeque</option>
-                                        <option>Lima</option>
-                                        <option>Loreto</option>
-                                        <option>Madre de Dios</option>
-                                        <option>Moquegua</option>
-                                        <option>Pasco</option>
-                                        <option>Piura</option>
-                                        <option>Puno</option>
-                                        <option>San Martín</option>
-                                        <option>Tacna</option>
-                                        <option>Tumbes</option>
-                                        <option>Ucayali</option>
-                                    </select>
-                                    <small class="order-error" data-error-for="department"></small>
+                                    <span><svg class="order-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0ZM12 7v6M9 10h6"/></svg>Departamento *</span>
+                                    <select id="department" name="department" required disabled aria-describedby="department-error"><option value="">Selecciona una modalidad de envío</option></select>
+                                    <small class="order-error" id="department-error" data-error-for="department"></small>
                                 </label>
                                 <label class="order-field">
-                                    <span>Provincia *</span>
-                                    <input id="province" name="province" type="text" required>
-                                    <small class="order-error" data-error-for="province"></small>
+                                    <span><svg class="order-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0ZM12 7v6M9 10h6"/></svg>Provincia *</span>
+                                    <select id="province" name="province" required disabled aria-describedby="province-error"><option value="">Selecciona un departamento</option></select>
+                                    <small class="order-error" id="province-error" data-error-for="province"></small>
                                 </label>
+                                <div class="order-field" data-location-district>
+                                    <span id="district-field-label"><svg class="order-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0ZM12 7v6M9 10h6"/></svg>Distrito *</span>
+                                    <select aria-labelledby="district-field-label" id="district" name="district" required disabled aria-describedby="district-error"><option value="">Selecciona un distrito</option></select>
+                                    <small class="order-error" id="district-error" data-error-for="district"></small>
+                                </div>
                                 <label class="order-field">
-                                    <span>Distrito *</span>
-                                    <input id="district" name="district" type="text" required>
-                                    <small class="order-error" data-error-for="district"></small>
-                                </label>
-                                <label class="order-field">
-                                    <span>Dirección de entrega o agencia *</span>
-                                    <input id="address" name="address" type="text" required>
-                                    <small class="order-error" data-error-for="address"></small>
+                                    <span><svg class="order-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0ZM12 7v6M9 10h6"/></svg>Dirección de entrega o agencia *</span>
+                                    <input id="address" name="address" type="text" required disabled aria-describedby="address-error address-help">
+                                    <small class="order-error" id="address-error" data-error-for="address"></small>
+                                    <small class="order-location-help" id="address-help"></small>
                                 </label>
                                 <label class="order-field order-field--full">
-                                    <span>Referencia</span>
-                                    <input id="reference" name="reference" type="text">
+                                    <span><svg class="order-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0ZM12 7v6M9 10h6"/></svg>Referencia</span>
+                                    <input id="reference" name="reference" type="text" disabled>
                                 </label>
                             </div>
-                        </fieldset>
-                        <div class="order-actions">
-                            <button class="order-button order-button--secondary" type="button"
-                                data-prev-step="1">VOLVER</button>
-                            <button class="order-button order-button--primary" type="button"
-                                data-next-step="3">SIGUIENTE <span aria-hidden="true">→</span></button>
-                        </div>
-                    </div>
-
-                    <div class="order-step" data-step="3" hidden>
-                        <fieldset class="order-fieldset">
-                            <legend>Paso 3: Resumen del pedido</legend>
-                            <div class="order-summary-product" id="order-summary-product"></div>
-                            <ul class="order-summary-trust" aria-label="Garantías del producto">
+                    </fieldset>
+                    <ul class="order-summary-trust" aria-label="Garantías del producto">
                                 <li><img src="./imgs/porciento_garantizado.png" alt="" width="80" height="80"><span>Satisfacción garantizada</span></li>
                                 <li><img src="./imgs/porciento_natural.png" alt="" width="80" height="80"><span>100% natural</span></li>
                                 <li><img src="./imgs/produccion_verificado.png" alt="" width="80" height="80"><span>Producción verificada</span></li>
                             </ul>
-                            <div class="order-summary" id="order-summary"></div>
-                            <p class="order-summary__note">Al continuar, se abrirá WhatsApp con el resumen de tu pedido
-                                para que un asesor confirme la entrega y el pago.</p>
-                        </fieldset>
-                        <div class="order-actions">
-                            <button class="order-button order-button--secondary" type="button"
-                                data-prev-step="2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m16 3 5 5-12 12-6 1 1-6Z M14 5l5 5"/></svg>EDITAR</button>
-                            <button class="order-button order-button--whatsapp" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l1.5-5A8.5 8.5 0 1 1 20 11.5Z"/><path d="M8 7c0 5 3 8 8 8l1-3-3-1-1 1-2-2 1-1-1-3Z"/></svg>CONTACTAR POR
-                                WHATSAPP</button>
-                        </div>
+
+                    <div class="order-submit-area">
+                        <button class="order-button order-button--place-order" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 9 5v8l-9 5-9-5V8Z"/><path d="m3 8 9 5 9-5M12 13v8M7.5 5.5l9 5V14"/></svg><span>REGISTRAR PEDIDO</span></button>
+                        <p class="order-summary__note">Al continuar, se abrirá WhatsApp con el resumen de tu pedido para que un asesor confirme la entrega y el pago.</p>
                     </div>
                 </form>
             </div>
         </section>
     </div>
-        <a href="https://wa.me/51970396146?text=Hola%2C%20ya%20vi%20toda%20la%20informaci%C3%B3n%2C%20quiero%20comprar%20Erec%20Man"
-            class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
-            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="16" fill="#25D366"/><path fill="#fff" d="M26.7 5.3A14.9 14.9 0 0 0 3.3 23.2L1.2 31l8-2.1A14.9 14.9 0 0 0 26.7 5.3ZM16.2 28a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.8 1.3 1.3-4.7-.3-.5A12.4 12.4 0 1 1 16.2 28Zm6.8-9.3c-.4-.2-2.2-1.1-2.6-1.2-.3-.1-.6-.2-.8.2-.2.4-1 1.2-1.2 1.4-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7.4-.6c.1-.2 0-.5-.1-.7l-1.2-2.8c-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5s-1.3 1.3-1.3 3.1 1.4 3.6 1.6 3.8c.2.3 2.7 4.1 6.5 5.7.9.4 1.6.6 2.2.8.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5Z" transform="translate(3 3) scale(.8)"/></svg>
-        </a>
-        <script src="js/main.js?v=2026-09-26"></script>
+
+        <script src="js/ubigeos-inei.js?v=2026-11-15"></script>
+        <script src="js/main.js?v=2026-11-15-shipping"></script>
 
 
 </body>

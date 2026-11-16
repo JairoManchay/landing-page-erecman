@@ -2044,10 +2044,10 @@ section main
     color: #333;
 }
 
-.order-button--whatsapp {
-    background: #1baf5d;
+.order-button--place-order {
+    background: #cc1337;
     color: #fff;
-    box-shadow: 0 0.6rem 1.2rem rgba(27, 175, 93, 0.25);
+    box-shadow: 0 0.6rem 1.2rem rgba(174, 26, 57, 0.25);
 }
 
 .order-summary {
@@ -2568,7 +2568,7 @@ body.order-modal-open > .whatsapp-float { visibility: hidden; }
 .province-notice label { min-height: 44px; line-height: 1.5; }
 .order-choice-group input, .province-notice input, .order-promotion input { width: 20px; height: 20px; flex: 0 0 20px; }
 .order-promotion > span { min-width: 0; }
-.order-button--whatsapp { background: #12783f; }
+.order-button--place-order { background: #cc1337; }
 .order-field input, .order-field select { min-height: 46px; font-size: 16px; border-color: #999; }
 .order-section-label { font-size: 18px; }
 .order-promotion strong { font-size: 16px; line-height: 1.4; }
@@ -2722,4 +2722,14 @@ body.order-modal-open > .whatsapp-float { visibility: hidden; }
 @media (max-width: 599px) {
     .order-summary-trust { gap: 8px; padding: 16px 8px; }
     .order-summary-trust img { width: 64px; height: 64px; }
+}
+
+/* Gentle red blink on the final order action without hiding its label. */
+@keyframes place-order-blink {
+    0%, 100% { background-color: #cc1337; box-shadow: 0 4px 12px rgba(174, 26, 57, .22); }
+    50% { background-color: #a6112e; box-shadow: 0 4px 18px rgba(174, 26, 57, .48); }
+}
+.order-button--place-order { animation: place-order-blink 2.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+    .order-button--place-order { animation: none; }
 }

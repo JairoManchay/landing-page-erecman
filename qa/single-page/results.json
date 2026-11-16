@@ -1,0 +1,1670 @@
+{
+  "assertions": [
+    {
+      "name": "320px opens one continuous form",
+      "pass": true
+    },
+    {
+      "name": "320px section order and initial pack",
+      "pass": true
+    },
+    {
+      "name": "320px float hidden",
+      "pass": true
+    },
+    {
+      "name": "320px all Peru departments and Callao",
+      "pass": true
+    },
+    {
+      "name": "320px required fields block submission with inline errors",
+      "pass": true
+    },
+    {
+      "name": "320px Province defaults Shalom and blocks home",
+      "pass": true
+    },
+    {
+      "name": "320px rejects phone 98765432",
+      "pass": true
+    },
+    {
+      "name": "320px rejects phone 812345678",
+      "pass": true
+    },
+    {
+      "name": "320px rejects phone abc987654321",
+      "pass": true
+    },
+    {
+      "name": "320px rejects phone +519876543210",
+      "pass": true
+    },
+    {
+      "name": "320px advance acceptance required; valid phone normalizes",
+      "pass": true
+    },
+    {
+      "name": "320px pack live advance and balance exactly once",
+      "pass": true
+    },
+    {
+      "name": "320px complete Shalom WhatsApp",
+      "pass": true
+    },
+    {
+      "name": "320px live Olva summary",
+      "pass": true
+    },
+    {
+      "name": "320px Olva WhatsApp selected method",
+      "pass": true
+    },
+    {
+      "name": "320px live individual price, balance and image",
+      "pass": true
+    },
+    {
+      "name": "320px Lima removes advance, resets acceptance and chooses home",
+      "pass": true
+    },
+    {
+      "name": "320px Lima WhatsApp has no provincial advance",
+      "pass": true
+    },
+    {
+      "name": "320px Lima Shalom still available",
+      "pass": true
+    },
+    {
+      "name": "320px forced disabled home cannot submit for Province",
+      "pass": true
+    },
+    {
+      "name": "320px final valid order opens only prepared WhatsApp link",
+      "pass": true
+    },
+    {
+      "name": "320px modal contained and internally scrollable",
+      "pass": true
+    },
+    {
+      "name": "320px single column layout contained",
+      "pass": true
+    },
+    {
+      "name": "320px fields readable and tap targets >=44px",
+      "pass": true
+    },
+    {
+      "name": "320px promo images +20% loaded",
+      "pass": true
+    },
+    {
+      "name": "320px final button Spanish register CTA",
+      "pass": true
+    },
+    {
+      "name": "320px submit reachable and contained at scroll end",
+      "pass": true
+    },
+    {
+      "name": "320px reduced motion disables CTA and image animations",
+      "pass": true
+    },
+    {
+      "name": "320px keyboard focus wraps inside modal",
+      "pass": true
+    },
+    {
+      "name": "320px Escape closes and restores trigger focus",
+      "pass": true
+    },
+    {
+      "name": "320px reopening preserves customer and updates requested promotion",
+      "pass": true
+    },
+    {
+      "name": "375px opens one continuous form",
+      "pass": true
+    },
+    {
+      "name": "375px section order and initial pack",
+      "pass": true
+    },
+    {
+      "name": "375px float hidden",
+      "pass": true
+    },
+    {
+      "name": "375px all Peru departments and Callao",
+      "pass": true
+    },
+    {
+      "name": "375px required fields block submission with inline errors",
+      "pass": true
+    },
+    {
+      "name": "375px Province defaults Shalom and blocks home",
+      "pass": true
+    },
+    {
+      "name": "375px rejects phone 98765432",
+      "pass": true
+    },
+    {
+      "name": "375px rejects phone 812345678",
+      "pass": true
+    },
+    {
+      "name": "375px rejects phone abc987654321",
+      "pass": true
+    },
+    {
+      "name": "375px rejects phone +519876543210",
+      "pass": true
+    },
+    {
+      "name": "375px advance acceptance required; valid phone normalizes",
+      "pass": true
+    },
+    {
+      "name": "375px pack live advance and balance exactly once",
+      "pass": true
+    },
+    {
+      "name": "375px complete Shalom WhatsApp",
+      "pass": true
+    },
+    {
+      "name": "375px live Olva summary",
+      "pass": true
+    },
+    {
+      "name": "375px Olva WhatsApp selected method",
+      "pass": true
+    },
+    {
+      "name": "375px live individual price, balance and image",
+      "pass": true
+    },
+    {
+      "name": "375px Lima removes advance, resets acceptance and chooses home",
+      "pass": true
+    },
+    {
+      "name": "375px Lima WhatsApp has no provincial advance",
+      "pass": true
+    },
+    {
+      "name": "375px Lima Shalom still available",
+      "pass": true
+    },
+    {
+      "name": "375px forced disabled home cannot submit for Province",
+      "pass": true
+    },
+    {
+      "name": "375px final valid order opens only prepared WhatsApp link",
+      "pass": true
+    },
+    {
+      "name": "375px modal contained and internally scrollable",
+      "pass": true
+    },
+    {
+      "name": "375px single column layout contained",
+      "pass": true
+    },
+    {
+      "name": "375px fields readable and tap targets >=44px",
+      "pass": true
+    },
+    {
+      "name": "375px promo images +20% loaded",
+      "pass": true
+    },
+    {
+      "name": "375px final button Spanish register CTA",
+      "pass": true
+    },
+    {
+      "name": "375px submit reachable and contained at scroll end",
+      "pass": true
+    },
+    {
+      "name": "375px reduced motion disables CTA and image animations",
+      "pass": true
+    },
+    {
+      "name": "375px keyboard focus wraps inside modal",
+      "pass": true
+    },
+    {
+      "name": "375px Escape closes and restores trigger focus",
+      "pass": true
+    },
+    {
+      "name": "375px reopening preserves customer and updates requested promotion",
+      "pass": true
+    },
+    {
+      "name": "390px opens one continuous form",
+      "pass": true
+    },
+    {
+      "name": "390px section order and initial pack",
+      "pass": true
+    },
+    {
+      "name": "390px float hidden",
+      "pass": true
+    },
+    {
+      "name": "390px all Peru departments and Callao",
+      "pass": true
+    },
+    {
+      "name": "390px required fields block submission with inline errors",
+      "pass": true
+    },
+    {
+      "name": "390px Province defaults Shalom and blocks home",
+      "pass": true
+    },
+    {
+      "name": "390px rejects phone 98765432",
+      "pass": true
+    },
+    {
+      "name": "390px rejects phone 812345678",
+      "pass": true
+    },
+    {
+      "name": "390px rejects phone abc987654321",
+      "pass": true
+    },
+    {
+      "name": "390px rejects phone +519876543210",
+      "pass": true
+    },
+    {
+      "name": "390px advance acceptance required; valid phone normalizes",
+      "pass": true
+    },
+    {
+      "name": "390px pack live advance and balance exactly once",
+      "pass": true
+    },
+    {
+      "name": "390px complete Shalom WhatsApp",
+      "pass": true
+    },
+    {
+      "name": "390px live Olva summary",
+      "pass": true
+    },
+    {
+      "name": "390px Olva WhatsApp selected method",
+      "pass": true
+    },
+    {
+      "name": "390px live individual price, balance and image",
+      "pass": true
+    },
+    {
+      "name": "390px Lima removes advance, resets acceptance and chooses home",
+      "pass": true
+    },
+    {
+      "name": "390px Lima WhatsApp has no provincial advance",
+      "pass": true
+    },
+    {
+      "name": "390px Lima Shalom still available",
+      "pass": true
+    },
+    {
+      "name": "390px forced disabled home cannot submit for Province",
+      "pass": true
+    },
+    {
+      "name": "390px final valid order opens only prepared WhatsApp link",
+      "pass": true
+    },
+    {
+      "name": "390px modal contained and internally scrollable",
+      "pass": true
+    },
+    {
+      "name": "390px single column layout contained",
+      "pass": true
+    },
+    {
+      "name": "390px fields readable and tap targets >=44px",
+      "pass": true
+    },
+    {
+      "name": "390px promo images +20% loaded",
+      "pass": true
+    },
+    {
+      "name": "390px final button Spanish register CTA",
+      "pass": true
+    },
+    {
+      "name": "390px submit reachable and contained at scroll end",
+      "pass": true
+    },
+    {
+      "name": "390px reduced motion disables CTA and image animations",
+      "pass": true
+    },
+    {
+      "name": "390px keyboard focus wraps inside modal",
+      "pass": true
+    },
+    {
+      "name": "390px Escape closes and restores trigger focus",
+      "pass": true
+    },
+    {
+      "name": "390px reopening preserves customer and updates requested promotion",
+      "pass": true
+    },
+    {
+      "name": "430px opens one continuous form",
+      "pass": true
+    },
+    {
+      "name": "430px section order and initial pack",
+      "pass": true
+    },
+    {
+      "name": "430px float hidden",
+      "pass": true
+    },
+    {
+      "name": "430px all Peru departments and Callao",
+      "pass": true
+    },
+    {
+      "name": "430px required fields block submission with inline errors",
+      "pass": true
+    },
+    {
+      "name": "430px Province defaults Shalom and blocks home",
+      "pass": true
+    },
+    {
+      "name": "430px rejects phone 98765432",
+      "pass": true
+    },
+    {
+      "name": "430px rejects phone 812345678",
+      "pass": true
+    },
+    {
+      "name": "430px rejects phone abc987654321",
+      "pass": true
+    },
+    {
+      "name": "430px rejects phone +519876543210",
+      "pass": true
+    },
+    {
+      "name": "430px advance acceptance required; valid phone normalizes",
+      "pass": true
+    },
+    {
+      "name": "430px pack live advance and balance exactly once",
+      "pass": true
+    },
+    {
+      "name": "430px complete Shalom WhatsApp",
+      "pass": true
+    },
+    {
+      "name": "430px live Olva summary",
+      "pass": true
+    },
+    {
+      "name": "430px Olva WhatsApp selected method",
+      "pass": true
+    },
+    {
+      "name": "430px live individual price, balance and image",
+      "pass": true
+    },
+    {
+      "name": "430px Lima removes advance, resets acceptance and chooses home",
+      "pass": true
+    },
+    {
+      "name": "430px Lima WhatsApp has no provincial advance",
+      "pass": true
+    },
+    {
+      "name": "430px Lima Shalom still available",
+      "pass": true
+    },
+    {
+      "name": "430px forced disabled home cannot submit for Province",
+      "pass": true
+    },
+    {
+      "name": "430px final valid order opens only prepared WhatsApp link",
+      "pass": true
+    },
+    {
+      "name": "430px modal contained and internally scrollable",
+      "pass": true
+    },
+    {
+      "name": "430px single column layout contained",
+      "pass": true
+    },
+    {
+      "name": "430px fields readable and tap targets >=44px",
+      "pass": true
+    },
+    {
+      "name": "430px promo images +20% loaded",
+      "pass": true
+    },
+    {
+      "name": "430px final button Spanish register CTA",
+      "pass": true
+    },
+    {
+      "name": "430px submit reachable and contained at scroll end",
+      "pass": true
+    },
+    {
+      "name": "430px reduced motion disables CTA and image animations",
+      "pass": true
+    },
+    {
+      "name": "430px keyboard focus wraps inside modal",
+      "pass": true
+    },
+    {
+      "name": "430px Escape closes and restores trigger focus",
+      "pass": true
+    },
+    {
+      "name": "430px reopening preserves customer and updates requested promotion",
+      "pass": true
+    },
+    {
+      "name": "768px opens one continuous form",
+      "pass": true
+    },
+    {
+      "name": "768px section order and initial pack",
+      "pass": true
+    },
+    {
+      "name": "768px float hidden",
+      "pass": true
+    },
+    {
+      "name": "768px all Peru departments and Callao",
+      "pass": true
+    },
+    {
+      "name": "768px required fields block submission with inline errors",
+      "pass": true
+    },
+    {
+      "name": "768px Province defaults Shalom and blocks home",
+      "pass": true
+    },
+    {
+      "name": "768px rejects phone 98765432",
+      "pass": true
+    },
+    {
+      "name": "768px rejects phone 812345678",
+      "pass": true
+    },
+    {
+      "name": "768px rejects phone abc987654321",
+      "pass": true
+    },
+    {
+      "name": "768px rejects phone +519876543210",
+      "pass": true
+    },
+    {
+      "name": "768px advance acceptance required; valid phone normalizes",
+      "pass": true
+    },
+    {
+      "name": "768px pack live advance and balance exactly once",
+      "pass": true
+    },
+    {
+      "name": "768px complete Shalom WhatsApp",
+      "pass": true
+    },
+    {
+      "name": "768px live Olva summary",
+      "pass": true
+    },
+    {
+      "name": "768px Olva WhatsApp selected method",
+      "pass": true
+    },
+    {
+      "name": "768px live individual price, balance and image",
+      "pass": true
+    },
+    {
+      "name": "768px Lima removes advance, resets acceptance and chooses home",
+      "pass": true
+    },
+    {
+      "name": "768px Lima WhatsApp has no provincial advance",
+      "pass": true
+    },
+    {
+      "name": "768px Lima Shalom still available",
+      "pass": true
+    },
+    {
+      "name": "768px forced disabled home cannot submit for Province",
+      "pass": true
+    },
+    {
+      "name": "768px final valid order opens only prepared WhatsApp link",
+      "pass": true
+    },
+    {
+      "name": "768px modal contained and internally scrollable",
+      "pass": true
+    },
+    {
+      "name": "768px single column layout contained",
+      "pass": true
+    },
+    {
+      "name": "768px fields readable and tap targets >=44px",
+      "pass": true
+    },
+    {
+      "name": "768px promo images +20% loaded",
+      "pass": true
+    },
+    {
+      "name": "768px final button Spanish register CTA",
+      "pass": true
+    },
+    {
+      "name": "768px submit reachable and contained at scroll end",
+      "pass": true
+    },
+    {
+      "name": "768px reduced motion disables CTA and image animations",
+      "pass": true
+    },
+    {
+      "name": "768px keyboard focus wraps inside modal",
+      "pass": true
+    },
+    {
+      "name": "768px Escape closes and restores trigger focus",
+      "pass": true
+    },
+    {
+      "name": "768px reopening preserves customer and updates requested promotion",
+      "pass": true
+    },
+    {
+      "name": "1024px opens one continuous form",
+      "pass": true
+    },
+    {
+      "name": "1024px section order and initial pack",
+      "pass": true
+    },
+    {
+      "name": "1024px float hidden",
+      "pass": true
+    },
+    {
+      "name": "1024px all Peru departments and Callao",
+      "pass": true
+    },
+    {
+      "name": "1024px required fields block submission with inline errors",
+      "pass": true
+    },
+    {
+      "name": "1024px Province defaults Shalom and blocks home",
+      "pass": true
+    },
+    {
+      "name": "1024px rejects phone 98765432",
+      "pass": true
+    },
+    {
+      "name": "1024px rejects phone 812345678",
+      "pass": true
+    },
+    {
+      "name": "1024px rejects phone abc987654321",
+      "pass": true
+    },
+    {
+      "name": "1024px rejects phone +519876543210",
+      "pass": true
+    },
+    {
+      "name": "1024px advance acceptance required; valid phone normalizes",
+      "pass": true
+    },
+    {
+      "name": "1024px pack live advance and balance exactly once",
+      "pass": true
+    },
+    {
+      "name": "1024px complete Shalom WhatsApp",
+      "pass": true
+    },
+    {
+      "name": "1024px live Olva summary",
+      "pass": true
+    },
+    {
+      "name": "1024px Olva WhatsApp selected method",
+      "pass": true
+    },
+    {
+      "name": "1024px live individual price, balance and image",
+      "pass": true
+    },
+    {
+      "name": "1024px Lima removes advance, resets acceptance and chooses home",
+      "pass": true
+    },
+    {
+      "name": "1024px Lima WhatsApp has no provincial advance",
+      "pass": true
+    },
+    {
+      "name": "1024px Lima Shalom still available",
+      "pass": true
+    },
+    {
+      "name": "1024px forced disabled home cannot submit for Province",
+      "pass": true
+    },
+    {
+      "name": "1024px final valid order opens only prepared WhatsApp link",
+      "pass": true
+    },
+    {
+      "name": "1024px modal contained and internally scrollable",
+      "pass": true
+    },
+    {
+      "name": "1024px single column layout contained",
+      "pass": true
+    },
+    {
+      "name": "1024px fields readable and tap targets >=44px",
+      "pass": true
+    },
+    {
+      "name": "1024px promo images +20% loaded",
+      "pass": true
+    },
+    {
+      "name": "1024px final button Spanish register CTA",
+      "pass": true
+    },
+    {
+      "name": "1024px submit reachable and contained at scroll end",
+      "pass": true
+    },
+    {
+      "name": "1024px reduced motion disables CTA and image animations",
+      "pass": true
+    },
+    {
+      "name": "1024px keyboard focus wraps inside modal",
+      "pass": true
+    },
+    {
+      "name": "1024px Escape closes and restores trigger focus",
+      "pass": true
+    },
+    {
+      "name": "1024px reopening preserves customer and updates requested promotion",
+      "pass": true
+    },
+    {
+      "name": "1366px opens one continuous form",
+      "pass": true
+    },
+    {
+      "name": "1366px section order and initial pack",
+      "pass": true
+    },
+    {
+      "name": "1366px float hidden",
+      "pass": true
+    },
+    {
+      "name": "1366px all Peru departments and Callao",
+      "pass": true
+    },
+    {
+      "name": "1366px required fields block submission with inline errors",
+      "pass": true
+    },
+    {
+      "name": "1366px Province defaults Shalom and blocks home",
+      "pass": true
+    },
+    {
+      "name": "1366px rejects phone 98765432",
+      "pass": true
+    },
+    {
+      "name": "1366px rejects phone 812345678",
+      "pass": true
+    },
+    {
+      "name": "1366px rejects phone abc987654321",
+      "pass": true
+    },
+    {
+      "name": "1366px rejects phone +519876543210",
+      "pass": true
+    },
+    {
+      "name": "1366px advance acceptance required; valid phone normalizes",
+      "pass": true
+    },
+    {
+      "name": "1366px pack live advance and balance exactly once",
+      "pass": true
+    },
+    {
+      "name": "1366px complete Shalom WhatsApp",
+      "pass": true
+    },
+    {
+      "name": "1366px live Olva summary",
+      "pass": true
+    },
+    {
+      "name": "1366px Olva WhatsApp selected method",
+      "pass": true
+    },
+    {
+      "name": "1366px live individual price, balance and image",
+      "pass": true
+    },
+    {
+      "name": "1366px Lima removes advance, resets acceptance and chooses home",
+      "pass": true
+    },
+    {
+      "name": "1366px Lima WhatsApp has no provincial advance",
+      "pass": true
+    },
+    {
+      "name": "1366px Lima Shalom still available",
+      "pass": true
+    },
+    {
+      "name": "1366px forced disabled home cannot submit for Province",
+      "pass": true
+    },
+    {
+      "name": "1366px final valid order opens only prepared WhatsApp link",
+      "pass": true
+    },
+    {
+      "name": "1366px modal contained and internally scrollable",
+      "pass": true
+    },
+    {
+      "name": "1366px single column layout contained",
+      "pass": true
+    },
+    {
+      "name": "1366px fields readable and tap targets >=44px",
+      "pass": true
+    },
+    {
+      "name": "1366px promo images +20% loaded",
+      "pass": true
+    },
+    {
+      "name": "1366px final button Spanish register CTA",
+      "pass": true
+    },
+    {
+      "name": "1366px submit reachable and contained at scroll end",
+      "pass": true
+    },
+    {
+      "name": "1366px reduced motion disables CTA and image animations",
+      "pass": true
+    },
+    {
+      "name": "1366px keyboard focus wraps inside modal",
+      "pass": true
+    },
+    {
+      "name": "1366px Escape closes and restores trigger focus",
+      "pass": true
+    },
+    {
+      "name": "1366px reopening preserves customer and updates requested promotion",
+      "pass": true
+    },
+    {
+      "name": "1920px opens one continuous form",
+      "pass": true
+    },
+    {
+      "name": "1920px section order and initial pack",
+      "pass": true
+    },
+    {
+      "name": "1920px float hidden",
+      "pass": true
+    },
+    {
+      "name": "1920px all Peru departments and Callao",
+      "pass": true
+    },
+    {
+      "name": "1920px required fields block submission with inline errors",
+      "pass": true
+    },
+    {
+      "name": "1920px Province defaults Shalom and blocks home",
+      "pass": true
+    },
+    {
+      "name": "1920px rejects phone 98765432",
+      "pass": true
+    },
+    {
+      "name": "1920px rejects phone 812345678",
+      "pass": true
+    },
+    {
+      "name": "1920px rejects phone abc987654321",
+      "pass": true
+    },
+    {
+      "name": "1920px rejects phone +519876543210",
+      "pass": true
+    },
+    {
+      "name": "1920px advance acceptance required; valid phone normalizes",
+      "pass": true
+    },
+    {
+      "name": "1920px pack live advance and balance exactly once",
+      "pass": true
+    },
+    {
+      "name": "1920px complete Shalom WhatsApp",
+      "pass": true
+    },
+    {
+      "name": "1920px live Olva summary",
+      "pass": true
+    },
+    {
+      "name": "1920px Olva WhatsApp selected method",
+      "pass": true
+    },
+    {
+      "name": "1920px live individual price, balance and image",
+      "pass": true
+    },
+    {
+      "name": "1920px Lima removes advance, resets acceptance and chooses home",
+      "pass": true
+    },
+    {
+      "name": "1920px Lima WhatsApp has no provincial advance",
+      "pass": true
+    },
+    {
+      "name": "1920px Lima Shalom still available",
+      "pass": true
+    },
+    {
+      "name": "1920px forced disabled home cannot submit for Province",
+      "pass": true
+    },
+    {
+      "name": "1920px final valid order opens only prepared WhatsApp link",
+      "pass": true
+    },
+    {
+      "name": "1920px modal contained and internally scrollable",
+      "pass": true
+    },
+    {
+      "name": "1920px single column layout contained",
+      "pass": true
+    },
+    {
+      "name": "1920px fields readable and tap targets >=44px",
+      "pass": true
+    },
+    {
+      "name": "1920px promo images +20% loaded",
+      "pass": true
+    },
+    {
+      "name": "1920px final button Spanish register CTA",
+      "pass": true
+    },
+    {
+      "name": "1920px submit reachable and contained at scroll end",
+      "pass": true
+    },
+    {
+      "name": "1920px reduced motion disables CTA and image animations",
+      "pass": true
+    },
+    {
+      "name": "1920px keyboard focus wraps inside modal",
+      "pass": true
+    },
+    {
+      "name": "1920px Escape closes and restores trigger focus",
+      "pass": true
+    },
+    {
+      "name": "1920px reopening preserves customer and updates requested promotion",
+      "pass": true
+    }
+  ],
+  "geometry": [
+    {
+      "viewport": [
+        320,
+        740
+      ],
+      "dialog": {
+        "x": 8,
+        "y": 8,
+        "w": 304,
+        "h": 724,
+        "right": 312,
+        "bottom": 732
+      },
+      "content": {
+        "x": 9,
+        "y": 9,
+        "w": 302,
+        "h": 722,
+        "right": 311,
+        "bottom": 731
+      },
+      "scrollHeight": 3826,
+      "contentHeight": 722,
+      "overflow": false,
+      "visualContained": true,
+      "fields": [
+        {
+          "h": 52,
+          "font": 16,
+          "w": 246
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 246
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 246
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 246
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 246
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 246
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 246
+        }
+      ],
+      "promos": [
+        {
+          "w": 72,
+          "h": 94,
+          "loaded": true
+        },
+        {
+          "w": 72,
+          "h": 94,
+          "loaded": true
+        }
+      ],
+      "submit": "REGISTRAR PEDIDO",
+      "close": {
+        "x": 255,
+        "y": 21,
+        "w": 44,
+        "h": 44,
+        "right": 299,
+        "bottom": 65
+      }
+    },
+    {
+      "viewport": [
+        375,
+        812
+      ],
+      "dialog": {
+        "x": 8,
+        "y": 8,
+        "w": 359,
+        "h": 796,
+        "right": 367,
+        "bottom": 804
+      },
+      "content": {
+        "x": 9,
+        "y": 9,
+        "w": 357,
+        "h": 794,
+        "right": 366,
+        "bottom": 803
+      },
+      "scrollHeight": 3360,
+      "contentHeight": 794,
+      "overflow": false,
+      "visualContained": true,
+      "fields": [
+        {
+          "h": 52,
+          "font": 16,
+          "w": 301
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 301
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 301
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 301
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 301
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 301
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 301
+        }
+      ],
+      "promos": [
+        {
+          "w": 72,
+          "h": 94,
+          "loaded": true
+        },
+        {
+          "w": 72,
+          "h": 94,
+          "loaded": true
+        }
+      ],
+      "submit": "REGISTRAR PEDIDO",
+      "close": {
+        "x": 310,
+        "y": 21,
+        "w": 44,
+        "h": 44,
+        "right": 354,
+        "bottom": 65
+      }
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "dialog": {
+        "x": 8,
+        "y": 8,
+        "w": 374,
+        "h": 828,
+        "right": 382,
+        "bottom": 836
+      },
+      "content": {
+        "x": 9,
+        "y": 9,
+        "w": 372,
+        "h": 826,
+        "right": 381,
+        "bottom": 835
+      },
+      "scrollHeight": 3294,
+      "contentHeight": 826,
+      "overflow": false,
+      "visualContained": true,
+      "fields": [
+        {
+          "h": 52,
+          "font": 16,
+          "w": 316
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 316
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 316
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 316
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 316
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 316
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 316
+        }
+      ],
+      "promos": [
+        {
+          "w": 72,
+          "h": 94,
+          "loaded": true
+        },
+        {
+          "w": 72,
+          "h": 94,
+          "loaded": true
+        }
+      ],
+      "submit": "REGISTRAR PEDIDO",
+      "close": {
+        "x": 325,
+        "y": 21,
+        "w": 44,
+        "h": 44,
+        "right": 369,
+        "bottom": 65
+      }
+    },
+    {
+      "viewport": [
+        430,
+        932
+      ],
+      "dialog": {
+        "x": 8,
+        "y": 8,
+        "w": 414,
+        "h": 916,
+        "right": 422,
+        "bottom": 924
+      },
+      "content": {
+        "x": 9,
+        "y": 9,
+        "w": 412,
+        "h": 914,
+        "right": 421,
+        "bottom": 923
+      },
+      "scrollHeight": 3271,
+      "contentHeight": 914,
+      "overflow": false,
+      "visualContained": true,
+      "fields": [
+        {
+          "h": 52,
+          "font": 16,
+          "w": 356
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 356
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 356
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 356
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 356
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 356
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 356
+        }
+      ],
+      "promos": [
+        {
+          "w": 72,
+          "h": 94,
+          "loaded": true
+        },
+        {
+          "w": 72,
+          "h": 94,
+          "loaded": true
+        }
+      ],
+      "submit": "REGISTRAR PEDIDO",
+      "close": {
+        "x": 365,
+        "y": 21,
+        "w": 44,
+        "h": 44,
+        "right": 409,
+        "bottom": 65
+      }
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "dialog": {
+        "x": 12,
+        "y": 12,
+        "w": 744,
+        "h": 1000,
+        "right": 756,
+        "bottom": 1012
+      },
+      "content": {
+        "x": 13,
+        "y": 13,
+        "w": 742,
+        "h": 998,
+        "right": 755,
+        "bottom": 1011
+      },
+      "scrollHeight": 2559,
+      "contentHeight": 998,
+      "overflow": false,
+      "visualContained": true,
+      "fields": [
+        {
+          "h": 52,
+          "font": 16,
+          "w": 322
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 322
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 322
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 322
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 322
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 322
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 662
+        }
+      ],
+      "promos": [
+        {
+          "w": 86,
+          "h": 114,
+          "loaded": true
+        },
+        {
+          "w": 86,
+          "h": 114,
+          "loaded": true
+        }
+      ],
+      "submit": "REGISTRAR PEDIDO",
+      "close": {
+        "x": 699,
+        "y": 25,
+        "w": 44,
+        "h": 44,
+        "right": 743,
+        "bottom": 69
+      }
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "dialog": {
+        "x": 102,
+        "y": 30.71875,
+        "w": 820,
+        "h": 706.546875,
+        "right": 922,
+        "bottom": 737.265625
+      },
+      "content": {
+        "x": 103,
+        "y": 31.71875,
+        "w": 818,
+        "h": 704.546875,
+        "right": 921,
+        "bottom": 736.265625
+      },
+      "scrollHeight": 2527,
+      "contentHeight": 705,
+      "overflow": false,
+      "visualContained": true,
+      "fields": [
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 738
+        }
+      ],
+      "promos": [
+        {
+          "w": 86,
+          "h": 114,
+          "loaded": true
+        },
+        {
+          "w": 86,
+          "h": 114,
+          "loaded": true
+        }
+      ],
+      "submit": "REGISTRAR PEDIDO",
+      "close": {
+        "x": 865,
+        "y": 43.71875,
+        "w": 44,
+        "h": 44,
+        "right": 909,
+        "bottom": 87.71875
+      }
+    },
+    {
+      "viewport": [
+        1366,
+        900
+      ],
+      "dialog": {
+        "x": 273,
+        "y": 36,
+        "w": 820,
+        "h": 828,
+        "right": 1093,
+        "bottom": 864
+      },
+      "content": {
+        "x": 274,
+        "y": 37,
+        "w": 818,
+        "h": 826,
+        "right": 1092,
+        "bottom": 863
+      },
+      "scrollHeight": 2527,
+      "contentHeight": 826,
+      "overflow": false,
+      "visualContained": true,
+      "fields": [
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 738
+        }
+      ],
+      "promos": [
+        {
+          "w": 86,
+          "h": 114,
+          "loaded": true
+        },
+        {
+          "w": 86,
+          "h": 114,
+          "loaded": true
+        }
+      ],
+      "submit": "REGISTRAR PEDIDO",
+      "close": {
+        "x": 1036,
+        "y": 49,
+        "w": 44,
+        "h": 44,
+        "right": 1080,
+        "bottom": 93
+      }
+    },
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "dialog": {
+        "x": 550,
+        "y": 80,
+        "w": 820,
+        "h": 920,
+        "right": 1370,
+        "bottom": 1000
+      },
+      "content": {
+        "x": 551,
+        "y": 81,
+        "w": 818,
+        "h": 918,
+        "right": 1369,
+        "bottom": 999
+      },
+      "scrollHeight": 2527,
+      "contentHeight": 918,
+      "overflow": false,
+      "visualContained": true,
+      "fields": [
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 360
+        },
+        {
+          "h": 52,
+          "font": 16,
+          "w": 738
+        }
+      ],
+      "promos": [
+        {
+          "w": 86,
+          "h": 114,
+          "loaded": true
+        },
+        {
+          "w": 86,
+          "h": 114,
+          "loaded": true
+        }
+      ],
+      "submit": "REGISTRAR PEDIDO",
+      "close": {
+        "x": 1313,
+        "y": 93,
+        "w": 44,
+        "h": 44,
+        "right": 1357,
+        "bottom": 137
+      }
+    }
+  ]
+}

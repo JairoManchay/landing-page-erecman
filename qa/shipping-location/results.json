@@ -1,0 +1,822 @@
+{
+  "assertions": [
+    {
+      "name": "320 two shipping modes, no steps or old agency radios",
+      "pass": true
+    },
+    {
+      "name": "320 official complete geographic catalog",
+      "pass": true
+    },
+    {
+      "name": "320 empty form cannot send",
+      "pass": true
+    },
+    {
+      "name": "320 Lima and province locked to official Lima codes",
+      "pass": true
+    },
+    {
+      "name": "320 all 43 Lima districts only, including endpoints",
+      "pass": true
+    },
+    {
+      "name": "320 Lima no advance and visible district",
+      "pass": true
+    },
+    {
+      "name": "320 Lima district and exact address required",
+      "pass": true
+    },
+    {
+      "name": "320 Lima UTF-8 WhatsApp and complete product/customer",
+      "pass": true
+    },
+    {
+      "name": "320 switching to Shalom clears incompatible location and pickup data",
+      "pass": true
+    },
+    {
+      "name": "320 identity and promotion survive switch",
+      "pass": true
+    },
+    {
+      "name": "320 Shalom departments enabled; province depends on department",
+      "pass": true
+    },
+    {
+      "name": "320 provinces filtered to selected department",
+      "pass": true
+    },
+    {
+      "name": "320 department change clears province, agency and reference",
+      "pass": true
+    },
+    {
+      "name": "320 Shalom requires advance acceptance",
+      "pass": true
+    },
+    {
+      "name": "320 coverage not promised; financial balance correct",
+      "pass": true
+    },
+    {
+      "name": "320 Shalom UTF-8 WhatsApp complete and no stale Lima data",
+      "pass": true
+    },
+    {
+      "name": "320 promotion updates pending difference live",
+      "pass": true
+    },
+    {
+      "name": "320 individual WhatsApp balance",
+      "pass": true
+    },
+    {
+      "name": "320 incompatible province code rejected",
+      "pass": true
+    },
+    {
+      "name": "320 returning to Lima resets all Shalom data and advance",
+      "pass": true
+    },
+    {
+      "name": "320 Lima return has no Shalom payload",
+      "pass": true
+    },
+    {
+      "name": "320 responsive form and seals preserved",
+      "pass": true
+    },
+    {
+      "name": "320 submit remains reachable",
+      "pass": true
+    },
+    {
+      "name": "375 two shipping modes, no steps or old agency radios",
+      "pass": true
+    },
+    {
+      "name": "375 official complete geographic catalog",
+      "pass": true
+    },
+    {
+      "name": "375 empty form cannot send",
+      "pass": true
+    },
+    {
+      "name": "375 Lima and province locked to official Lima codes",
+      "pass": true
+    },
+    {
+      "name": "375 all 43 Lima districts only, including endpoints",
+      "pass": true
+    },
+    {
+      "name": "375 Lima no advance and visible district",
+      "pass": true
+    },
+    {
+      "name": "375 Lima district and exact address required",
+      "pass": true
+    },
+    {
+      "name": "375 Lima UTF-8 WhatsApp and complete product/customer",
+      "pass": true
+    },
+    {
+      "name": "375 switching to Shalom clears incompatible location and pickup data",
+      "pass": true
+    },
+    {
+      "name": "375 identity and promotion survive switch",
+      "pass": true
+    },
+    {
+      "name": "375 Shalom departments enabled; province depends on department",
+      "pass": true
+    },
+    {
+      "name": "375 provinces filtered to selected department",
+      "pass": true
+    },
+    {
+      "name": "375 department change clears province, agency and reference",
+      "pass": true
+    },
+    {
+      "name": "375 Shalom requires advance acceptance",
+      "pass": true
+    },
+    {
+      "name": "375 coverage not promised; financial balance correct",
+      "pass": true
+    },
+    {
+      "name": "375 Shalom UTF-8 WhatsApp complete and no stale Lima data",
+      "pass": true
+    },
+    {
+      "name": "375 promotion updates pending difference live",
+      "pass": true
+    },
+    {
+      "name": "375 individual WhatsApp balance",
+      "pass": true
+    },
+    {
+      "name": "375 incompatible province code rejected",
+      "pass": true
+    },
+    {
+      "name": "375 returning to Lima resets all Shalom data and advance",
+      "pass": true
+    },
+    {
+      "name": "375 Lima return has no Shalom payload",
+      "pass": true
+    },
+    {
+      "name": "375 responsive form and seals preserved",
+      "pass": true
+    },
+    {
+      "name": "375 submit remains reachable",
+      "pass": true
+    },
+    {
+      "name": "390 two shipping modes, no steps or old agency radios",
+      "pass": true
+    },
+    {
+      "name": "390 official complete geographic catalog",
+      "pass": true
+    },
+    {
+      "name": "390 empty form cannot send",
+      "pass": true
+    },
+    {
+      "name": "390 Lima and province locked to official Lima codes",
+      "pass": true
+    },
+    {
+      "name": "390 all 43 Lima districts only, including endpoints",
+      "pass": true
+    },
+    {
+      "name": "390 Lima no advance and visible district",
+      "pass": true
+    },
+    {
+      "name": "390 Lima district and exact address required",
+      "pass": true
+    },
+    {
+      "name": "390 Lima UTF-8 WhatsApp and complete product/customer",
+      "pass": true
+    },
+    {
+      "name": "390 switching to Shalom clears incompatible location and pickup data",
+      "pass": true
+    },
+    {
+      "name": "390 identity and promotion survive switch",
+      "pass": true
+    },
+    {
+      "name": "390 Shalom departments enabled; province depends on department",
+      "pass": true
+    },
+    {
+      "name": "390 provinces filtered to selected department",
+      "pass": true
+    },
+    {
+      "name": "390 department change clears province, agency and reference",
+      "pass": true
+    },
+    {
+      "name": "390 Shalom requires advance acceptance",
+      "pass": true
+    },
+    {
+      "name": "390 coverage not promised; financial balance correct",
+      "pass": true
+    },
+    {
+      "name": "390 Shalom UTF-8 WhatsApp complete and no stale Lima data",
+      "pass": true
+    },
+    {
+      "name": "390 promotion updates pending difference live",
+      "pass": true
+    },
+    {
+      "name": "390 individual WhatsApp balance",
+      "pass": true
+    },
+    {
+      "name": "390 incompatible province code rejected",
+      "pass": true
+    },
+    {
+      "name": "390 returning to Lima resets all Shalom data and advance",
+      "pass": true
+    },
+    {
+      "name": "390 Lima return has no Shalom payload",
+      "pass": true
+    },
+    {
+      "name": "390 responsive form and seals preserved",
+      "pass": true
+    },
+    {
+      "name": "390 submit remains reachable",
+      "pass": true
+    },
+    {
+      "name": "430 two shipping modes, no steps or old agency radios",
+      "pass": true
+    },
+    {
+      "name": "430 official complete geographic catalog",
+      "pass": true
+    },
+    {
+      "name": "430 empty form cannot send",
+      "pass": true
+    },
+    {
+      "name": "430 Lima and province locked to official Lima codes",
+      "pass": true
+    },
+    {
+      "name": "430 all 43 Lima districts only, including endpoints",
+      "pass": true
+    },
+    {
+      "name": "430 Lima no advance and visible district",
+      "pass": true
+    },
+    {
+      "name": "430 Lima district and exact address required",
+      "pass": true
+    },
+    {
+      "name": "430 Lima UTF-8 WhatsApp and complete product/customer",
+      "pass": true
+    },
+    {
+      "name": "430 switching to Shalom clears incompatible location and pickup data",
+      "pass": true
+    },
+    {
+      "name": "430 identity and promotion survive switch",
+      "pass": true
+    },
+    {
+      "name": "430 Shalom departments enabled; province depends on department",
+      "pass": true
+    },
+    {
+      "name": "430 provinces filtered to selected department",
+      "pass": true
+    },
+    {
+      "name": "430 department change clears province, agency and reference",
+      "pass": true
+    },
+    {
+      "name": "430 Shalom requires advance acceptance",
+      "pass": true
+    },
+    {
+      "name": "430 coverage not promised; financial balance correct",
+      "pass": true
+    },
+    {
+      "name": "430 Shalom UTF-8 WhatsApp complete and no stale Lima data",
+      "pass": true
+    },
+    {
+      "name": "430 promotion updates pending difference live",
+      "pass": true
+    },
+    {
+      "name": "430 individual WhatsApp balance",
+      "pass": true
+    },
+    {
+      "name": "430 incompatible province code rejected",
+      "pass": true
+    },
+    {
+      "name": "430 returning to Lima resets all Shalom data and advance",
+      "pass": true
+    },
+    {
+      "name": "430 Lima return has no Shalom payload",
+      "pass": true
+    },
+    {
+      "name": "430 responsive form and seals preserved",
+      "pass": true
+    },
+    {
+      "name": "430 submit remains reachable",
+      "pass": true
+    },
+    {
+      "name": "768 two shipping modes, no steps or old agency radios",
+      "pass": true
+    },
+    {
+      "name": "768 official complete geographic catalog",
+      "pass": true
+    },
+    {
+      "name": "768 empty form cannot send",
+      "pass": true
+    },
+    {
+      "name": "768 Lima and province locked to official Lima codes",
+      "pass": true
+    },
+    {
+      "name": "768 all 43 Lima districts only, including endpoints",
+      "pass": true
+    },
+    {
+      "name": "768 Lima no advance and visible district",
+      "pass": true
+    },
+    {
+      "name": "768 Lima district and exact address required",
+      "pass": true
+    },
+    {
+      "name": "768 Lima UTF-8 WhatsApp and complete product/customer",
+      "pass": true
+    },
+    {
+      "name": "768 switching to Shalom clears incompatible location and pickup data",
+      "pass": true
+    },
+    {
+      "name": "768 identity and promotion survive switch",
+      "pass": true
+    },
+    {
+      "name": "768 Shalom departments enabled; province depends on department",
+      "pass": true
+    },
+    {
+      "name": "768 provinces filtered to selected department",
+      "pass": true
+    },
+    {
+      "name": "768 department change clears province, agency and reference",
+      "pass": true
+    },
+    {
+      "name": "768 Shalom requires advance acceptance",
+      "pass": true
+    },
+    {
+      "name": "768 coverage not promised; financial balance correct",
+      "pass": true
+    },
+    {
+      "name": "768 Shalom UTF-8 WhatsApp complete and no stale Lima data",
+      "pass": true
+    },
+    {
+      "name": "768 promotion updates pending difference live",
+      "pass": true
+    },
+    {
+      "name": "768 individual WhatsApp balance",
+      "pass": true
+    },
+    {
+      "name": "768 incompatible province code rejected",
+      "pass": true
+    },
+    {
+      "name": "768 returning to Lima resets all Shalom data and advance",
+      "pass": true
+    },
+    {
+      "name": "768 Lima return has no Shalom payload",
+      "pass": true
+    },
+    {
+      "name": "768 responsive form and seals preserved",
+      "pass": true
+    },
+    {
+      "name": "768 submit remains reachable",
+      "pass": true
+    },
+    {
+      "name": "1024 two shipping modes, no steps or old agency radios",
+      "pass": true
+    },
+    {
+      "name": "1024 official complete geographic catalog",
+      "pass": true
+    },
+    {
+      "name": "1024 empty form cannot send",
+      "pass": true
+    },
+    {
+      "name": "1024 Lima and province locked to official Lima codes",
+      "pass": true
+    },
+    {
+      "name": "1024 all 43 Lima districts only, including endpoints",
+      "pass": true
+    },
+    {
+      "name": "1024 Lima no advance and visible district",
+      "pass": true
+    },
+    {
+      "name": "1024 Lima district and exact address required",
+      "pass": true
+    },
+    {
+      "name": "1024 Lima UTF-8 WhatsApp and complete product/customer",
+      "pass": true
+    },
+    {
+      "name": "1024 switching to Shalom clears incompatible location and pickup data",
+      "pass": true
+    },
+    {
+      "name": "1024 identity and promotion survive switch",
+      "pass": true
+    },
+    {
+      "name": "1024 Shalom departments enabled; province depends on department",
+      "pass": true
+    },
+    {
+      "name": "1024 provinces filtered to selected department",
+      "pass": true
+    },
+    {
+      "name": "1024 department change clears province, agency and reference",
+      "pass": true
+    },
+    {
+      "name": "1024 Shalom requires advance acceptance",
+      "pass": true
+    },
+    {
+      "name": "1024 coverage not promised; financial balance correct",
+      "pass": true
+    },
+    {
+      "name": "1024 Shalom UTF-8 WhatsApp complete and no stale Lima data",
+      "pass": true
+    },
+    {
+      "name": "1024 promotion updates pending difference live",
+      "pass": true
+    },
+    {
+      "name": "1024 individual WhatsApp balance",
+      "pass": true
+    },
+    {
+      "name": "1024 incompatible province code rejected",
+      "pass": true
+    },
+    {
+      "name": "1024 returning to Lima resets all Shalom data and advance",
+      "pass": true
+    },
+    {
+      "name": "1024 Lima return has no Shalom payload",
+      "pass": true
+    },
+    {
+      "name": "1024 responsive form and seals preserved",
+      "pass": true
+    },
+    {
+      "name": "1024 submit remains reachable",
+      "pass": true
+    },
+    {
+      "name": "1366 two shipping modes, no steps or old agency radios",
+      "pass": true
+    },
+    {
+      "name": "1366 official complete geographic catalog",
+      "pass": true
+    },
+    {
+      "name": "1366 empty form cannot send",
+      "pass": true
+    },
+    {
+      "name": "1366 Lima and province locked to official Lima codes",
+      "pass": true
+    },
+    {
+      "name": "1366 all 43 Lima districts only, including endpoints",
+      "pass": true
+    },
+    {
+      "name": "1366 Lima no advance and visible district",
+      "pass": true
+    },
+    {
+      "name": "1366 Lima district and exact address required",
+      "pass": true
+    },
+    {
+      "name": "1366 Lima UTF-8 WhatsApp and complete product/customer",
+      "pass": true
+    },
+    {
+      "name": "1366 switching to Shalom clears incompatible location and pickup data",
+      "pass": true
+    },
+    {
+      "name": "1366 identity and promotion survive switch",
+      "pass": true
+    },
+    {
+      "name": "1366 Shalom departments enabled; province depends on department",
+      "pass": true
+    },
+    {
+      "name": "1366 provinces filtered to selected department",
+      "pass": true
+    },
+    {
+      "name": "1366 department change clears province, agency and reference",
+      "pass": true
+    },
+    {
+      "name": "1366 Shalom requires advance acceptance",
+      "pass": true
+    },
+    {
+      "name": "1366 coverage not promised; financial balance correct",
+      "pass": true
+    },
+    {
+      "name": "1366 Shalom UTF-8 WhatsApp complete and no stale Lima data",
+      "pass": true
+    },
+    {
+      "name": "1366 promotion updates pending difference live",
+      "pass": true
+    },
+    {
+      "name": "1366 individual WhatsApp balance",
+      "pass": true
+    },
+    {
+      "name": "1366 incompatible province code rejected",
+      "pass": true
+    },
+    {
+      "name": "1366 returning to Lima resets all Shalom data and advance",
+      "pass": true
+    },
+    {
+      "name": "1366 Lima return has no Shalom payload",
+      "pass": true
+    },
+    {
+      "name": "1366 responsive form and seals preserved",
+      "pass": true
+    },
+    {
+      "name": "1366 submit remains reachable",
+      "pass": true
+    },
+    {
+      "name": "1920 two shipping modes, no steps or old agency radios",
+      "pass": true
+    },
+    {
+      "name": "1920 official complete geographic catalog",
+      "pass": true
+    },
+    {
+      "name": "1920 empty form cannot send",
+      "pass": true
+    },
+    {
+      "name": "1920 Lima and province locked to official Lima codes",
+      "pass": true
+    },
+    {
+      "name": "1920 all 43 Lima districts only, including endpoints",
+      "pass": true
+    },
+    {
+      "name": "1920 Lima no advance and visible district",
+      "pass": true
+    },
+    {
+      "name": "1920 Lima district and exact address required",
+      "pass": true
+    },
+    {
+      "name": "1920 Lima UTF-8 WhatsApp and complete product/customer",
+      "pass": true
+    },
+    {
+      "name": "1920 switching to Shalom clears incompatible location and pickup data",
+      "pass": true
+    },
+    {
+      "name": "1920 identity and promotion survive switch",
+      "pass": true
+    },
+    {
+      "name": "1920 Shalom departments enabled; province depends on department",
+      "pass": true
+    },
+    {
+      "name": "1920 provinces filtered to selected department",
+      "pass": true
+    },
+    {
+      "name": "1920 department change clears province, agency and reference",
+      "pass": true
+    },
+    {
+      "name": "1920 Shalom requires advance acceptance",
+      "pass": true
+    },
+    {
+      "name": "1920 coverage not promised; financial balance correct",
+      "pass": true
+    },
+    {
+      "name": "1920 Shalom UTF-8 WhatsApp complete and no stale Lima data",
+      "pass": true
+    },
+    {
+      "name": "1920 promotion updates pending difference live",
+      "pass": true
+    },
+    {
+      "name": "1920 individual WhatsApp balance",
+      "pass": true
+    },
+    {
+      "name": "1920 incompatible province code rejected",
+      "pass": true
+    },
+    {
+      "name": "1920 returning to Lima resets all Shalom data and advance",
+      "pass": true
+    },
+    {
+      "name": "1920 Lima return has no Shalom payload",
+      "pass": true
+    },
+    {
+      "name": "1920 responsive form and seals preserved",
+      "pass": true
+    },
+    {
+      "name": "1920 submit remains reachable",
+      "pass": true
+    }
+  ],
+  "messages": [
+    {
+      "width": 320,
+      "mode": "Lima",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Lima — Contraentrega\n🗺️ *Departamento:* Lima\n📍 *Provincia:* Lima\n🏘️ *Distrito:* Miraflores\n🏠 *Dirección:* LIMA-ONLY: Av. Larco 123, dpto. 4\n💵 *Pago:* Contraentrega\n🔎 *Referencia:* LIMA-REF: esquina & puerta azul\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 320,
+      "mode": "Shalom",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Shalom\n🗺️ *Departamento:* Ancash\n📍 *Ciudad / Provincia:* Huaraz\n🏠 *Agencia:* SHALOM-ONLY: Agencia Huaraz a confirmar\n💵 *Adelanto requerido:* S/40\n💳 *Diferencia por pagar:* S/229.90\n⏳ *Estado del adelanto:* Pendiente de coordinar\nLa diferencia del producto se paga al recoger. El adelanto aún no ha sido pagado.\n🔎 *Referencia:* SHALOM-REF: junto a la plaza\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 375,
+      "mode": "Lima",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Lima — Contraentrega\n🗺️ *Departamento:* Lima\n📍 *Provincia:* Lima\n🏘️ *Distrito:* Miraflores\n🏠 *Dirección:* LIMA-ONLY: Av. Larco 123, dpto. 4\n💵 *Pago:* Contraentrega\n🔎 *Referencia:* LIMA-REF: esquina & puerta azul\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 375,
+      "mode": "Shalom",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Shalom\n🗺️ *Departamento:* Ancash\n📍 *Ciudad / Provincia:* Huaraz\n🏠 *Agencia:* SHALOM-ONLY: Agencia Huaraz a confirmar\n💵 *Adelanto requerido:* S/40\n💳 *Diferencia por pagar:* S/229.90\n⏳ *Estado del adelanto:* Pendiente de coordinar\nLa diferencia del producto se paga al recoger. El adelanto aún no ha sido pagado.\n🔎 *Referencia:* SHALOM-REF: junto a la plaza\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 390,
+      "mode": "Lima",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Lima — Contraentrega\n🗺️ *Departamento:* Lima\n📍 *Provincia:* Lima\n🏘️ *Distrito:* Miraflores\n🏠 *Dirección:* LIMA-ONLY: Av. Larco 123, dpto. 4\n💵 *Pago:* Contraentrega\n🔎 *Referencia:* LIMA-REF: esquina & puerta azul\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 390,
+      "mode": "Shalom",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Shalom\n🗺️ *Departamento:* Ancash\n📍 *Ciudad / Provincia:* Huaraz\n🏠 *Agencia:* SHALOM-ONLY: Agencia Huaraz a confirmar\n💵 *Adelanto requerido:* S/40\n💳 *Diferencia por pagar:* S/229.90\n⏳ *Estado del adelanto:* Pendiente de coordinar\nLa diferencia del producto se paga al recoger. El adelanto aún no ha sido pagado.\n🔎 *Referencia:* SHALOM-REF: junto a la plaza\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 430,
+      "mode": "Lima",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Lima — Contraentrega\n🗺️ *Departamento:* Lima\n📍 *Provincia:* Lima\n🏘️ *Distrito:* Miraflores\n🏠 *Dirección:* LIMA-ONLY: Av. Larco 123, dpto. 4\n💵 *Pago:* Contraentrega\n🔎 *Referencia:* LIMA-REF: esquina & puerta azul\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 430,
+      "mode": "Shalom",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Shalom\n🗺️ *Departamento:* Ancash\n📍 *Ciudad / Provincia:* Huaraz\n🏠 *Agencia:* SHALOM-ONLY: Agencia Huaraz a confirmar\n💵 *Adelanto requerido:* S/40\n💳 *Diferencia por pagar:* S/229.90\n⏳ *Estado del adelanto:* Pendiente de coordinar\nLa diferencia del producto se paga al recoger. El adelanto aún no ha sido pagado.\n🔎 *Referencia:* SHALOM-REF: junto a la plaza\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 768,
+      "mode": "Lima",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Lima — Contraentrega\n🗺️ *Departamento:* Lima\n📍 *Provincia:* Lima\n🏘️ *Distrito:* Miraflores\n🏠 *Dirección:* LIMA-ONLY: Av. Larco 123, dpto. 4\n💵 *Pago:* Contraentrega\n🔎 *Referencia:* LIMA-REF: esquina & puerta azul\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 768,
+      "mode": "Shalom",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Shalom\n🗺️ *Departamento:* Ancash\n📍 *Ciudad / Provincia:* Huaraz\n🏠 *Agencia:* SHALOM-ONLY: Agencia Huaraz a confirmar\n💵 *Adelanto requerido:* S/40\n💳 *Diferencia por pagar:* S/229.90\n⏳ *Estado del adelanto:* Pendiente de coordinar\nLa diferencia del producto se paga al recoger. El adelanto aún no ha sido pagado.\n🔎 *Referencia:* SHALOM-REF: junto a la plaza\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 1024,
+      "mode": "Lima",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Lima — Contraentrega\n🗺️ *Departamento:* Lima\n📍 *Provincia:* Lima\n🏘️ *Distrito:* Miraflores\n🏠 *Dirección:* LIMA-ONLY: Av. Larco 123, dpto. 4\n💵 *Pago:* Contraentrega\n🔎 *Referencia:* LIMA-REF: esquina & puerta azul\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 1024,
+      "mode": "Shalom",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Shalom\n🗺️ *Departamento:* Ancash\n📍 *Ciudad / Provincia:* Huaraz\n🏠 *Agencia:* SHALOM-ONLY: Agencia Huaraz a confirmar\n💵 *Adelanto requerido:* S/40\n💳 *Diferencia por pagar:* S/229.90\n⏳ *Estado del adelanto:* Pendiente de coordinar\nLa diferencia del producto se paga al recoger. El adelanto aún no ha sido pagado.\n🔎 *Referencia:* SHALOM-REF: junto a la plaza\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 1366,
+      "mode": "Lima",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Lima — Contraentrega\n🗺️ *Departamento:* Lima\n📍 *Provincia:* Lima\n🏘️ *Distrito:* Miraflores\n🏠 *Dirección:* LIMA-ONLY: Av. Larco 123, dpto. 4\n💵 *Pago:* Contraentrega\n🔎 *Referencia:* LIMA-REF: esquina & puerta azul\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 1366,
+      "mode": "Shalom",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Shalom\n🗺️ *Departamento:* Ancash\n📍 *Ciudad / Provincia:* Huaraz\n🏠 *Agencia:* SHALOM-ONLY: Agencia Huaraz a confirmar\n💵 *Adelanto requerido:* S/40\n💳 *Diferencia por pagar:* S/229.90\n⏳ *Estado del adelanto:* Pendiente de coordinar\nLa diferencia del producto se paga al recoger. El adelanto aún no ha sido pagado.\n🔎 *Referencia:* SHALOM-REF: junto a la plaza\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 1920,
+      "mode": "Lima",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Lima — Contraentrega\n🗺️ *Departamento:* Lima\n📍 *Provincia:* Lima\n🏘️ *Distrito:* Miraflores\n🏠 *Dirección:* LIMA-ONLY: Av. Larco 123, dpto. 4\n💵 *Pago:* Contraentrega\n🔎 *Referencia:* LIMA-REF: esquina & puerta azul\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    },
+    {
+      "width": 1920,
+      "mode": "Shalom",
+      "message": "https://wa.me/51970396146?text=Hola, quiero confirmar un pedido de Erecman Plus.\n\n📦 *Producto:* Especial Pack\n🔢 *Cantidad:* 2 frascos\n💰 *Precio del producto:* S/269.90\n👤 *Nombre:* Cliente de prueba Ñ & María\n📱 *Celular:* 987654321\n\n🚚 *Envío:* Shalom\n🗺️ *Departamento:* Ancash\n📍 *Ciudad / Provincia:* Huaraz\n🏠 *Agencia:* SHALOM-ONLY: Agencia Huaraz a confirmar\n💵 *Adelanto requerido:* S/40\n💳 *Diferencia por pagar:* S/229.90\n⏳ *Estado del adelanto:* Pendiente de coordinar\nLa diferencia del producto se paga al recoger. El adelanto aún no ha sido pagado.\n🔎 *Referencia:* SHALOM-REF: junto a la plaza\nCosto de envío y cobertura por confirmar con el asesor.\n\nQuisiera confirmar mi pedido y coordinar el pago y la entrega."
+    }
+  ]
+}

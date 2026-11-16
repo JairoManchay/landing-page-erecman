@@ -329,6 +329,13 @@ if (orderModal && orderForm) {
     }
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildWhatsAppMessage())}`;
     window.open(url, "_blank", "noopener");
+    // Track only the validated WhatsApp contact attempt, without personal data.
+    try {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "generate_lead" });
+    } catch (error) {
+      // Tracking failures must not interrupt the order flow.
+    }
   });
 
   document.addEventListener("keydown", event => {

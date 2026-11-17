@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+body {
+    display: grid;
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 20px;
+    place-items: center;
+    background: radial-gradient(ellipse at top, #a61231, #370b17 70%);
+    color: #242023;
+    font: 1rem/1.6 system-ui, sans-serif;
+}
+
+.thanks-card {
+    width: min(100%, 34rem);
+    padding: clamp(24px, 7vw, 52px);
+    border-top: 5px solid #d6ac58;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 16px 48px #14060b66;
+    text-align: center;
+}
+
+.thanks-brand {
+    margin: 0 0 18px;
+    color: #a61231;
+    font-weight: 800;
+    letter-spacing: .12em;
+}
+
+.thanks-brand span { color: #795812; }
+.thanks-card h1 { margin: 0; font-size: clamp(1.65rem, 6vw, 2.5rem); line-height: 1.15; }
+.thanks-card section p { margin: 16px 0 24px; }
+.thanks-action, .thanks-home {
+    display: inline-flex;
+    min-height: 48px;
+    padding: 10px 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+.thanks-action { background: #08743b; }
+.thanks-action:hover { background: #055c2e; }
+.thanks-home { background: #a61231; }
+.thanks-card a:focus-visible { outline: 3px solid #a61231; outline-offset: 4px; }
+
+.thanks-spinner {
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 0 auto 20px;
+    border: 3px solid #eddee1;
+    border-top-color: #a61231;
+    border-radius: 50%;
+    animation: thanks-spin .8s linear infinite;
+}
+@keyframes thanks-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+    .thanks-spinner { animation: none; }
+}

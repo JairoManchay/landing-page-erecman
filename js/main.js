@@ -31,8 +31,36 @@ const PACK_PROMOTION = {
   productQuantity: 2,
 };
 
-const WHATSAPP_NUMBER = "51970396146";
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const consultationLink = document.getElementById("whatsapp-consulta");
+const orderTriggers = document.querySelectorAll("[data-order-trigger]");
+
+if (consultationLink) {
+  consultationLink.href = WhatsAppOrder.link("Hola, quisiera recibir más información sobre Erecman Plus.");
+  consultationLink.hidden = false;
+  consultationLink.addEventListener("click", () => {
+    window.dataLayer?.push({ event: "whatsapp_consulta_click" });
+  });
+
+  let frame = 0;
+  function checkConsultationOverlap() {
+    if (frame) return;
+    frame = requestAnimationFrame(() => {
+      frame = 0;
+      const button = consultationLink.getBoundingClientRect();
+      const overlaps = [...orderTriggers].some(trigger => {
+        const bounds = trigger.getBoundingClientRect();
+        return bounds.left < button.right + 8 && bounds.right > button.left - 8 &&
+          bounds.top < button.bottom + 8 && bounds.bottom > button.top - 8;
+      });
+      consultationLink.classList.toggle("is-obstructing", overlaps);
+    });
+  }
+  window.addEventListener("scroll", checkConsultationOverlap, { passive: true });
+  window.addEventListener("resize", checkConsultationOverlap);
+  window.addEventListener("load", checkConsultationOverlap);
+  checkConsultationOverlap();
+}
 
 if (!prefersReducedMotion) {
   document.querySelectorAll(".zoom-in:not([data-order-trigger])").forEach(function (element) {
@@ -83,11 +111,11 @@ const orderForm = document.querySelector("#order-form");
 
 if (orderModal && orderForm) {
   const formMessage = document.getElementById("order-form-message");
-  const triggerButtons = document.querySelectorAll("[data-order-trigger]");
   const provinceNotice = document.getElementById("province-notice");
   const scrollArea = orderModal.querySelector(".order-modal__content");
   let lastFocusedElement = null;
   let activeMode = null;
+  let navigatingToThanks = false;
   const catalog = window.ERECMAN_UBIGEO;
   const departmentField = document.getElementById("department");
   const provinceField = document.getElementById("province");
@@ -295,11 +323,12 @@ if (orderModal && orderForm) {
     if (lastFocusedElement?.isConnected) lastFocusedElement.focus({ preventScroll: true });
   }
 
-  triggerButtons.forEach(trigger => trigger.addEventListener("click", event => {
+  orderTriggers.forEach(trigger => trigger.addEventListener("click", event => {
     event.preventDefault();
     openModal(trigger);
   }));
   orderModal.querySelectorAll("[data-order-close]").forEach(button => button.addEventListener("click", closeModal));
+  window.addEventListener("pageshow", () => { navigatingToThanks = false; });
 
   orderForm.addEventListener("input", event => {
     if (event.target.type === "radio" || event.target.type === "checkbox") return;
@@ -317,8 +346,9 @@ if (orderModal && orderForm) {
     if (!orderForm.querySelector('[aria-invalid="true"]')) setMessage("");
   });
 
-  orderForm.addEventListener("submit", event => {
+  orderForm.addEventListener("submit", async event => {
     event.preventDefault();
+    if (navigatingToThanks) return;
     if (!validateForm()) {
       const firstInvalid = orderForm.querySelector('[aria-invalid="true"]:not(:disabled)');
       if (firstInvalid) {
@@ -327,14 +357,25 @@ if (orderModal && orderForm) {
       }
       return;
     }
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildWhatsAppMessage())}`;
-    window.open(url, "_blank", "noopener");
-    // Track only the validated WhatsApp contact attempt, without personal data.
     try {
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: "generate_lead" });
+      WhatsAppOrder.save(buildWhatsAppMessage());
+      navigatingToThanks = true;
+      const page = new URL("gracias/index.html", window.location.href);
+      if (/^https?:$/.test(page.protocol) && page.pathname === "/gracias/index.html") {
+        try {
+          const route = await fetch("/gracias", { signal: AbortSignal.timeout(2500) });
+          if (route.ok && (await route.text()).includes('id="order-ready"')) {
+            page.pathname = "/gracias";
+          }
+        } catch {
+          // Static previews can serve the file directly without the clean URL.
+        }
+      }
+      window.location.assign(page.href);
     } catch (error) {
-      // Tracking failures must not interrupt the order flow.
+      navigatingToThanks = false;
+      setMessage("No pudimos preparar la página de gracias. Habilita el almacenamiento de esta sesión e inténtalo de nuevo.");
+      scrollArea.scrollTop = 0;
     }
   });
 

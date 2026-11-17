@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NLKVG5JR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="referrer" content="same-origin">
+    <title>Gracias por tus datos | Erecman Plus</title>
+    <link rel="stylesheet" href="../css/gracias.css">
+    <script defer src="../js/whatsapp-order.js?v=2026-11-17"></script>
+    <script defer src="../js/gracias.js?v=2026-11-17-redireccion"></script>
+</head>
+<body>
+    <main class="thanks-card">
+        <p class="thanks-brand">ERECMAN <span>PLUS</span></p>
+        <section id="order-ready" hidden>
+            <h1>¡Tu pedido está casi listo!</h1>
+            <p id="whatsapp-status">Gracias por completar tus datos. En unos segundos te llevaremos a WhatsApp para que puedas enviar y confirmar tu pedido.</p>
+            <span class="thanks-spinner" id="whatsapp-spinner" aria-hidden="true" hidden></span>
+            <a class="thanks-action" id="continue-whatsapp">Continuar a WhatsApp</a>
+        </section>
+        <section id="no-order">
+            <h1>Completa tu pedido en la landing</h1>
+            <p>En esta pestaña no hay un pedido disponible. Vuelve a la landing para completar el formulario.</p>
+            <a class="thanks-home" href="../">Volver a la landing</a>
+        </section>
+    </main>
+</body>
+</html>

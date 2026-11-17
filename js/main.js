@@ -328,7 +328,15 @@ if (orderModal && orderForm) {
     openModal(trigger);
   }));
   orderModal.querySelectorAll("[data-order-close]").forEach(button => button.addEventListener("click", closeModal));
-  window.addEventListener("pageshow", () => { navigatingToThanks = false; });
+  window.addEventListener("pageshow", () => {
+    navigatingToThanks = false;
+    if (!history.state?.returnFromWhatsApp) return;
+    const { returnFromWhatsApp, ...state } = history.state;
+    history.replaceState(state, "");
+    closeModal();
+    window.scrollTo({ top: 0, behavior: "instant" });
+    history.scrollRestoration = "auto";
+  });
 
   orderForm.addEventListener("input", event => {
     if (event.target.type === "radio" || event.target.type === "checkbox") return;
@@ -371,6 +379,8 @@ if (orderModal && orderForm) {
           // Static previews can serve the file directly without the clean URL.
         }
       }
+      history.replaceState({ ...history.state, returnFromWhatsApp: true }, "");
+      history.scrollRestoration = "manual";
       window.location.assign(page.href);
     } catch (error) {
       navigatingToThanks = false;
